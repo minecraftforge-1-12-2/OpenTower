@@ -58,6 +58,7 @@ obj_player1.holycross = 0
 instance_destroy(obj_crosspriest_cross)
 if isgustavo != obj_player.isgustavo
 {
+	trace("HUH")
 	if isgustavo
 		scr_switchgustavo()
 	else
@@ -71,6 +72,7 @@ if isgustavo != obj_player.isgustavo
 
 if !obj_player1.ispeppino && isgustavo != obj_player.noisecrusher
 {
+	trace("WHAT")
 	if isgustavo
 		scr_switchgustavo();
 	else

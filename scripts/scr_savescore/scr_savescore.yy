@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_savescore",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Utilities",
-    "path": "folders/Scripts/General/Utilities.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_savescore",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_savescore",
+  "parent":{
+    "name":"Utilities",
+    "path":"folders/Scripts/General/Utilities.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

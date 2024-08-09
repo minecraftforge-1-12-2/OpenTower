@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "tdp_text_action",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "TDP",
-    "path": "folders/Scripts/TDP.yy",
+  "$GMScript":"v1",
+  "%Name":"tdp_text_action",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tdp_text_action",
+  "parent":{
+    "name":"TDP",
+    "path":"folders/Scripts/TDP.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

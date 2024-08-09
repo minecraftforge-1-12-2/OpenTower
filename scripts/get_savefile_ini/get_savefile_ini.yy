@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "get_savefile_ini",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Saves",
-    "path": "folders/Scripts/Systems/Saves.yy",
+  "$GMScript":"v1",
+  "%Name":"get_savefile_ini",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_savefile_ini",
+  "parent":{
+    "name":"Saves",
+    "path":"folders/Scripts/Systems/Saves.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

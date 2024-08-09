@@ -20,18 +20,18 @@ function tdp_input_destroy()
 {
 	ds_map_destroy(global.input_list);
 }
-function tdp_input_add(argument0)
+function tdp_input_add(action_array)
 {
-	ds_map_set(global.input_list, argument0.name, argument0);
+	ds_map_set(global.input_list, action_array.name, action_array);
 }
-function tdp_input_update(argument0 = -1)
+function tdp_input_update(device = -1)
 {
-	gamepad_set_axis_deadzone(argument0, global.input_controller_deadzone);
+	gamepad_set_axis_deadzone(device, global.input_controller_deadzone);
 	var key = ds_map_find_first(global.input_list);
 	var num = ds_map_size(global.input_list);
 	for (var i = 0; i < num; i++)
 	{
-		ds_map_find_value(global.input_list, key).update(argument0);
+		ds_map_find_value(global.input_list, key).update(device);
 		key = ds_map_find_next(global.input_list, key);
 	}
 }

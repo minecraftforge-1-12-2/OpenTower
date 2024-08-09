@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "toggle_panel",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Level Editor",
-    "path": "folders/Scripts/Level Editor.yy",
+  "$GMScript":"v1",
+  "%Name":"toggle_panel",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"toggle_panel",
+  "parent":{
+    "name":"Level Editor",
+    "path":"folders/Scripts/Level Editor.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

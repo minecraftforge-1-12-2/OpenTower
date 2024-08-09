@@ -20,6 +20,6 @@ if (abs(distance_to_object(obj_player1)) < 25 && !place_meeting(x, y, obj_destru
 }
 if gotowardsplayer == 1
 {
-	move_towards_point(obj_player.x, obj_player.y, movespeed);
+	move_towards_point(obj_player1.x, obj_player1.y, movespeed);
 	movespeed++;
 }

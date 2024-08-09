@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "instance_edit_update",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Level Editor",
-    "path": "folders/Scripts/Level Editor.yy",
+  "$GMScript":"v1",
+  "%Name":"instance_edit_update",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"instance_edit_update",
+  "parent":{
+    "name":"Level Editor",
+    "path":"folders/Scripts/Level Editor.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

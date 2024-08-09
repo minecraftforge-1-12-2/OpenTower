@@ -77,6 +77,7 @@ function scr_pause_activate_objects(unpause_sounds = true)
 	}
 	ds_list_clear(instance_list);
 	ds_list_clear(sound_list);
+	obj_player1.key_start = false;
 	fadein = false;
 	pause = false;
 	alarm[2] = 1;

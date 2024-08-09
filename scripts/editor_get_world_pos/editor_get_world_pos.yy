@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "editor_get_world_pos",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Level Editor",
-    "path": "folders/Scripts/Level Editor.yy",
+  "$GMScript":"v1",
+  "%Name":"editor_get_world_pos",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"editor_get_world_pos",
+  "parent":{
+    "name":"Level Editor",
+    "path":"folders/Scripts/Level Editor.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_start_game",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Saves",
-    "path": "folders/Scripts/Systems/Saves.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_start_game",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_start_game",
+  "parent":{
+    "name":"Saves",
+    "path":"folders/Scripts/Systems/Saves.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

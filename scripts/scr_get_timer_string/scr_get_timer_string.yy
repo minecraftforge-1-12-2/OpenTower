@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_get_timer_string",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Systems",
-    "path": "folders/Scripts/Systems.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_get_timer_string",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_get_timer_string",
+  "parent":{
+    "name":"Systems",
+    "path":"folders/Scripts/Systems.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

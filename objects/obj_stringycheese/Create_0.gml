@@ -1,4 +1,5 @@
 playerid = -4;
+hand_index_spr = spr_mrpinch_hand2;
 state = states.normal;
 handx = x;
 handy = y;

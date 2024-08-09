@@ -46,30 +46,39 @@ if floor(image_index) == image_number - 1
 							lastroom_soundtest = room;
 							lastroom_secretportalID = other.id;
 						}
-						if !other.secret
-						{
-							lastroom = room;
-							targetRoom = other.targetRoom;
-							secretportalID = other.id;
-						}
-						else
-						{
-							targetRoom = lastroom;
-							if (room == tower_soundtest || room == tower_soundtestlevel)
-							{
-								targetRoom = lastroom_soundtest;
-								secretportalID = lastroom_secretportalID;
-							}
-						}
 						if (instance_exists(obj_randomsecret) && !obj_randomsecret.selected)
 						{
-							obj_randomsecret.selected = true;
+							obj_randomsecret.selected = true
 							var len = array_length(obj_randomsecret.levels);
 							if len > 0
 							{
 								var num = irandom(len - 1);
 								targetRoom = obj_randomsecret.levels[num];
+								other.targetRoom = targetRoom
 								array_delete(obj_randomsecret.levels, num, 1);
+							}
+							trace(room_get_name(targetRoom))
+						}
+						if !other.secret && (instance_exists(obj_randomsecret) ? obj_randomsecret.selected : true)
+						{
+							lastroom = room;
+							targetRoom = other.targetRoom;
+							secretportalID = other.id;
+						}
+						else if other.secret
+						{
+							if instance_exists(obj_randomsecret)
+							{
+								targetRoom = other.targetRoom
+								if array_length(obj_randomsecret.levels) == 0
+									targetRoom = secret_entrance;
+							}
+							else
+								targetRoom = lastroom;
+							if (room == tower_soundtest || room == tower_soundtestlevel)
+							{
+								targetRoom = lastroom_soundtest;
+								secretportalID = lastroom_secretportalID;
 							}
 						}
 					}

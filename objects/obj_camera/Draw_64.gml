@@ -24,7 +24,7 @@ if global.kungfu
 }
 if obj_player.state != states.dead
 {
-	if obj_player.x < 250 && obj_player.y < 169
+	if obj_player1.x < 250 && obj_player1.y < 169
 		hud_posY = Approach(hud_posY, -300, 15);
 	else
 		hud_posY = Approach(hud_posY, 0, 15);

@@ -148,7 +148,6 @@ function add_achievement_notify(_name, _creation_code, _func, _local = true, _sa
 }
 function notification_push(notif, array)
 {
-	trace("Pushing notification: ", notif, " ", array);
 	with obj_achievementtracker
 		ds_queue_enqueue(notify_queue, [notif, array]);
 }

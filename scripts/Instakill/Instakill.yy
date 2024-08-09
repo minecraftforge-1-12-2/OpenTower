@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Instakill",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Baddies",
-    "path": "folders/Scripts/Baddies.yy",
+  "$GMScript":"v1",
+  "%Name":"Instakill",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Instakill",
+  "parent":{
+    "name":"Baddies",
+    "path":"folders/Scripts/Baddies.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

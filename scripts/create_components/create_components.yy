@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "create_components",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Level Editor",
-    "path": "folders/Scripts/Level Editor.yy",
+  "$GMScript":"v1",
+  "%Name":"create_components",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_components",
+  "parent":{
+    "name":"Level Editor",
+    "path":"folders/Scripts/Level Editor.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "EditorObject",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Level Editor",
-    "path": "folders/Scripts/Level Editor.yy",
+  "$GMScript":"v1",
+  "%Name":"EditorObject",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EditorObject",
+  "parent":{
+    "name":"Level Editor",
+    "path":"folders/Scripts/Level Editor.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

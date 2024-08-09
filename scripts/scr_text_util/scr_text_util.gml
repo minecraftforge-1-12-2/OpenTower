@@ -229,7 +229,7 @@ function scr_text_arr_size(array)
 	{
 		var b = array[i];
 		var cx = b[0];
-		var cy = b[1];
+		var cy = b[1] - 8;
 		var t = b[2];
 		var val = b[3];
 		
@@ -303,7 +303,7 @@ function scr_draw_text_arr(x, y, text_arr, color = c_white, alpha = 1, effect = 
 	{
 		var b = text_arr[i];
 		var cx = x + b[0];
-		var cy = y + b[1];
+		var cy = y + 8 + b[1];
 		var t = b[2];
 		var val = b[3];
 		
@@ -418,7 +418,7 @@ function scr_draw_text_arr(x, y, text_arr, color = c_white, alpha = 1, effect = 
 				
 				if icon != -4
 				{
-					draw_sprite(icon.sprite_index, icon.image_index, cx, cy);
+					draw_sprite(icon.sprite_index, icon.image_index, cx, cy - 8);
 					if icon.str != ""
 					{
 						var f = draw_get_font();

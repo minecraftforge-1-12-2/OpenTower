@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_initenemy",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Baddies",
-    "path": "folders/Scripts/Baddies.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_initenemy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_initenemy",
+  "parent":{
+    "name":"Baddies",
+    "path":"folders/Scripts/Baddies.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

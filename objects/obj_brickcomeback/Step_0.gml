@@ -1,6 +1,7 @@
-if obj_player.isgustavo == 0
+if obj_player1.isgustavo == 0
 {
 	instance_create(x, y, obj_genericpoofeffect);
+	trace("brick destroyed")
 	instance_destroy();
 }
 if !trapped

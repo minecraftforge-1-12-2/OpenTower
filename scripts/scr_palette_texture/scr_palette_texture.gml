@@ -79,7 +79,7 @@ function scr_get_texture_name(texture)
 	}
 	return "none";
 }
-function scr_palette_texture(sprite, subimg, x, y, xscale, yscale, rot = 0, col = c_white, alpha = 1, gui = false, texture = noone)
+function scr_palette_texture(sprite, subimg, x, y, xscale, yscale, rot = 0, col = c_white, alpha = 1, gui = 0, texture = noone)
 {
 	if texture == noone
 		texture = global.palettetexture;
@@ -91,54 +91,61 @@ function scr_palette_texture(sprite, subimg, x, y, xscale, yscale, rot = 0, col 
 	else
 		gui = false;
 	
-	if shader_current() == global.Pal_Shader
-		pal_swap_set(spr_peppalette, 1, false);
+	var surfw = sprite_get_width(sprite) * abs(xscale), surfh = sprite_get_height(sprite) * abs(yscale);
+	if surfw == 0 or surfh == 0
+		exit;
 	
-	if !surface_exists(global.palettesurface)
-		global.palettesurface = surface_create(960, 540);
-	if !surface_exists(global.palettesurfaceclip)
-		global.palettesurfaceclip = surface_create(960, 540);
+	//var palshader = shader_current();
+	//reset_shader_fix();
 	
-	var cx = camera_get_view_x(view_camera[0]);
-	var cy = camera_get_view_y(view_camera[0]);
-	if gui
-	{
-		cx = 0;
-		cy = 0;
-	}
+	if (surface_get_width(global.palettesurface) != surfw || surface_get_height(global.palettesurface) != surfh)
+		surface_free(global.palettesurface);
+	if (surface_get_width(global.palettesurfaceclip) != surfw || surface_get_height(global.palettesurfaceclip) != surfh)
+		surface_free(global.palettesurfaceclip);
+	
+	if (!surface_exists(global.palettesurface))
+		global.palettesurface = surface_create(surfw, surfh);
+	if (!surface_exists(global.palettesurfaceclip))
+		global.palettesurfaceclip = surface_create(surfw, surfh);
 	
 	surface_set_target(global.palettesurfaceclip);
-	draw_clear_alpha(0, 0);
-	draw_rectangle_color(0, 0, 960, 540, c_white, c_white, c_white, c_white, false);
+	draw_clear(c_white);
 	gpu_set_blendmode(bm_subtract);
-	draw_sprite_ext(sprite, subimg, x - cx, y - cy, xscale, yscale, rot, c_white, 1);
-	if gui
-		reset_blendmode();
-	else
-		gpu_set_blendmode(bm_normal);
+	
+	var xo = sprite_get_xoffset(sprite);
+	var yo = sprite_get_yoffset(sprite);
+	
+	draw_sprite_ext(sprite, subimg, xo * abs(xscale), yo * abs(yscale), xscale, yscale, rot, c_white, 1);
+	
+	gpu_set_blendmode(bm_normal);
+	
 	surface_reset_target();
 	surface_set_target(global.palettesurface);
+	draw_clear_alpha(c_black, 0);
+	
 	var sw = sprite_get_width(sprite);
 	var sh = sprite_get_height(sprite);
 	var xs = sw / sprite_get_width(texture);
 	var ys = sh / sprite_get_height(texture);
-	var xo = sprite_get_xoffset(sprite);
-	var yo = sprite_get_yoffset(sprite);
-	var xx = x - cx - xo;
-	var yy = y - cy - yo;
+	
+	var xx = -xo;
+	var yy = -yo;
 	
 	if xscale < 0
-		xx = ((x - cx) + xo) - sw;
+		xx = xo - sw;
 	if yscale < 0
-		yy = ((y - cy) + yo) - sh;
+		yy = yo - sh;
 	
-	draw_sprite_ext(texture, 0, xx, yy, xs + 4, ys + 4, 0, col, 1);
+	draw_sprite_ext(texture, global.Pattern_Index, 0, 0, (xs + 4) * abs(xscale), (ys + 4) * abs(yscale), 0, col, 1);
 	gpu_set_blendmode(bm_subtract);
 	draw_surface(global.palettesurfaceclip, 0, 0);
-	if gui
-		reset_blendmode();
-	else
-		gpu_set_blendmode(bm_normal);
+	
+	gpu_set_blendmode(bm_normal);
+	
 	surface_reset_target();
-	draw_surface_ext(global.palettesurface, cx, cy, 1, 1, 0, c_white, alpha);
+	draw_surface_ext(global.palettesurface, x - xo * abs(xscale), y - yo * abs(yscale), 1, 1, 0, c_white, alpha);
+	
+	//shader_set(palshader);
+	//if gui
+	//	reset_blendmode();
 }
