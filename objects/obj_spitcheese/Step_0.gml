@@ -45,7 +45,7 @@ if state != states.stun
 scr_scareenemy();
 if bombreset > 0
 	bombreset--;
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 if ((player.x > (x - 400) && player.x < (x + 400)) && (y <= (player.y + 60) && y >= (player.y - 60)))
 {
 	if bombreset <= 0

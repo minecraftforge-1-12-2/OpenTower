@@ -35,9 +35,6 @@ if other.key_up2 && other.ispeppino == ispeppino
 		pattern = arr[3];
 	other.player_patterntexture[other.player_paletteindex] = pattern;
 	
-	trace(other.player_paletteselect, " pal");
-	trace(other.player_patterntexture, " texture");
-	
 	ini_open_from_string(obj_savesystem.ini_str);
 	ini_write_real("Game", "palette", other.player_paletteselect[0]);
 	ini_write_real("Game", "palette_player2", other.player_paletteselect[1]);

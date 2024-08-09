@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_debug",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_debug",
+  "parent":{
+    "name":"PizzaTower_GM2",
+    "path":"PizzaTower_GM2.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

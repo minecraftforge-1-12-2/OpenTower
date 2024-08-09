@@ -3,7 +3,7 @@ var pal = player_index;
 if global.swapmode && obj_savesystem.ispeppino
 	pal = !pal;
 paletteselect = player_paletteselect[pal];
-global.palettetexture = player_patterntexture[pal];
+global.palettetexture = obj_player1.player_patterntexture[pal];
 player_paletteindex = pal;
 if global.collect != global.lastcollect
 {

@@ -6,6 +6,7 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+    {"name":"inst_3F08889B","path":"rooms/chateau_secret2/chateau_secret2.yy",},
     {"name":"inst_945B1D69","path":"rooms/chateau_secret2/chateau_secret2.yy",},
     {"name":"inst_180F8BE1","path":"rooms/chateau_secret2/chateau_secret2.yy",},
     {"name":"inst_ADB2F959","path":"rooms/chateau_secret2/chateau_secret2.yy",},
@@ -80,11 +81,11 @@
     {"name":"inst_A1FE2E33","path":"rooms/chateau_secret2/chateau_secret2.yy",},
     {"name":"inst_36A19CBB","path":"rooms/chateau_secret2/chateau_secret2.yy",},
     {"name":"inst_BA550A23","path":"rooms/chateau_secret2/chateau_secret2.yy",},
-    {"name":"inst_3F08889B","path":"rooms/chateau_secret2/chateau_secret2.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_3F08889B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F08889B","objectId":{"name":"obj_trapghost","path":"objects/obj_trapghost/obj_trapghost.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":1568.0,},
         {"$GMRInstance":"v1","%Name":"inst_945B1D69","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_945B1D69","objectId":{"name":"obj_secretportal","path":"objects/obj_secretportal/obj_secretportal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":480.0,},
         {"$GMRInstance":"v1","%Name":"inst_180F8BE1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_180F8BE1","objectId":{"name":"obj_secretportalstart","path":"objects/obj_secretportalstart/obj_secretportalstart.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":1664.0,},
         {"$GMRInstance":"v1","%Name":"inst_ADB2F959","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_ADB2F959","objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":14.000001,"scaleY":4.0,"x":928.0,"y":1728.0,},
@@ -159,7 +160,6 @@
         {"$GMRInstance":"v1","%Name":"inst_A1FE2E33","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_A1FE2E33","objectId":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":608.0,},
         {"$GMRInstance":"v1","%Name":"inst_36A19CBB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36A19CBB","objectId":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1152.0,"y":608.0,},
         {"$GMRInstance":"v1","%Name":"inst_BA550A23","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_BA550A23","objectId":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1152.0,"y":576.0,},
-        {"$GMRInstance":"v1","%Name":"inst_3F08889B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F08889B","objectId":{"name":"obj_trapghost","path":"objects/obj_trapghost/obj_trapghost.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":1568.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":80,"SerialiseWidth":94,"TileCompressedData":[
           -693,0,2,310,311,-92,0,2,320,321,-822,0,2,258,259,-134,0,2,258,259,-460,0,2,268,269,-92,0,2,278,279,
@@ -235,8 +235,8 @@
   ],
   "name":"chateau_secret2",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Chateau",
+    "path":"folders/Rooms/Levels/Chateau.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

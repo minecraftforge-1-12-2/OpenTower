@@ -57,7 +57,6 @@ if floor(image_index) == image_number - 1
 								other.targetRoom = targetRoom
 								array_delete(obj_randomsecret.levels, num, 1);
 							}
-							trace(room_get_name(targetRoom))
 						}
 						if !other.secret && (instance_exists(obj_randomsecret) ? obj_randomsecret.selected : true)
 						{

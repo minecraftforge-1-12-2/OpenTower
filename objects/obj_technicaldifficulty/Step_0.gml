@@ -1,7 +1,7 @@
 static_index += (0.35 * static_dir);
 if alarm[0] > 0
 {
-	with obj_player
+	with obj_player1
 	{
 		state = states.actor;
 		hsp = 0;

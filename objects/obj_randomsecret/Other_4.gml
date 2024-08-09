@@ -56,23 +56,21 @@ switch room
 obj_player1.shotgunAnim = shotgunAnim
 obj_player1.holycross = 0
 instance_destroy(obj_crosspriest_cross)
-if isgustavo != obj_player.isgustavo
+if isgustavo != obj_player1.isgustavo
 {
-	trace("HUH")
 	if isgustavo
 		scr_switchgustavo()
 	else
 		scr_switchpeppino()
-	with obj_player
+	with obj_player1
 	{
 		tauntstoredstate = (isgustavo ? states.ratmount : states.normal)
 		tauntstoredsprite = sprite_index
 	}
 }
 
-if !obj_player1.ispeppino && isgustavo != obj_player.noisecrusher
+if !obj_player1.ispeppino && isgustavo != obj_player1.noisecrusher
 {
-	trace("WHAT")
 	if isgustavo
 		scr_switchgustavo();
 	else
@@ -84,7 +82,7 @@ if !obj_player1.ispeppino && global.noisejetpack
 switch startstate
 {
 	case noone:
-		with obj_player
+		with obj_player1
 		{
 			if !isgustavo
 			{
@@ -102,7 +100,7 @@ switch startstate
 		break
 	
 	case states.knightpep:
-		with obj_player
+		with obj_player1
 		{
 			tauntstoredstate = states.knightpepslopes
 			tauntstoredsprite = spr_knightpepdownslope
@@ -112,7 +110,7 @@ switch startstate
 		break
 	
 	case states.firemouth:
-		with obj_player
+		with obj_player1
 		{
 			tauntstoredstate = states.firemouth
 			tauntstoredsprite = spr_firemouth

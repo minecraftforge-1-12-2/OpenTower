@@ -1,6 +1,4 @@
 toppins are flashing for some reason
-patterns no workie
-secret level thing
 toppins are just broken
 random layer_depth messages
-https://cdn.discordapp.com/attachments/1230201328232562738/1271403061449064534/Replay_2024.08.09-14.39.mp4?ex=66b735df&is=66b5e45f&hm=7fef16d793b70770c85eaf011e93d6664f58bcbcf0183b36d7008bd35892f3ec&
+there might be some bugs in swap mode idk
