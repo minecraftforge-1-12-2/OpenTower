@@ -174,7 +174,6 @@ function scr_getinput()
 	if instance_exists(obj_softlockcrash)
 		exit;
 	
-	var verticaldeadzone = global.input_controller_deadzone_vertical;
 	var horizontaldeadzone = global.input_controller_deadzone_horizontal;
 	var vertpress_dz = global.input_controller_deadzone_press;
 	var horizpress_dz = global.input_controller_deadzone_press;

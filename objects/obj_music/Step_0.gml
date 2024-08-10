@@ -1,7 +1,6 @@
 prevpillar_on_camera = pillar_on_camera;
 if (fmod_event_instance_is_playing(kidspartychaseID) && instance_exists(obj_pause) && !obj_pause.pause && !instance_exists(obj_monster))
 {
-	trace("Stopping kidsparty music");
 	fmod_event_instance_stop(kidspartychaseID, false);
 	instance_destroy(obj_kidspartybg);
 	if music != -4

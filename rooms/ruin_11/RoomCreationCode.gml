@@ -1,4 +1,4 @@
-pal_swap_init_system(shd_pal_swapper);
+pal_swap_init_system();
 global.roommessage = "ANCIENT GODS AND PB";
 with (obj_secretblock)
 	particlespr = spr_ruindebris4;

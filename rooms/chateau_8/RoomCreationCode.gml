@@ -1,4 +1,4 @@
-pal_swap_init_system(shd_pal_swapper);
+pal_swap_init_system();
 global.roommessage = "GOBLIN PIT OF HORROR";
 if (global.panic)
 {

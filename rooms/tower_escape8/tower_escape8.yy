@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"tower_escape8",
-  "creationCodeFile":"${project_dir}/rooms/tower_escape8/RoomCreationCode.gml",
+  "creationCodeFile":"rooms/tower_escape8/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

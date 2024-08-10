@@ -59,9 +59,9 @@ function SUPER_boss_hurt(player)
 		collisioned = true;
 	}
 }
-function boss_hurt(player)
+function boss_hurt(_player)
 {
-	SUPER_boss_hurt(player);
+	SUPER_boss_hurt(_player);
 }
 function parry()
 {

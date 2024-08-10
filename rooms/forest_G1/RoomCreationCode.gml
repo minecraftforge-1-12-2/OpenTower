@@ -1,4 +1,4 @@
-pal_swap_init_system(shd_pal_swapper)
+pal_swap_init_system()
 global.roommessage = "PIZZA TOWER ISLAND"
 var lay_id = layer_get_id("Assets_1")
 var gus = layer_sprite_get_id(lay_id, "graphic_606CD6FF")

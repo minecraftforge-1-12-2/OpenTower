@@ -1,6 +1,5 @@
 var tx = playerid.x;
 var ty = playerid.y - 60;
-var acc = 0.2;
 
 switch state
 {

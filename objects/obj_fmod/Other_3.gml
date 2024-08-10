@@ -1,1 +1,4 @@
-fmod_destroy();
+fmod_studio_bank_unload(master_bank_index)
+fmod_studio_bank_unload(master_strings_bank_index)
+fmod_studio_bank_unload(music_bank_index)
+fmod_studio_bank_unload(sfx_bank_index)

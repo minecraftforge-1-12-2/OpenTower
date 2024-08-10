@@ -1,4 +1,5 @@
 /// @description steam is handled here.
+fmod_studio_system_update(); 
 steam_update();
 if !global.steam_api
 {
