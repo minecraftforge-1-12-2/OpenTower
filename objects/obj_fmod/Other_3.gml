@@ -1,4 +1,4 @@
-fmod_studio_bank_unload(master_bank_index)
-fmod_studio_bank_unload(master_strings_bank_index)
-fmod_studio_bank_unload(music_bank_index)
-fmod_studio_bank_unload(sfx_bank_index)
+fmod_studio_bank_unload(global.master_bank_index)
+fmod_studio_bank_unload(global.master_strings_bank_index)
+fmod_studio_bank_unload(global.music_bank_index)
+fmod_studio_bank_unload(global.sfx_bank_index)
