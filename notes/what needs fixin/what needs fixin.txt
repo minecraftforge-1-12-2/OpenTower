@@ -1,5 +1,4 @@
 followers are just broken
 random layer_depth messages
 there might be some bugs in swap mode idk
-3d audio
 THERE MIGHT BE some bugs with the new fmod

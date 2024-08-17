@@ -457,9 +457,9 @@ function scr_playersounds()
 			}
 			else if fmod_event_instance_is_playing(snd_airspin)
 			{
+				fmod_event_instance_stop(snd_airspin, true)
 				if (sprite_index == spr_mach || sprite_index == spr_mach4 || sprite_index == spr_crazyrun)
 					fmod_event_one_shot_3d("event:/sfx/playerN/wallbounceland", x, y)
-				fmod_event_instance_stop(snd_airspin, true)
 			}
 		}
 		else

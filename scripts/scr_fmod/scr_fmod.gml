@@ -8,13 +8,15 @@
 #macro fmod_event_instance_set_timeline_pos fmod_studio_event_instance_set_timeline_position
 function fmod_set_listener_attributes(listener, dx, dy)
 {
-	var Struct_3D_ATTRIBUTES = {
-		position: {x: dx,y: dy, z: 0},
-		velocity: {x:0,y:0,z:0},
-		forward: {x:0,y:0,z:0},
-		up: {x:0,y:0,z:0},
+	var attributes = {
+		position: {x: 0, y: 0, z: 0},
+		velocity: {x: 0, y: 0, z: 0},
+		forward: {x:0,y:0,z:1.0},
+		up: {x:0,y:1.0,z:0},
 	}
-	fmod_studio_system_set_listener_attributes(listener, Struct_3D_ATTRIBUTES);
+	attributes.position.x = dx
+	attributes.position.y = dy
+	fmod_studio_system_set_listener_attributes(listener, attributes);
 }
 function fmod_event_create_instance(event)
 {
@@ -31,15 +33,17 @@ function fmod_event_instance_stop(instance, mode)
 {
 	fmod_studio_event_instance_stop(instance, mode)
 }
-function fmod_event_instance_set_3d_attributes(event, dx = x, dy = y)
+function fmod_event_instance_set_3d_attributes(instance, dx = x, dy = y)
 {
-	var Struct_3D_ATTRIBUTES = {
-		position: {x: dx,y: dy, z: 0},
-		velocity: {x:0,y:0,z:0},
-		forward: {x:0,y:0,z:0},
-		up: {x:0,y:0,z:0},
+	var attributes = {
+		position: {x: 0, y: 0, z: 0},
+		velocity: {x: 0, y: 0, z: 0},
+		forward: {x:0,y:0,z:1.0},
+		up: {x:0,y:1.0,z:0},
 	}
-	fmod_studio_event_instance_set_3d_attributes(event, Struct_3D_ATTRIBUTES)
+	attributes.position.x = dx
+	attributes.position.y = dy
+	fmod_studio_event_instance_set_3d_attributes(instance, attributes)
 }
 function fmod_event_one_shot(event)
 {
@@ -54,13 +58,15 @@ function fmod_event_one_shot_3d(event, dx = x, dy = y)
 	trace(event)
 	var eventdesc = fmod_studio_system_get_event(event)
 	var instance = fmod_studio_event_description_create_instance(eventdesc)
-	var Struct_3D_ATTRIBUTES = {
-		position: {x: dx,y: dy, z: 0},
-		velocity: {x:0,y:0,z:0},
-		forward: {x:0,y:0,z:0},
-		up: {x:0,y:0,z:0},
+	var attributes = {
+		position: {x: 0, y: 0, z: 0},
+		velocity: {x: 0, y: 0, z: 0},
+		forward: {x:0,y:0,z:1.0},
+		up: {x:0,y:1.0,z:0},
 	}
-	fmod_studio_event_instance_set_3d_attributes(instance, Struct_3D_ATTRIBUTES)
+	attributes.position.x = dx
+	attributes.position.y = dy
+	fmod_studio_event_instance_set_3d_attributes(instance, attributes)
 	fmod_studio_event_instance_start(instance)
 	array_push(global.instances, instance)
 	fmod_studio_event_instance_release(instance)
@@ -96,5 +102,5 @@ function fmod_event_instance_set_paused(event, pause)
 }
 function fmod_event_instance_is_playing(event)
 {
-	return fmod_studio_event_instance_get_playback_state(event) != FMOD_STUDIO_PLAYBACK_STATE.STOPPED
+	return fmod_studio_event_instance_get_playback_state(event) != FMOD_STUDIO_PLAYBACK_STATE.STOPPED && fmod_studio_event_instance_get_playback_state(event) != FMOD_STUDIO_PLAYBACK_STATE.STOPPING
 }

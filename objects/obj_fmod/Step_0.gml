@@ -25,9 +25,6 @@ else if room != Loadiingroom
 for(var i = 0;i < array_length(global.instances); i++)
 {
 	var inst = global.instances[i]
-	if fmod_studio_event_instance_is_valid(inst)
-	{
-		if !fmod_event_instance_is_playing(inst)
-			array_delete(global.instances, i, 1)
-	}
+	if (!fmod_studio_event_instance_is_valid(inst) || !fmod_event_instance_is_playing(inst))
+		array_delete(global.instances, i, 1)
 }
