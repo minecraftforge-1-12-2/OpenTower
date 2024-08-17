@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_fmod",
   "parent":{
-    "name":"Fmod Shenanigans",
-    "path":"folders/Fmod Shenanigans.yy",
+    "name":"FMOD",
+    "path":"folders/Extensions/FMOD.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

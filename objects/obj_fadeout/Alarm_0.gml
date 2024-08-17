@@ -11,7 +11,6 @@ if (instance_exists(obj_player))
 		{
 			var r = room;
 			scr_room_goto(obj_player1.targetRoom);
-			trace(string_concat(room_get_name(obj_player1.targetRoom), " BALLS OFF"));
 			if r == tower_peppinohouse
 				scr_unlock_swap();
 			with obj_player

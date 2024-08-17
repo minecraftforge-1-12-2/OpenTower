@@ -12,8 +12,8 @@
   "name":"obj_fmod",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fmod Shenanigans",
-    "path":"folders/Fmod Shenanigans.yy",
+    "name":"FMOD",
+    "path":"folders/Extensions/FMOD.yy",
   },
   "parentObjectId":null,
   "persistent":true,
