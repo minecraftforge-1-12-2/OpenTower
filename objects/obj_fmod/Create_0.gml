@@ -28,3 +28,4 @@ show_debug_message("sfx: " + string(fmod_last_result()));
 global.sound_map = ds_map_create();
 global.steam_api = false;
 global.screenshotcount = 0;
+global.instances = []

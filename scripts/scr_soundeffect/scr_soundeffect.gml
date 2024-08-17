@@ -26,7 +26,7 @@ function set_audio_config(save = true)
 	fmod_set_parameter("sfxVolume", global.option_sfx_volume, true);
 }
 
-function set_controller_config()
+function set_controller_config() //how is this soundeffect what
 {
 	ini_open_from_string(obj_savesystem.ini_str_options);
 	

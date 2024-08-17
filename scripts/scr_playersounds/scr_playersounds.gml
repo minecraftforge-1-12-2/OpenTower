@@ -114,10 +114,14 @@ function scr_playersounds()
 				fmod_event_instance_set_parameter(sjumpsnd, "state", 1, true);
 			else if state != states.Sjump
 			{
-				if (fmod_event_instance_is_playing(sjumpsnd) && fmod_event_instance_get_parameter(sjumpsnd, "state") < 1)
+				if (fmod_event_instance_is_playing(sjumpsnd) /*&& fmod_event_instance_get_parameter(sjumpsnd, "state") < 1*/)
+				{
 					fmod_event_instance_stop(sjumpsnd, true);
+				}
 				else if (!fmod_event_instance_is_playing(sjumpsnd))
+				{
 					fmod_event_instance_set_parameter(sjumpsnd, "state", 0, true);
+				}
 			}
 			if (sprite_index == spr_player_Sjumpcancelstart || sprite_index == spr_playerN_sidewayspin)
 				fmod_event_instance_stop(sjumpsnd, true);

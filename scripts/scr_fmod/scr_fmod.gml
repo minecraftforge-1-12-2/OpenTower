@@ -1,7 +1,6 @@
 #macro fmod_set_parameter fmod_studio_system_set_parameter_by_name
 #macro fmod_get_parameter fmod_studio_system_get_parameter_by_name
 #macro fmod_event_instance_set_parameter fmod_studio_event_instance_set_parameter_by_name
-#macro fmod_event_instance_stop fmod_studio_event_instance_stop
 #macro fmod_event_instance_get_parameter fmod_studio_event_instance_get_parameter_by_name
 #macro fmod_event_instance_get_paused fmod_studio_event_instance_get_paused
 #macro fmod_event_instance_release fmod_studio_event_instance_release
@@ -25,7 +24,12 @@ function fmod_event_create_instance(event)
 }
 function fmod_event_instance_play(instance)
 {
+	array_push(global.instances, instance)
 	fmod_studio_event_instance_start(instance);
+}
+function fmod_event_instance_stop(instance, mode)
+{
+	fmod_studio_event_instance_stop(instance, mode)
 }
 function fmod_event_instance_set_3d_attributes(event, dx = x, dy = y)
 {
@@ -39,10 +43,10 @@ function fmod_event_instance_set_3d_attributes(event, dx = x, dy = y)
 }
 function fmod_event_one_shot(event)
 {
-	trace(fmod_studio_bank_get_bus_count(global.sfx_bank_index))
 	var eventdesc = fmod_studio_system_get_event(event)
 	var instance = fmod_studio_event_description_create_instance(eventdesc)
 	fmod_studio_event_instance_start(instance)
+	array_push(global.instances, instance)
 	fmod_studio_event_instance_release(instance)
 }
 function fmod_event_one_shot_3d(event, dx = x, dy = y)
@@ -58,11 +62,28 @@ function fmod_event_one_shot_3d(event, dx = x, dy = y)
 	}
 	fmod_studio_event_instance_set_3d_attributes(instance, Struct_3D_ATTRIBUTES)
 	fmod_studio_event_instance_start(instance)
+	array_push(global.instances, instance)
 	fmod_studio_event_instance_release(instance)
 }
 function fmod_event_instance_set_paused_all(pause)
 {
-	fmod_studio_bus_set_paused(fmod_studio_bank_get_bus_list(global.sfx_bank_index), pause)
+	if pause
+	{
+		pausedinst = []
+		for (var i = 0; i < array_length(global.instances); i++) {
+	        var instance = global.instances[i]
+			array_push(pausedinst, instance)
+	        fmod_studio_event_instance_set_paused(instance, pause);
+		}
+	}
+	else
+	{
+		for (var i = 0; i < array_length(pausedinst); i++) {
+	        var instance = pausedinst[i]
+	        fmod_studio_event_instance_set_paused(instance, pause);
+		}
+		array_pop(pausedinst)
+	}
 }
 function fmod_event_get_length(event)
 {

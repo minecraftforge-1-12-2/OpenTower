@@ -452,7 +452,6 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"credits.txt","CopyToMask":-1,"filePath":"datafiles","name":"credits.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"GMEXT-FMOD.html","CopyToMask":0,"filePath":"datafiles","name":"GMEXT-FMOD.html","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"GMEXT-FMOD.html","CopyToMask":-1,"filePath":"datafiles","name":"GMEXT-FMOD.html","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"english.txt","CopyToMask":3035426170322551022,"filePath":"datafiles/lang","name":"english.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Gameframe_License.txt","CopyToMask":-1,"filePath":"datafiles/licenses","name":"Gameframe_License.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
