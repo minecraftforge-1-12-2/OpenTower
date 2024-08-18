@@ -6,6 +6,8 @@ if (!fmod_event_instance_is_playing(snd))
 	fmod_event_instance_play(snd);
 if (!instance_exists(playerid))
 	exit;
+if !roomstarted
+	exit;
 var _move = true;
 with obj_player
 {

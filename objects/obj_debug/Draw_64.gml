@@ -5,8 +5,12 @@ if debugactive
 		scr_debug("X", obj_player1.x, 0)
 		scr_debug("Y", obj_player1.y, 1)
 		scr_debug("Room", room_get_name(room), 2)
-		scr_debug("Palette",sprite_get_name(obj_player1.spr_palette), 3)
-		scr_debug("Palette select",obj_player1.paletteselect, 4)
-		scr_debug("Pattern",sprite_get_name(global.palettetexture), 5)
+		scr_debug("pX",obj_player.x, 3)
+		scr_debug("pY",obj_player.y, 4)
+		if instance_exists(obj_followcharacter)
+		{
+			scr_debug("followX",obj_followcharacter.x, 5)
+			scr_debug("followY",obj_followcharacter.y, 6)
+		}
 	}
 }

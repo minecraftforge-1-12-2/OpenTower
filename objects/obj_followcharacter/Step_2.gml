@@ -2,6 +2,8 @@ if lock
 	exit;
 if (followid != -4 && !instance_exists(obj_player1))
 	exit;
+if !roomstarted
+	exit;
 playerid = obj_player1.id;
 if playerid.state != states.ladder && playerid.state != states.door && playerid.state != states.comingoutdoor
 {

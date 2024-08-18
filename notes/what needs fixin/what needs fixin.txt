@@ -1,4 +1,5 @@
-followers are just broken
 random layer_depth messages
-there might be some bugs in swap mode idk
-THERE MIGHT BE some bugs with the new fmod
+exit followers are a bit broken
+
+SWAP MODE:
+swapping from peppino to noise cutscene is broken
