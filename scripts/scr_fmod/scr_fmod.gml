@@ -61,22 +61,22 @@ function fmod_event_get_length(event)
 
 function fmod_event_instance_get_parameter(inst, name)
 {
-	fmod_studio_event_instance_get_parameter_by_name(inst, name)
+	return fmod_studio_event_instance_get_parameter_by_name(inst, name)
 }
 
 function fmod_event_instance_get_paused(inst) 
 {
-	fmod_studio_event_instance_get_paused(inst)
+	return fmod_studio_event_instance_get_paused(inst)
 }
 
 function fmod_get_parameter(name)
 {
-	fmod_studio_system_get_parameter_by_name(name)
+	return fmod_studio_system_get_parameter_by_name(name)
 }
 
 function fmod_event_instance_get_timeline_pos(inst) 
 {
-	fmod_studio_event_instance_get_timeline_position(inst)
+	return fmod_studio_event_instance_get_timeline_position(inst)
 }
 
 #endregion
