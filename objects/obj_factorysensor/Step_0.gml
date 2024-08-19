@@ -2,7 +2,7 @@ prevclosed = closed;
 var _closed = false;
 if !graffiti
 {
-	with obj_player
+	with obj_player1
 	{
 		if (check_player_coop() && x > other.bbox_right)
 		{
@@ -13,7 +13,7 @@ if !graffiti
 	}
 	if !_closed
 	{
-		with obj_player
+		with obj_player1
 		{
 			if (check_player_coop() && x < other.bbox_left)
 				other.closed = false;

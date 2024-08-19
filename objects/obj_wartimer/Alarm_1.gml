@@ -1,7 +1,7 @@
 if room != rank_room && minutes <= 0 && seconds <= 0 && addseconds <= 0
 {
 	instance_destroy(obj_fadeout);
-	with obj_player
+	with obj_player1
 	{
 		targetDoor = "A";
 		room = timesuproom;

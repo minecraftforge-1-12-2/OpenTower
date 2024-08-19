@@ -9,11 +9,11 @@ if (instance_exists(baddieID))
 	y = baddieID.y;
 	image_xscale = baddieID.image_xscale;
 }
-if (instance_exists(baddieID) && place_meeting(x, y, obj_player) && obj_player.cutscene == 0)
+if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0)
 {
 	if baddieID.state != states.grabbed && !baddieID.invincible && baddieID.state != states.ghostpossess
 	{
-		with obj_player
+		with obj_player1
 		{
 			var _obj_player = id;
 			var _playerindex = (object_index == obj_player1) ? 1 : 2;

@@ -41,7 +41,7 @@ if (place_meeting(x + hsp, y, obj_iceblock) && state == states.charge)
 	with (instance_place(x + hsp, y, obj_iceblock))
 		instance_destroy();
 }
-targetplayer = instance_nearest(x, y, obj_player);
+targetplayer = instance_nearest(x, y, obj_player1);
 if state == states.walk && attack_cooldown <= 0
 {
 	if (x != targetplayer.x && targetplayer.x > (x - 200) && targetplayer.x < (x + 200) && targetplayer.y < (y + 50) && targetplayer.y > (y - 50))

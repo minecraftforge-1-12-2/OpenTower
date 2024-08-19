@@ -1,6 +1,6 @@
 if room == rm_editor
 	exit;
-targetplayer = instance_nearest(x, y, obj_player);
+targetplayer = instance_nearest(x, y, obj_player1);
 switch state
 {
 	case states.idle:

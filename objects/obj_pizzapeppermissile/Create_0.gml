@@ -14,7 +14,7 @@ if !_destroy
 if _destroy
 {
 	instance_destroy();
-	with obj_player
+	with obj_player1
 		noisepeppermissile = 0;
 	exit;
 }

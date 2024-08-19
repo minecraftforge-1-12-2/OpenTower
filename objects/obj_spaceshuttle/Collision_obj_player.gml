@@ -9,7 +9,7 @@ with other
 		other.hitY = other.y;
 		instance_destroy(other.arrowID);
 		fmod_event_instance_play(global.snd_spaceship);
-		with obj_player
+		with obj_player1
 		{
 			if (check_player_coop())
 			{

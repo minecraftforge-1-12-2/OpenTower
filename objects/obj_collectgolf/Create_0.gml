@@ -6,6 +6,6 @@ with other
 	global.collected = false;
 	global.collectsound = 0;
 }
-if obj_player.character == "S"
+if obj_player1.character == "S"
 	sprite_index = spr_snickcollectible1;
 depth = 11;

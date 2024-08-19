@@ -1,4 +1,4 @@
-with obj_player
+with obj_player1
 {
 	if ((state == states.handstandjump || state == states.mach3 || state == states.mach2 || (state == states.tumble && sprite_index == spr_crouchslip)) && (place_meeting(x + sign(hsp), y, other) || place_meeting(x + xscale, y, other)))
 	{

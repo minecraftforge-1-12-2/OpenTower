@@ -87,7 +87,7 @@ if flash == 1 && alarm[2] <= 0
 	alarm[2] = 0.15 * room_speed;
 if bombreset > 0 && state != states.stun
 	bombreset--;
-else if (state == states.walk && distance_to_object(obj_player) < 250)
+else if (state == states.walk && distance_to_object(obj_player1) < 250)
 {
 	state = states.pizzagoblinthrow;
 	cooldown = 20;

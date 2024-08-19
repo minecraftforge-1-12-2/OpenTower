@@ -1,6 +1,6 @@
 if room == hub_loadingscreen && state != 2
 {
-	with obj_player
+	with obj_player1
 	{
 		state = states.comingoutdoor;
 		sprite_index = spr_walkfront;
@@ -10,7 +10,7 @@ if room == hub_loadingscreen && state != 2
 	{
 		fadeoutcreate = true;
 		var grouparr = ["hubgroup"];
-		with obj_player
+		with obj_player1
 		{
 			ini_open_from_string(obj_savesystem.ini_str);
 			var _intro = ini_read_real("Tutorial", "finished", false);

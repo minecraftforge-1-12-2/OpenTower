@@ -47,7 +47,7 @@ if state != states.stun
 	birdcreated = false;
 if flash == 1 && alarm[2] <= 0
 	alarm[2] = 0.15 * room_speed;
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 switch state
 {
 	case states.idle:

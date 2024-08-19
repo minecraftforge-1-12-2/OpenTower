@@ -43,7 +43,7 @@ if state == states.stun && stunned > 100 && birdcreated == 0
 }
 if state != states.stun
 	birdcreated = false;
-targetplayer = instance_nearest(x, y, obj_player);
+targetplayer = instance_nearest(x, y, obj_player1);
 if state == states.walk
 {
 	if sprite_index == spr_pizzaboy

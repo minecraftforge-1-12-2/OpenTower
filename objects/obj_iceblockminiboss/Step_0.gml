@@ -1,4 +1,4 @@
-if visible == 1 && obj_player.state != states.ejected
+if visible == 1 && obj_player1.state != states.ejected
 {
 	if (place_meeting(x, y - 1, obj_player1))
 	{

@@ -1,4 +1,4 @@
-playerid = instance_nearest(x, y, obj_player);
+playerid = instance_nearest(x, y, obj_player1);
 if move
 {
 	var spd = 1;

@@ -1,6 +1,6 @@
 if room == rm_editor
 	exit;
-targetplayer = instance_nearest(x, y, obj_player);
+targetplayer = instance_nearest(x, y, obj_player1);
 if (ceiling && (state == states.crouch || state == states.punch))
 	grav = 0;
 else if (ceiling && (state != states.crouch && state != states.punch))

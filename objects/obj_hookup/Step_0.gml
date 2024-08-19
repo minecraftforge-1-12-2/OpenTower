@@ -22,7 +22,7 @@ else if hooked
 			instance_destroy();
 	}
 	y -= movespeed;
-	with obj_player
+	with obj_player1
 	{
 		if (state == states.ladder && place_meeting(x, y, other))
 			y -= 5;

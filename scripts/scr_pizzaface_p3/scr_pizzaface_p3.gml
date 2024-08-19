@@ -281,7 +281,7 @@ function scr_pizzaface_p3_walk()
 }
 function scr_pizzaface_p3_jump()
 {
-	with obj_player
+	with obj_player1
 	{
 		if (place_meeting(x, y, other))
 		{
@@ -330,7 +330,7 @@ function scr_pizzaface_p3_stomp()
 			shake_mag = 6;
 			shake_mag_acc = 5 / room_speed;
 		}
-		with obj_player
+		with obj_player1
 		{
 			if (place_meeting(x, y, other))
 			{

@@ -5,7 +5,7 @@ var acc = 0.2
 switch state
 {
 	case 0:
-		if place_meeting(x, y, obj_player)
+		if place_meeting(x, y, obj_player1)
 		{
 			playerid = obj_player1.id
 			state++

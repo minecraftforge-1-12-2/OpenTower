@@ -86,7 +86,7 @@ if state != states.stun
 	birdcreated = false;
 if flash == 1 && alarm[2] <= 0
 	alarm[2] = 0.15 * room_speed;
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 if elite && ragecooldown > 0
 	ragecooldown--;
 if state == states.walk && state != states.stun && sprite_index == walkspr && sprite_index != spr_indiancheese_scared && elite && ragecooldown == 0

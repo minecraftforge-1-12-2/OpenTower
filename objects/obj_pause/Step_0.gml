@@ -8,7 +8,7 @@ if (!pause && instance_exists(obj_player1) && alarm[3] == -1 && obj_player1.key_
 		if !loop
 			_cutscenehandler = true;
 	}
-	with obj_player
+	with obj_player1
 	{
 		if ((state == states.victory && place_meeting(x, y, obj_startgate)) || (state == states.door && place_meeting(x, y, obj_exitgate)))
 			_cutscenehandler = true;

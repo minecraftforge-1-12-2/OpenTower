@@ -2,7 +2,7 @@ if !released && global.panic
 {
 	if (inst != -4 && !instance_exists(inst))
 		inst = -4;
-	if obj_player.x > x
+	if obj_player1.x > x
 	{
 		released = true;
 		image_speed = 0.35;

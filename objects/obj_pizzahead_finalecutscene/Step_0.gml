@@ -16,7 +16,7 @@ switch state
 			{
 				if (y < -200 && !instance_exists(obj_fadeout))
 				{
-					with obj_player
+					with obj_player1
 					{
 						targetRoom = boss_pizzafacefinale;
 						targetDoor = "B";

@@ -44,7 +44,7 @@ else if state == 5
 }
 else if state == 6
 	instance_destroy();
-with obj_player
+with obj_player1
 {
 	pistolanim = -4;
 	sprite_index = spr_peppino_duel;

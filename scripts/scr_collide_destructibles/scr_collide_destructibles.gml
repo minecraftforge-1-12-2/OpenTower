@@ -1,6 +1,6 @@
 function scr_collide_destructibles()
 {
-	with obj_player
+	with obj_player1
 	{
 		if ((state == states.jump && sprite_index == spr_playerN_noisebombspinjump)
 		|| (ghostdash && sprite_index != spr_ghostidle) || state == states.machcancel

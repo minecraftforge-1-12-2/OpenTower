@@ -1,7 +1,7 @@
 if !fakedeath
 {
 	scr_playerreset();
-	with obj_player
+	with obj_player1
 	{
 		if (object_index == obj_player1 || global.coop)
 		{

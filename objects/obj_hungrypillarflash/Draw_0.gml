@@ -6,7 +6,7 @@ draw_set_alpha(1);
 with debrisid
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 shader_set(global.Pal_Shader);
-with obj_player
+with obj_player1
 {
 	if visible
 	{

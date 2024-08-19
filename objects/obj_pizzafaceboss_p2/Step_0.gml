@@ -53,7 +53,7 @@ if (obj_player1.state != states.actor && obj_player1.y >= (y - 20) && obj_player
 {
 	if ((x > (room_width / 2) && obj_player1.x >= (x - 60)) || (x <= (room_width / 2) && obj_player1.x <= (x + 60)))
 	{
-		with obj_player
+		with obj_player1
 		{
 			if state != states.tackle
 			{

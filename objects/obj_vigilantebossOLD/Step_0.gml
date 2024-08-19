@@ -1,4 +1,4 @@
-targetplayer = global.coop ? instance_nearest(x, y, obj_player) : obj_player1;
+targetplayer = global.coop ? instance_nearest(x, y, obj_player1) : obj_player1;
 if hp <= 0 && state != states.arenaround && state != states.fistmatch
 {
 	if !thrown && !destroyable
@@ -11,7 +11,7 @@ if chooseparry_buffer > 0
 if important && honor && nexthonor && phase > 3 && state != states.superattack
 {
 	var ch = false;
-	with obj_player
+	with obj_player1
 	{
 		if state == states.chainsawbump
 			ch = true;

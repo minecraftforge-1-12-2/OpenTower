@@ -247,7 +247,7 @@ function __global_object_depths()
 	global.__objectDepths[238] = -4;
 	
 	global.__objectNames[0] = "obj_solid";
-	global.__objectNames[1] = "obj_player";
+	global.__objectNames[1] = "obj_player1";
 	global.__objectNames[2] = "obj_pause";
 	global.__objectNames[3] = "obj_music";
 	global.__objectNames[4] = "obj_tv";

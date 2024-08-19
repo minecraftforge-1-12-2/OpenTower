@@ -1,5 +1,5 @@
 var p = false;
-with obj_player
+with obj_player1
 {
 	if targetDoor == "LAP"
 	{

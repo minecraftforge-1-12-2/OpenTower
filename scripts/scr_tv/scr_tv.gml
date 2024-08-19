@@ -92,7 +92,7 @@ function tv_push_prompt_once(prompt_array, prompt_entry)
 }
 function tv_default_condition()
 {
-	return place_meeting(x, y, obj_player);
+	return place_meeting(x, y, obj_player1);
 }
 function tv_get_palette()
 {
@@ -145,7 +145,7 @@ function tv_do_expression(sprite, reset_pal = false, force_pep = false)
 					break
 				case spr_tv_exprcollect:
 					expressionbuffer = 150
-					if obj_player.isgustavo
+					if obj_player1.isgustavo
 					{
 						expressionsprite = spr_tv_happyG
 						if (irandom(100) <= 50)

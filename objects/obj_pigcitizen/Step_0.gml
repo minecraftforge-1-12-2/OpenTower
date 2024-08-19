@@ -38,7 +38,7 @@ switch state
 			if (place_meeting(x + sign(hsp), y, obj_solid) && !place_meeting(x + sign(hsp), y, obj_slope))
 				image_xscale *= -1;
 		}
-		if (obj_player.state == states.backbreaker && bbox_in_camera(view_camera[0], 50))
+		if (obj_player1.state == states.backbreaker && bbox_in_camera(view_camera[0], 50))
 		{
 			if state != states.backbreaker
 				fmod_event_one_shot_3d("event:/sfx/voice/pigphoto", x, y);
@@ -47,8 +47,8 @@ switch state
 			state = states.backbreaker;
 			hsp = 0;
 			vsp = 0;
-			if x != obj_player.x
-				image_xscale = sign(obj_player.x - x);
+			if x != obj_player1.x
+				image_xscale = sign(obj_player1.x - x);
 			if (ds_list_find_index(global.saveroom, id) == -1)
 			{
 				ds_list_add(global.saveroom, id);
@@ -58,7 +58,7 @@ switch state
 		break;
 	case states.backbreaker:
 		sprite_index = tauntspr;
-		if obj_player.state != states.backbreaker
+		if obj_player1.state != states.backbreaker
 		{
 			state = states.normal;
 			hsp = tauntstoredhsp;

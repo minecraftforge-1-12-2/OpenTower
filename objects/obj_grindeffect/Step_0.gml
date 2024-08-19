@@ -1,4 +1,4 @@
-x = obj_player.x;
-y = obj_player.y;
-if obj_player.state != states.grind
+x = obj_player1.x;
+y = obj_player1.y;
+if obj_player1.state != states.grind
 	instance_destroy();

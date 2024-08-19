@@ -71,7 +71,7 @@ function scr_hurtplayer(player)
 					global.kungfu = false;
 					if (!instance_exists(obj_fadeout))
 					{
-						with obj_player
+						with obj_player1
 							targetRoom = lastroom;
 						instance_create(x, y, obj_fadeout);
 					}
@@ -205,7 +205,7 @@ function scr_hurtplayer(player)
 					global.kungfu = false;
 					if (!instance_exists(obj_fadeout))
 					{
-						with obj_player
+						with obj_player1
 							targetRoom = lastroom;
 						instance_create(x, y, obj_fadeout);
 					}

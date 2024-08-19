@@ -1,6 +1,6 @@
 if global.horse
 	exit;
-with obj_player
+with obj_player1
 {
 	if other.image_yscale == 1
 	{
@@ -22,7 +22,7 @@ with obj_player
 			if global.coop == 1
 			{
 				var _box = other.id;
-				with obj_player
+				with obj_player1
 				{
 					x = _box.x;
 					y = _box.y - 76;
@@ -67,7 +67,7 @@ with obj_player
 			if global.coop == 1
 			{
 				_box = other.id;
-				with obj_player
+				with obj_player1
 				{
 					x = _box.x;
 					y = _box.y + 24;

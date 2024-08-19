@@ -1,13 +1,13 @@
 if press >= 8 && drop == 0
 {
-	obj_player.image_index = 0;
-	obj_player.alarm[8] = 60;
-	obj_player.state = states.hurt;
+	obj_player1.image_index = 0;
+	obj_player1.alarm[8] = 60;
+	obj_player1.state = states.hurt;
 	drop = true;
 	closed = false;
 }
 if closed == 1
-	y = obj_player.y;
+	y = obj_player1.y;
 if drop == 1
 {
 	if (place_meeting(x + floor(hsp), y, obj_null))

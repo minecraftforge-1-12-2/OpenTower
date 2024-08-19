@@ -20,13 +20,13 @@ switch state
 		}
 		break;
 	case states.arenaintro:
-		with obj_player
+		with obj_player1
 			state = states.gottreasure;
 		if cutscene_count > 0
 			cutscene_count--;
 		else
 		{
-			with obj_player
+			with obj_player1
 			{
 				state = states.normal;
 				image_index = 0;
@@ -101,7 +101,7 @@ switch state
 					instance_destroy(block_inst);
 				}
 				cutscene_count = outro_max;
-				with obj_player
+				with obj_player1
 				{
 					with obj_music
 						arena = false;

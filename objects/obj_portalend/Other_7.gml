@@ -1,6 +1,6 @@
 if sprite_index == spr_pizzaportalend
 {
-	with obj_player
+	with obj_player1
 	{
 		visible = true;
 		sprite_index = spr_pizzaportalentrancestart;

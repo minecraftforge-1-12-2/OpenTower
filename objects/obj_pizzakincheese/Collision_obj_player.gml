@@ -1,6 +1,6 @@
 if room == rm_editor
 	exit;
-if obj_player.state != states.hurt && global.cheesefollow == 0
+if obj_player1.state != states.hurt && global.cheesefollow == 0
 {
 	global.heattime = 60;
 	global.style += 10;

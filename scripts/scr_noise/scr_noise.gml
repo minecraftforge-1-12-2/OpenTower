@@ -206,7 +206,7 @@ function scr_noise_arenaintro()
 				{
 					state = states.walk;
 					spotlightID.expand = true;
-					with obj_player
+					with obj_player1
 					{
 						state = 0;
 						sprite_index = spr_idle;
@@ -299,7 +299,7 @@ function scr_noise_arenaintro()
 			{
 				state = states.walk;
 				spotlightID.expand = true;
-				with obj_player
+				with obj_player1
 				{
 					if ispeppino
 						create_particle(x, y, 9);
@@ -323,7 +323,7 @@ function scr_noise_arenaintro()
 			{
 				state = states.walk;
 				spotlightID.expand = true;
-				with obj_player
+				with obj_player1
 				{
 					state = states.normal;
 					sprite_index = spr_idle;
@@ -1031,7 +1031,7 @@ function scr_noise_golf()
 	}
 	if sprite_index != spr_playerN_golfswing
 	{
-		with obj_player
+		with obj_player1
 		{
 			if (place_meeting(x, y, other))
 			{

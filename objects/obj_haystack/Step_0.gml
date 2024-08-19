@@ -6,7 +6,7 @@ if sprite_index != spr_haystackburning && sprite_index != spr_haystackburningup
 		if (state == states.charge && place_meeting(x + hsp, y, other))
 			other.sprite_index = spr_haystackburningup;
 	}
-	with obj_player
+	with obj_player1
 	{
 		if ((state == states.firemouth && (place_meeting(x + hsp, y, other) || place_meeting(x, y + 1, other))) || (state == states.fireass && place_meeting(x, y + 1, other)))
 			other.sprite_index = spr_haystackburningup;
@@ -53,7 +53,7 @@ else if sprite_index == spr_haystackburning
 		sprite_index = spr_haystack;
 		firetimer = 200;
 	}
-	playerid = instance_place(x, y - 1, obj_player);
+	playerid = instance_place(x, y - 1, obj_player1);
 	with playerid
 	{
 		if state != states.fireass && state != states.knightpep

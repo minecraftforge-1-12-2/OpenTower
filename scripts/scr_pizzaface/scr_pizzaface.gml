@@ -215,7 +215,7 @@ function scr_pizzaface_arenaintro()
 		y = (room_height / 2) - 100;
 		vsp = 0;
 		scr_boss_genericintro(spr_pizzaface);
-		with obj_player
+		with obj_player1
 		{
 			sprite_index = spr_3hpidle;
 			xscale = 1;

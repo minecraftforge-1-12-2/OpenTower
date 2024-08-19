@@ -2,7 +2,7 @@ piledriver = true;
 active = false;
 step = function()
 {
-	with (obj_player)
+	with (obj_player1)
 	{
 		if (place_meeting(x, y, other) && state != states.superslam && state != states.chainsaw)
 			other.piledriver = false;

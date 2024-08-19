@@ -47,7 +47,7 @@ switch state
 		}
 		break;
 }
-var targetplayer = instance_nearest(x, y, obj_player);
+var targetplayer = instance_nearest(x, y, obj_player1);
 if cooldown > 0
 	cooldown--;
 if state == states.walk && cooldown <= 0

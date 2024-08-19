@@ -1,6 +1,6 @@
-if (place_meeting(x, y, obj_player))
+if (place_meeting(x, y, obj_player1))
 {
-	with obj_player
+	with obj_player1
 	{
 		if (state == states.mach1 || state == states.mach2)
 		{
@@ -23,26 +23,26 @@ if (place_meeting(x, y, obj_player))
 }
 if grabbed == 1
 {
-	image_xscale = -obj_player.xscale;
+	image_xscale = -obj_player1.xscale;
 	grav = 0;
-	obj_player.baddiegrabbedID = id;
-	if (obj_player.state == states.grabbing || obj_player.state == states.grab || obj_player.state == states.throwing || obj_player.state == states.slam || obj_player.state == states.tacklecharge)
+	obj_player1.baddiegrabbedID = id;
+	if (obj_player1.state == states.grabbing || obj_player1.state == states.grab || obj_player1.state == states.throwing || obj_player1.state == states.slam || obj_player1.state == states.tacklecharge)
 	{
 		grounded = false;
-		x = obj_player.x;
-		if obj_player.sprite_index != spr_player_haulingstart
-			y = obj_player.y - 40;
-		else if (floor(obj_player.image_index) == 0)
-			y = obj_player.y;
-		else if (floor(obj_player.image_index) == 1)
-			y = obj_player.y - 10;
-		else if (floor(obj_player.image_index) == 2)
-			y = obj_player.y - 20;
-		else if (floor(obj_player.image_index) == 3)
-			y = obj_player.y - 30;
-		image_xscale = -obj_player.xscale;
+		x = obj_player1.x;
+		if obj_player1.sprite_index != spr_player_haulingstart
+			y = obj_player1.y - 40;
+		else if (floor(obj_player1.image_index) == 0)
+			y = obj_player1.y;
+		else if (floor(obj_player1.image_index) == 1)
+			y = obj_player1.y - 10;
+		else if (floor(obj_player1.image_index) == 2)
+			y = obj_player1.y - 20;
+		else if (floor(obj_player1.image_index) == 3)
+			y = obj_player1.y - 30;
+		image_xscale = -obj_player1.xscale;
 	}
-	with obj_player
+	with obj_player1
 	{
 		move = key_left2 + key_right2;
 		if (!(state == states.grab || state == states.grabbing || state == states.throwing || state == states.slam || state == states.tacklecharge || state == states.punch || state == states.superslam || state == states.backkick || state == states.uppunch || state == states.shoulder))
@@ -53,14 +53,14 @@ if grabbed == 1
 		}
 	}
 	hsp = 0;
-	if obj_player.state == states.punch
+	if obj_player1.state == states.punch
 	{
-		instance_create(x + (obj_player.xscale * 30), y, obj_bumpeffect);
+		instance_create(x + (obj_player1.xscale * 30), y, obj_bumpeffect);
 		grabbed = false;
 		grav = 0.5;
-		x = obj_player.x;
+		x = obj_player1.x;
 		vsp = 0;
-		y = obj_player.y - 5;
+		y = obj_player1.y - 5;
 		thrown = true;
 		hsp = -image_xscale * 25;
 		grav = 0;
@@ -72,22 +72,22 @@ if grabbed == 1
 			shake_mag_acc = 3 / room_speed;
 		}
 	}
-	if obj_player.state == states.shoulder
+	if obj_player1.state == states.shoulder
 	{
 		grav = 0.5;
 		instance_create(x, y + 20, obj_bumpeffect);
 		grabbed = false;
 		thrown = true;
-		x = obj_player.x;
-		y = obj_player.y;
-		if obj_player.sprite_index == spr_player_shoulder
+		x = obj_player1.x;
+		y = obj_player1.y;
+		if obj_player1.sprite_index == spr_player_shoulder
 			vsp = 15;
-		if obj_player.sprite_index == spr_player_diagonaldownthrow
+		if obj_player1.sprite_index == spr_player_diagonaldownthrow
 		{
 			hsp = -image_xscale * 10;
 			vsp = 15;
 		}
-		if obj_player.sprite_index == spr_player_diagonalupthrow
+		if obj_player1.sprite_index == spr_player_diagonalupthrow
 		{
 			hsp = -image_xscale * 10;
 			vsp = -15;
@@ -100,23 +100,23 @@ if grabbed == 1
 			shake_mag_acc = 3 / room_speed;
 		}
 	}
-	if obj_player.state == states.throwing
+	if obj_player1.state == states.throwing
 	{
 		grav = 0.5;
 		grabbed = false;
 		thrown = true;
-		x = obj_player.x;
-		y = obj_player.y;
+		x = obj_player1.x;
+		y = obj_player1.y;
 		hsp = -image_xscale * 10;
 		vsp = -10;
 	}
-	if obj_player.state == states.uppunch
+	if obj_player1.state == states.uppunch
 	{
-		instance_create(x + (-obj_player.xscale * 15), y - 50, obj_bumpeffect);
+		instance_create(x + (-obj_player1.xscale * 15), y - 50, obj_bumpeffect);
 		grav = 0.5;
 		thrown = true;
-		x = obj_player.x;
-		y = obj_player.y;
+		x = obj_player1.x;
+		y = obj_player1.y;
 		hsp = -image_xscale * 2;
 		grabbed = false;
 		vsp = -20;
@@ -129,78 +129,78 @@ if grabbed == 1
 			shake_mag_acc = 3 / room_speed;
 		}
 	}
-	if obj_player.state == states.tacklecharge
+	if obj_player1.state == states.tacklecharge
 	{
-		x = obj_player.x + (obj_player.xscale * 15);
-		y = obj_player.y;
+		x = obj_player1.x + (obj_player1.xscale * 15);
+		y = obj_player1.y;
 	}
-	if obj_player.state == states.superslam
+	if obj_player1.state == states.superslam
 	{
-		if obj_player.character == "P"
+		if obj_player1.character == "P"
 		{
-			if (floor(obj_player.image_index) == 0)
+			if (floor(obj_player1.image_index) == 0)
 			{
 				depth = 0;
-				x = obj_player.x + (obj_player.xscale * 10);
-				y = obj_player.y;
+				x = obj_player1.x + (obj_player1.xscale * 10);
+				y = obj_player1.y;
 			}
-			if (floor(obj_player.image_index) == 1)
+			if (floor(obj_player1.image_index) == 1)
 			{
 				depth = 0;
-				x = obj_player.x + (obj_player.xscale * 5);
-				y = obj_player.y;
+				x = obj_player1.x + (obj_player1.xscale * 5);
+				y = obj_player1.y;
 			}
-			if (floor(obj_player.image_index) == 2)
+			if (floor(obj_player1.image_index) == 2)
 			{
 				depth = 0;
-				x = obj_player.x;
-				y = obj_player.y;
+				x = obj_player1.x;
+				y = obj_player1.y;
 			}
-			if (floor(obj_player.image_index) == 3)
+			if (floor(obj_player1.image_index) == 3)
 			{
 				depth = 0;
-				x = obj_player.x + (obj_player.xscale * -5);
-				y = obj_player.y;
+				x = obj_player1.x + (obj_player1.xscale * -5);
+				y = obj_player1.y;
 			}
-			if (floor(obj_player.image_index) == 4)
+			if (floor(obj_player1.image_index) == 4)
 			{
 				depth = 0;
-				x = obj_player.x + (obj_player.xscale * -10);
-				y = obj_player.y;
+				x = obj_player1.x + (obj_player1.xscale * -10);
+				y = obj_player1.y;
 			}
-			if (floor(obj_player.image_index) == 5)
+			if (floor(obj_player1.image_index) == 5)
 			{
 				depth = -8;
-				x = obj_player.x + (obj_player.xscale * -5);
-				y = obj_player.y;
+				x = obj_player1.x + (obj_player1.xscale * -5);
+				y = obj_player1.y;
 			}
-			if (floor(obj_player.image_index) == 6)
+			if (floor(obj_player1.image_index) == 6)
 			{
 				depth = -8;
-				x = obj_player.x;
-				y = obj_player.y;
+				x = obj_player1.x;
+				y = obj_player1.y;
 			}
-			if (floor(obj_player.image_index) == 7)
+			if (floor(obj_player1.image_index) == 7)
 			{
 				depth = -8;
-				x = obj_player.x + (obj_player.xscale * 5);
-				y = obj_player.y;
+				x = obj_player1.x + (obj_player1.xscale * 5);
+				y = obj_player1.y;
 			}
 		}
 		else
 		{
 			depth = -7;
-			x = obj_player.x;
-			y = obj_player.y - 40;
+			x = obj_player1.x;
+			y = obj_player1.y - 40;
 		}
-		if obj_player.sprite_index == obj_player.spr_piledriverland
+		if obj_player1.sprite_index == obj_player1.spr_piledriverland
 		{
 			instance_create(x, y, obj_slapstar);
 			instance_create(x, y, obj_baddiegibs);
 			grabbed = false;
 			thrown = true;
-			x = obj_player.x;
-			y = obj_player.y;
+			x = obj_player1.x;
+			y = obj_player1.y;
 			grav = 0.5;
 			hsp = -image_xscale * 10;
 			vsp = -10;

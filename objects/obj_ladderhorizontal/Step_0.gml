@@ -9,7 +9,7 @@ if (place_meeting(x + hsp, y, obj_solid))
 x += hsp;
 if hooked
 {
-	with obj_player
+	with obj_player1
 	{
 		if state == states.ladder && hooked
 		{

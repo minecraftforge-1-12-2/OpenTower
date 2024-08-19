@@ -58,45 +58,45 @@ if levelselect == 1
 			{
 				if other.b == 0
 				{
-					obj_player.targetRoom = desert_1;
-					obj_player.player_x = 208;
-					obj_player.player_y = 434;
-					obj_player.character = "P";
+					obj_player1.targetRoom = desert_1;
+					obj_player1.player_x = 208;
+					obj_player1.player_y = 434;
+					obj_player1.character = "P";
 				}
 				if other.b == 1
 				{
-					obj_player.targetRoom = floor2_room0;
-					obj_player.player_x = 208;
-					obj_player.player_y = 434;
-					obj_player.character = "P";
+					obj_player1.targetRoom = floor2_room0;
+					obj_player1.player_x = 208;
+					obj_player1.player_y = 434;
+					obj_player1.character = "P";
 				}
 				if other.b == 2
 				{
-					obj_player.targetRoom = floor3_room0;
-					obj_player.player_x = 976;
-					obj_player.player_y = 434;
-					obj_player.character = "P";
+					obj_player1.targetRoom = floor3_room0;
+					obj_player1.player_x = 976;
+					obj_player1.player_y = 434;
+					obj_player1.character = "P";
 				}
 				if other.b == 3
 				{
-					obj_player.targetRoom = floor4_room0;
-					obj_player.player_x = 304;
-					obj_player.player_y = 402;
-					obj_player.character = "P";
+					obj_player1.targetRoom = floor4_room0;
+					obj_player1.player_x = 304;
+					obj_player1.player_y = 402;
+					obj_player1.character = "P";
 				}
 				if other.b == 4
 				{
-					obj_player.targetRoom = floor5_room1;
-					obj_player.player_x = 244;
-					obj_player.player_y = 187;
-					obj_player.character = "P";
+					obj_player1.targetRoom = floor5_room1;
+					obj_player1.player_x = 244;
+					obj_player1.player_y = 187;
+					obj_player1.character = "P";
 				}
 				if other.b == 5
 				{
-					obj_player.targetRoom = golf_room1;
-					obj_player.player_x = 176;
-					obj_player.player_y = 402;
-					obj_player.character = "P";
+					obj_player1.targetRoom = golf_room1;
+					obj_player1.player_x = 176;
+					obj_player1.player_y = 402;
+					obj_player1.character = "P";
 				}
 			}
 		}
@@ -106,16 +106,16 @@ if levelselect == 1
 			{
 				if other.b == 0
 				{
-					obj_player.player_x = 250;
-					obj_player.player_y = 250;
-					obj_player.character = "P";
+					obj_player1.player_x = 250;
+					obj_player1.player_y = 250;
+					obj_player1.character = "P";
 				}
 				if other.b == 1
 				{
-					obj_player.targetRoom = floor2_roomtreasure;
-					obj_player.player_x = 250;
-					obj_player.player_y = 250;
-					obj_player.character = "P";
+					obj_player1.targetRoom = floor2_roomtreasure;
+					obj_player1.player_x = 250;
+					obj_player1.player_y = 250;
+					obj_player1.character = "P";
 				}
 			}
 		}

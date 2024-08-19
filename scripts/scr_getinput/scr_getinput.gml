@@ -75,7 +75,7 @@ function scr_switch_get_menu_input()
 
 function scr_menu_getinput()
 {
-	if (!instance_exists(obj_player))
+	if (!instance_exists(obj_player1))
 		tdp_input_update(obj_inputAssigner.player_input_device[obj_inputAssigner.player_index]);
 	
 	key_up = tdp_input_get("menu_up").held || tdp_input_get("menu_upC").held;

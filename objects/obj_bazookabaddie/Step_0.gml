@@ -39,7 +39,7 @@ if state == states.stun && stunned > 100 && birdcreated == 0
 }
 if state != states.stun
 	birdcreated = false;
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 if bombreset > 0
 	bombreset--;
 if (x != player.x && grounded && player.x > (x - 500) && player.x < (x + 500) && player.y > (y - 500) && player.y < (y + 500) && !instance_exists(bazookaID))

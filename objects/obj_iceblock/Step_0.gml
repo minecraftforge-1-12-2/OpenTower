@@ -1,6 +1,6 @@
-if (place_meeting(x, y - 1, obj_player))
+if (place_meeting(x, y - 1, obj_player1))
 {
-	with obj_player
+	with obj_player1
 	{
 		if (state != states.gotoplayer && place_meeting(x, y + 1, other))
 		{

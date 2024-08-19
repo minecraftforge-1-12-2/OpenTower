@@ -3,7 +3,7 @@ if (global.levelcomplete && !global.mansioncutscene)
 	currentroom = room;
 	scene_info = [[function()
 	{
-		with (obj_player)
+		with (obj_player1)
 		{
 			state = states.normal;
 			x = backtohubstartx;

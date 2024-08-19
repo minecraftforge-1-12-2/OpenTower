@@ -32,7 +32,7 @@ if (instance_exists(bossID))
 switch state
 {
 	case states.arenaintro:
-		with obj_player
+		with obj_player1
 		{
 			state = states.actor;
 			xscale = (x > (room_width / 2)) ? -1 : 1;
@@ -63,7 +63,7 @@ switch state
 		else
 		{
 			state = states.normal;
-			with obj_player
+			with obj_player1
 			{
 				if (object_index != obj_player2 || global.coop)
 					state = states.normal;
@@ -92,7 +92,7 @@ switch state
 			}
 			timer_buffer--;
 			instance_destroy(obj_noisebossbomb);
-			with obj_player
+			with obj_player1
 			{
 				if (state != states.actor && state != states.comingoutdoor && state != states.hit && !instance_exists(obj_fadeout))
 				{
@@ -141,7 +141,7 @@ switch state
 			bell_sprite = spr_bosstimer_bell;
 			alarm[0] = 1;
 			state = states.normal;
-			with obj_player
+			with obj_player1
 			{
 				if (object_index == obj_player1 || global.coop)
 					state = states.normal;
@@ -153,10 +153,10 @@ switch state
 	case states.normal:
 		bell_sprite = spr_bosstimer_bell;
 		round_y = Approach(round_y, round_ystart, 4);
-		if super >= supermax && obj_player.state != states.playersuperattack
+		if super >= supermax && obj_player1.state != states.playersuperattack
 		{
 			var p = false;
-			with obj_player
+			with obj_player1
 			{
 				if (!p && key_shoot2 && check_player_coop())
 				{
@@ -201,7 +201,7 @@ switch state
 			case 2:
 				super_portrait_index += 0.35;
 				super_portrait_x += 1;
-				if (obj_player.state != states.playersuperattack || obj_player.superattackstate != states.transition)
+				if (obj_player1.state != states.playersuperattack || obj_player1.superattackstate != states.transition)
 					super_portrait_state = 0;
 				break;
 		}
@@ -220,7 +220,7 @@ switch state
 		else
 		{
 			var hit = false;
-			with obj_player
+			with obj_player1
 			{
 				if state == states.hit
 					hit = true;

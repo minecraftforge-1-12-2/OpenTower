@@ -9,7 +9,7 @@ else
 		displaytext = scr_separate_text(displaytext);
 		textbuffer = textspeed;
 	}
-	else if obj_player.key_jump
+	else if obj_player1.key_jump
 	{
 		if (currentdialog < (array_length(dialog) - 1))
 		{
@@ -18,7 +18,7 @@ else
 			textbuffer = textspeed;
 			displaytext = "";
 			currenttext = scr_calculate_text(dialog[currentdialog][0]);
-			obj_player.key_jump = false;
+			obj_player1.key_jump = false;
 			dialogheight = scr_calculate_height(currenttext);
 			dialogsprite = dialog[currentdialog][1];
 			var func = dialog[currentdialog][2];
@@ -37,7 +37,7 @@ else
 			instance_destroy();
 	}
 }
-if (currentpos < string_length(currenttext) && obj_player.key_jump)
+if (currentpos < string_length(currenttext) && obj_player1.key_jump)
 {
 	while (currentpos <= string_length(currenttext))
 	{

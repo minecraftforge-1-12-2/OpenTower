@@ -9,7 +9,7 @@ if (state == states.transition || state == states.victory || state == states.dea
 	draw_set_alpha(1);
 }
 var _super_bg = false;
-with obj_player
+with obj_player1
 {
 	if state == states.playersuperattack && superattackstate == states.punch
 		_super_bg = true;

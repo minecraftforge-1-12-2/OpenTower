@@ -22,15 +22,15 @@ function scr_enemy_hit()
 			_player = obj_player1.id;
 		else if grabbedby == 2
 			_player = obj_player2.id;
-		var _state = obj_player.state;
+		var _state = obj_player1.state;
 		if _state == states.chainsaw
-			_state = obj_player.tauntstoredstate;
+			_state = obj_player1.tauntstoredstate;
 		if ((object_index == obj_pepperman || object_index == obj_vigilanteboss || object_index == obj_noiseboss || object_index == obj_pf_fakepep || object_index == obj_fakepepboss || object_index == obj_pizzafaceboss || object_index == obj_pizzafaceboss_p3) && override_throw)
 		{
 			thrown = true;
 			override_throw = false;
 		}
-		else if (_state == states.mach2 || _state == states.tumble || (_state == states.machslide && obj_player.sprite_index != obj_player.spr_mach3boost && obj_player.sprite_index != spr_player_machslideboost3fall) || sprite_index == spr_player_ratmountattack || sprite_index == spr_lonegustavo_dash)
+		else if (_state == states.mach2 || _state == states.tumble || (_state == states.machslide && obj_player1.sprite_index != obj_player1.spr_mach3boost && obj_player1.sprite_index != spr_player_machslideboost3fall) || sprite_index == spr_player_ratmountattack || sprite_index == spr_lonegustavo_dash)
 			thrown = false;
 		else
 			thrown = true;
@@ -55,11 +55,11 @@ function scr_enemy_hit()
 		state = states.stun;
 		if (object_index == obj_pepperman || object_index == obj_vigilanteboss || object_index == obj_noiseboss || object_index == obj_pf_fakepep || object_index == obj_fakepepboss || object_index == obj_pizzafaceboss || object_index == obj_pizzafaceboss_p3)
 		{
-			if obj_player.tauntstoredstate != states.punch && obj_player.tauntstoredstate != states.freefall && obj_player.tauntstoredstate != states.superslam
+			if obj_player1.tauntstoredstate != states.punch && obj_player1.tauntstoredstate != states.freefall && obj_player1.tauntstoredstate != states.superslam
 			{
 				linethrown = true;
 				var f = 15;
-				if obj_player.tauntstoredstate == states.mach3
+				if obj_player1.tauntstoredstate == states.mach3
 					f = 25;
 				if (abs(hithsp) > abs(hitvsp))
 				{

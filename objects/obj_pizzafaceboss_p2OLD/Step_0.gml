@@ -52,7 +52,7 @@ else
 	explosionhit = false;
 if (hp <= 0 && !instance_exists(obj_fadeout))
 {
-	with obj_player
+	with obj_player1
 	{
 		targetRoom = boss_pizzaface_p3;
 		targetDoor = "A";

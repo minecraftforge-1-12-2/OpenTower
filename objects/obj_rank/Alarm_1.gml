@@ -2,7 +2,7 @@ global.levelcomplete = true;
 global.noisejetpack = false;
 global.pistol = false;
 scr_playerreset();
-with obj_player
+with obj_player1
 {
 	swap_player();
 	global.pistol = false;

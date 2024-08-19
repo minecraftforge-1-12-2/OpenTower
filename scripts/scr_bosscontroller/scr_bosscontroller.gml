@@ -40,7 +40,7 @@ function scr_bosscontroller_particle_anim(sprite, image, x, y, imagespeed, spr_p
 }
 function scr_bosscontroller_intro()
 {
-	with obj_player
+	with obj_player1
 	{
 		state = states.actor;
 		image_blend = make_colour_hsv(0, 0, 255);
@@ -97,7 +97,7 @@ function scr_bosscontroller_intro()
 				break;
 			case 3:
 				state = states.normal;
-				with obj_player
+				with obj_player1
 				{
 					state = states.actor;
 					hsp = 0;

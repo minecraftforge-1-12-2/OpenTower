@@ -1,4 +1,4 @@
-with obj_player
+with obj_player1
 {
 	if ghostdash && ghostpepper >= 3
 	{

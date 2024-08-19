@@ -1,6 +1,6 @@
 if image_index == 1 && global.panic == false && room != war_13
 {
-	with obj_player
+	with obj_player1
 	{
 		if (state == states.comingoutdoor && floor(image_index) == image_number - 2)
 		{
@@ -39,7 +39,7 @@ if image_index == 1 && global.panic == false && room != war_13
 }
 if drop && dropstate != states.idle
 	exit;
-with obj_player
+with obj_player1
 {
 	if (grounded && (x > (other.x - 160) && x < (other.x + 160)) && key_up && (state == states.normal || state == states.Sjumpprep || state == states.mach1 || state == states.mach2 || state == states.mach3) && (global.panic == true || global.snickchallenge == 1 || room == war_13 || other.random_secret))
 	{

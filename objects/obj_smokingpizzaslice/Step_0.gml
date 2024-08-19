@@ -109,7 +109,7 @@ if state != states.stun
 	birdcreated = false;
 if flash == 1 && alarm[2] <= 0
 	alarm[2] = 0.15 * room_speed;
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 if state == states.walk && substate != states.turn
 {
 	if ((player.x > (x - 400) && player.x < (x + 400)) && (y <= (player.y + 60) && y >= (player.y - 60)) && ragecooldown == 0)

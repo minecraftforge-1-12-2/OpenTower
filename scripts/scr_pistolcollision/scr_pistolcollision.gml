@@ -75,7 +75,7 @@ function scr_pistolhit(object, damage)
 								hsp = 0
 								vsp = 0
 								buildup = 100
-								with obj_player
+								with obj_player1
 								{
 									hurted = false
 									image_alpha = 1
@@ -141,7 +141,7 @@ function scr_pistolhit(object, damage)
 							buildup = 100
 							hitX = x
 							hitY = y
-							with obj_player
+							with obj_player1
 							{
 								hurted = false
 								image_alpha = 1

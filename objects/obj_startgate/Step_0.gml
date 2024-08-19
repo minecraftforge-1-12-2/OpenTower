@@ -1,7 +1,7 @@
-drawing = place_meeting(x, y, obj_player);
+drawing = place_meeting(x, y, obj_player1);
 image_index = 0;
 scr_hub_bg_step();
-if (!pizza && (highscore > 0 || (boss && hats > 0)) && bbox_in_camera(view_camera[0], 0) && distance_to_object(obj_player) < 150)
+if (!pizza && (highscore > 0 || (boss && hats > 0)) && bbox_in_camera(view_camera[0], 0) && distance_to_object(obj_player1) < 150)
 {
 	pizza = true;
 	if !boss
@@ -81,7 +81,7 @@ if (!pizza && (highscore > 0 || (boss && hats > 0)) && bbox_in_camera(view_camer
 if !drawing
 {
 	var dis = 250;
-	bgalpha = distance_to_object(obj_player) / dis;
+	bgalpha = distance_to_object(obj_player1) / dis;
 	bgalpha -= 0.25;
 	if bgalpha > 1
 		bgalpha = 1;

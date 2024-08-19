@@ -89,7 +89,7 @@ if (instance_exists(obj_jumpscare))
 if (state == states.walk && point_in_camera(x, y, view_camera[0]))
 {
 	var p = false;
-	with obj_player
+	with obj_player1
 	{
 		if state == states.backbreaker && sprite_index == spr_taunt
 			p = true;

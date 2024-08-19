@@ -30,7 +30,7 @@ function scr_playerN_hookshot()
 		}
 		vsp = -5;
 		with (instance_create(x, y + 35, obj_bangeffect))
-			image_xscale = obj_player.image_xscale;
+			image_xscale = obj_player1.image_xscale;
 		instance_create(x, y, obj_landcloud);
 		with obj_baddie
 		{

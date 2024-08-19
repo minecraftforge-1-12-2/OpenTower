@@ -708,7 +708,7 @@ function boss_pizzahead_p2_phase1hurt()
 	y = hitY + irandom_range(-1, 1);
 	hsp = 0;
 	vsp = 0;
-	with obj_player
+	with obj_player1
 	{
 		actorbuffer = 10000;
 		hsp = 0;
@@ -739,7 +739,7 @@ function boss_pizzahead_p2_phase1hurt()
 		camzoom = 1;
 		camera_set_view_size(view_camera[0], SCREEN_WIDTH, SCREEN_HEIGHT);
 		elitehit--;
-		with obj_player
+		with obj_player1
 			state = states.normal;
 	}
 	obj_screensizer.camzoom = camzoom;

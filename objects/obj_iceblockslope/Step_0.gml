@@ -1,7 +1,7 @@
-if (place_meeting(x, y - 1, obj_player))
+if (place_meeting(x, y - 1, obj_player1))
 {
 	var _dir = sign(image_xscale);
-	with obj_player
+	with obj_player1
 	{
 		if (state != states.climbwall && (icemovespeed < 2 || place_meeting(x, y + 1, obj_iceblock)) && place_meeting(x, y + 1, other) && scr_slope())
 		{

@@ -1,6 +1,6 @@
 if active
 {
-	with obj_player
+	with obj_player1
 	{
 		state = states.actor;
 		hsp = 0;
@@ -21,7 +21,7 @@ if floor(image_index) == image_number - 1
 		case spr_pizzaportalentrancestart:
 		case spr_pizzaportalentrancestartN:
 			sprite_index = spr_pizzaportal_disappear;
-			with obj_player
+			with obj_player1
 			{
 				state = states.normal;
 				visible = true;

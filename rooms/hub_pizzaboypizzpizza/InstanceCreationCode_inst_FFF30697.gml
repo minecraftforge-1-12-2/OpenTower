@@ -26,7 +26,7 @@ if (global.levelcomplete && !global.kidspartycutscene)
 		}
 	}], [cutscene_wait, 100], [cutscene_change_room, currentroom], [cutscene_set_player_visible, true], [cutscene_player_float, false], [function()
 	{
-		with (obj_player)
+		with (obj_player1)
 		{
 			state = states.normal;
 			x = backtohubstartx;

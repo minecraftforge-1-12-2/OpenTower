@@ -1,4 +1,4 @@
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 image_speed = 0.35;
 switch state
 {

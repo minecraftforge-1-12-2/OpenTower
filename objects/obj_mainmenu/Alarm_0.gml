@@ -12,7 +12,7 @@ if !showswap
 else
 {
 	var grouparr = ["characterselectgroup"];
-	with obj_player
+	with obj_player1
 	{
 		targetRoom = characterselect;
 		targetDoor = "A";

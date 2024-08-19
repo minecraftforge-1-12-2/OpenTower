@@ -66,7 +66,7 @@ if (global.levelcomplete && !global.warcutscene)
 		}
 	}], [explosion_func, 1342, 385], [cutscene_wait, 3], [explosion_func, 1342, 477], [cutscene_wait, 3], [explosion_func, 1342, 531], [cutscene_wait, 40], [cutscene_change_room, hub_laundryroom], [cutscene_set_player_pos, 300, 300], [cutscene_wait, 50], [explosion_func, 267, 4], [cutscene_wait, 3], [explosion_func, 267, 63], [cutscene_wait, 3], [explosion_func, 267, 125], [cutscene_wait, 3], [cutscene_wait, 100], [cutscene_change_room, currentroom], [cutscene_set_player_visible, true], [function()
 	{
-		with (obj_player)
+		with (obj_player1)
 		{
 			state = states.normal;
 			x = backtohubstartx;

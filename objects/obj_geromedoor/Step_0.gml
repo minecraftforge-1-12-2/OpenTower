@@ -16,7 +16,7 @@ if (!global.horse && (obj_player1.state == states.normal || obj_player1.state ==
 	ds_list_add(global.saveroom, id);
 	fmod_event_one_shot_3d("event:/sfx/misc/keyunlock", x, y);
 	fmod_event_one_shot("event:/sfx/misc/cheers");
-	with obj_player
+	with obj_player1
 	{
 		targetRoom = other.targetRoom;
 		targetDoor = other.targetDoor;

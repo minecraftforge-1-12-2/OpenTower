@@ -95,7 +95,7 @@ switch state
 		fade = Approach(fade, 1, 0.1);
 		if (fade >= 1 && !instance_exists(obj_fadeout))
 		{
-			with obj_player
+			with obj_player1
 			{
 				targetRoom = tower_entrancehall;
 				targetDoor = "A";

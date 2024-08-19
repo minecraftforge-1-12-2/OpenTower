@@ -25,7 +25,7 @@ if obj_player1.ispeppino != ispeppino
 	palettetitle = lang_get_value(concat("dresser_", palettes[paletteselect][0], "title"));
 	palettedesc = lang_get_value_newline(concat("dresser_", palettes[paletteselect][0]));
 }
-showtext = place_meeting(x, y, obj_player);
+showtext = place_meeting(x, y, obj_player1);
 if (instance_exists(obj_transfotip))
 	showtext = false;
 if showtext

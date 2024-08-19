@@ -1,4 +1,4 @@
-with obj_player
+with obj_player1
 {
 	if ((object_index != obj_player2 || global.coop) && state != states.actor && !instance_exists(obj_dialogcontroller))
 	{
@@ -15,7 +15,7 @@ with obj_player
 if (waitforhurt && !instance_exists(obj_dialogcontroller))
 {
 	var b = false;
-	with obj_player
+	with obj_player1
 	{
 		if state == states.hurt
 			b = true;

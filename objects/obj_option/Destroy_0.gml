@@ -1,4 +1,4 @@
-with obj_player
+with obj_player1
 {
 	if state == states.actor
 		state = states.normal;

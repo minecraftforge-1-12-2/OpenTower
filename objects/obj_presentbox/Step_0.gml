@@ -74,7 +74,7 @@ switch global.boxhp
 		instance_destroy(obj_presentbox);
 		break;
 }
-with (instance_place(x, y, obj_player))
+with (instance_place(x, y, obj_player1))
 {
 	if ((state == states.handstandjump || state == states.punch || state == states.lungeattack) && other.sprite_index != spr_present)
 	{

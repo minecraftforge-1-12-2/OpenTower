@@ -1,5 +1,5 @@
 var accel = 2;
-with obj_player
+with obj_player1
 {
 	if (room == rank_room && check_player_coop())
 	{

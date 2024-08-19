@@ -68,7 +68,7 @@ if state != states.stun
 	birdcreated = false;
 if flash == 1 && alarm[2] <= 0
 	alarm[2] = 0.15 * room_speed;
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 var check = player.x > (x - 300) && player.x < (x + 300);
 if (state == states.walk && check && y <= (player.y + 60) && y >= (player.y - 60) && state != states.punch && chargebuffer <= 0)
 {

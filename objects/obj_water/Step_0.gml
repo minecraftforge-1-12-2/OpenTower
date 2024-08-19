@@ -1,6 +1,6 @@
-if (place_meeting(x, y - 1, obj_player))
+if (place_meeting(x, y - 1, obj_player1))
 {
-	with obj_player
+	with obj_player1
 	{
 		if state != states.gotoplayer && state != states.trashjump && state != states.trashjumpprep && state != states.mach3 && state != states.parry && sprite_index != spr_mach3boost
 		{

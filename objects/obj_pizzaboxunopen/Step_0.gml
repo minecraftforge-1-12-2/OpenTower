@@ -1,11 +1,11 @@
 var roomname = string_letters(room_get_name(room));
-if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
+if (place_meeting(x, y, obj_player1) && sprite_index == spr_pizzaboxunopen)
 {
 	global.combotime = 60;
 	fmod_event_one_shot("event:/sfx/misc/collecttoppin");
 	if content == obj_noisebomb
 	{
-		with obj_player
+		with obj_player1
 		{
 			state = states.backbreaker;
 			sprite_index = spr_player_bossintro;

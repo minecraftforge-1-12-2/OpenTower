@@ -96,7 +96,7 @@ if (global.levelcomplete && !global.freezercutscene)
 	}], [cutscene_wait, 50], [cutscene_change_room, currentroom], [cutscene_set_player_pos, backx, backy], [cutscene_set_player_visible, true], [cutscene_player_float, false], [function()
 	{
 		instance_destroy(obj_actor);
-		with (obj_player)
+		with (obj_player1)
 		{
 			if (object_index != obj_player2 || global.coop)
 			{

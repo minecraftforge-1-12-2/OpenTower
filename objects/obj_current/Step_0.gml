@@ -1,7 +1,7 @@
 instance_destroy(instance_place(x, y - 1, obj_baddie));
-if (place_meeting(x, y - 1, obj_player))
+if (place_meeting(x, y - 1, obj_player1))
 {
-	with obj_player
+	with obj_player1
 	{
 		if state != states.golf && state != states.tackle && state != states.gotoplayer && state != states.stringfall && state != states.stringjump && state != states.stringfling
 		{

@@ -183,7 +183,7 @@ if state != states.walk && state != states.blockstance
 	attract_player = false;
 
 var _dis = 300;
-if (state == states.walk && obj_player1.isgustavo && !obj_player1.cutscene && obj_player1.state != states.spaceshuttle && obj_player1.state != states.taxi && ((distance_to_object(obj_player) < _dis && obj_player1.brick) || distance_to_object(obj_ratmountgroundpound) < _dis || (distance_to_object(obj_brickcomeback) < _dis && instance_exists(obj_brickcomeback) && !obj_brickcomeback.trapped) || distance_to_object(obj_brickball) < _dis))
+if (state == states.walk && obj_player1.isgustavo && !obj_player1.cutscene && obj_player1.state != states.spaceshuttle && obj_player1.state != states.taxi && ((distance_to_object(obj_player1) < _dis && obj_player1.brick) || distance_to_object(obj_ratmountgroundpound) < _dis || (distance_to_object(obj_brickcomeback) < _dis && instance_exists(obj_brickcomeback) && !obj_brickcomeback.trapped) || distance_to_object(obj_brickball) < _dis))
 {
 	state = states.blockstance;
 	sprite_index = spr_hamkuff_chain1;

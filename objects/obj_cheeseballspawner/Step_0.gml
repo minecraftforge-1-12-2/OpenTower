@@ -1,7 +1,7 @@
 refresh--;
 if sprite_index != spr_giantslimethrow
 {
-	if (refresh <= 0 && distance_to_pos(x, y, obj_player.x, obj_player.y, 400, 400))
+	if (refresh <= 0 && distance_to_pos(x, y, obj_player1.x, obj_player1.y, 400, 400))
 	{
 		sprite_index = spr_giantslimethrow;
 		image_index = 0;

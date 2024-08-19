@@ -1,4 +1,4 @@
-targetplayer = instance_nearest(x, y, obj_player);
+targetplayer = instance_nearest(x, y, obj_player1);
 image_speed = 0.35;
 switch state
 {
@@ -25,9 +25,9 @@ switch state
 		drawhandy = lerp(drawhandy, handy, 0.2);
 		if shootbuffer > 0
 			shootbuffer--;
-		if (shootbuffer <= 0 && place_meeting(handx, handy, obj_player))
+		if (shootbuffer <= 0 && place_meeting(handx, handy, obj_player1))
 		{
-			playerid = instance_place(handx, handy, obj_player);
+			playerid = instance_place(handx, handy, obj_player1);
 			with playerid
 			{
 				if state == states.cheeseball

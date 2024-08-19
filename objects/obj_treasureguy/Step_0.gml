@@ -27,7 +27,7 @@ switch state
 		scr_enemy_rage();
 		break;
 	case states.underground:
-		var player = instance_nearest(x, y, obj_player);
+		var player = instance_nearest(x, y, obj_player1);
 		hsp = 0;
 		if underground
 		{
@@ -78,7 +78,7 @@ if state != states.stun
 	birdcreated = false;
 if flash == 1 && alarm[2] <= 0
 	alarm[2] = 0.15 * room_speed;
-targetplayer = global.coop ? instance_nearest(x, y, obj_player) : obj_player1;
+targetplayer = global.coop ? instance_nearest(x, y, obj_player1) : obj_player1;
 if state == states.walk
 {
 	sprite_index = walkspr;

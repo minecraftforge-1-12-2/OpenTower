@@ -1,4 +1,4 @@
-with obj_player
+with obj_player1
 	state = states.titlescreen;
 if scene >= 0
 {

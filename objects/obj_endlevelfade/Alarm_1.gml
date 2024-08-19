@@ -1,5 +1,5 @@
 room = targetRoom;
-with obj_player
+with obj_player1
 {
 	targetRoom = other.targetRoom;
 	targetDoor = other.targetDoor;

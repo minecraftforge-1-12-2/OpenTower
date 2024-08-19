@@ -1,4 +1,4 @@
-if (place_meeting(x, y, obj_player))
+if (place_meeting(x, y, obj_player1))
 	active = true;
 if active
 {

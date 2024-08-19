@@ -1,6 +1,6 @@
 if idle && state == states.walk && bombreset <= 0
 {
-	var targetplayer = instance_nearest(x, y, obj_player);
+	var targetplayer = instance_nearest(x, y, obj_player1);
 	if (abs(targetplayer.x - x) <= 250 && targetplayer.y < y && targetplayer.y > (y - 300))
 	{
 		state = states.pizzagoblinthrow;

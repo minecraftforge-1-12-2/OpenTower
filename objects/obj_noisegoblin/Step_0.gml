@@ -58,7 +58,7 @@ if state != states.stun
 	thrown = false;
 if bombreset > 0
 	bombreset--;
-targetplayer = global.coop ? instance_nearest(x, y, obj_player) : obj_player1;
+targetplayer = global.coop ? instance_nearest(x, y, obj_player1) : obj_player1;
 if ((sprite_index == spr_archergoblin_shoot || sprite_index == spr_archergoblin_wave) && x != targetplayer.x)
 	image_xscale = -sign(x - targetplayer.x);
 if x != targetplayer.x && targetplayer.state != states.bombpep && state != states.actor && state != states.pizzagoblinthrow && bombreset == 0 && grounded

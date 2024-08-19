@@ -596,7 +596,7 @@ function boss_pepperman_fistmatchend()
 {
 	state_boss_arenaround();
 	var c = false;
-	with obj_player
+	with obj_player1
 	{
 		state_player_arenaround();
 		if hsp == 0
@@ -605,7 +605,7 @@ function boss_pepperman_fistmatchend()
 	if c && hsp == 0
 	{
 		state = states.normal;
-		with obj_player
+		with obj_player1
 			state = states.normal;
 	}
 }

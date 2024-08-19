@@ -28,7 +28,7 @@ if active
 	vsp = vmovespeed * vscale;
 	x += hsp;
 	y += vsp;
-	with (instance_place(x, y - (2 + abs(v_velocity)), obj_player))
+	with (instance_place(x, y - (2 + abs(v_velocity)), obj_player1))
 	{
 		var v = 0;
 		if (abs(other.vsp) > 2)
@@ -46,9 +46,9 @@ if active
 	if (changing_hdir && !place_meeting(x, y, obj_moving_hstop))
 		changing_hdir = false;
 }
-else if (place_meeting(x, y - 1, obj_player))
+else if (place_meeting(x, y - 1, obj_player1))
 {
-	with obj_player
+	with obj_player1
 	{
 		if (place_meeting(x, y + 1, other) && !place_meeting(x, y, other))
 		{

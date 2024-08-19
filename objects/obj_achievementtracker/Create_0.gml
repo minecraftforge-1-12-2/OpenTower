@@ -1167,7 +1167,7 @@ add_achievement_notify("farm1", function(data)
 	{
 		var n = achievement_get_variable("f1_count");
 		var r = room_get_name(arr[1]);
-		if (obj_player.state == states.backbreaker && (string_letters(r) == "farm" || string_letters(r) == "farmb"))
+		if (obj_player1.state == states.backbreaker && (string_letters(r) == "farm" || string_letters(r) == "farmb"))
 		{
 			n.value++;
 			if n.value >= 3
@@ -1294,7 +1294,7 @@ add_achievement_update("forest1", 5, -4, function(data)
 	if global.leveltosave == "forest"
 	{
 		var b = false;
-		with obj_player
+		with obj_player1
 		{
 			if (!b && state == states.backbreaker && distance_to_object(obj_beedeco) < 300)
 				b = true;

@@ -66,7 +66,7 @@ if state == states.walk
 	if (point_in_camera(x, y, view_camera[0]))
 	{
 		var _taunt = false;
-		with obj_player
+		with obj_player1
 		{
 			if state == states.backbreaker
 				_taunt = true;

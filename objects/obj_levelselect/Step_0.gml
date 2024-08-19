@@ -11,7 +11,7 @@ if (!instance_exists(obj_option))
 		selected_level += (key_left2 + key_right2);
 		selected_level = clamp(selected_level, 0, array_length(level_array[selected_world]) - 1);
 	}
-	with obj_player
+	with obj_player1
 	{
 		movespeed = 0;
 		hsp = 0;
@@ -22,7 +22,7 @@ if (!instance_exists(obj_option))
 	if (key_jump2 && !instance_exists(obj_fadeout))
 	{
 		var _levelinfo = level_array[selected_world][selected_level];
-		with obj_player
+		with obj_player1
 		{
 			global.leveltosave = _levelinfo[2];
 			global.leveltorestart = _levelinfo[1];
@@ -37,7 +37,7 @@ if (!instance_exists(obj_option))
 	}
 	if (instance_exists(obj_fadeout))
 	{
-		with obj_player
+		with obj_player1
 			image_index = 0;
 	}
 }

@@ -1,6 +1,6 @@
 if state != states.grabbed
 {
-	with obj_player
+	with obj_player1
 	{
 		if y < other.y && attacking == 0 && state == states.jump && vsp > 0
 		{

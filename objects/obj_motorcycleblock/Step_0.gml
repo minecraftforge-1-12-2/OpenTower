@@ -1,4 +1,4 @@
-with obj_player
+with obj_player1
 {
 	if (state == states.motorcycle && place_meeting(x + hsp, y, other))
 	{

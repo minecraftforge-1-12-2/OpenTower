@@ -137,7 +137,7 @@ function scr_monster_detect(width, height, player)
 }
 function scr_puppet_detect()
 {
-	with obj_player
+	with obj_player1
 	{
 		if ((object_index != obj_player2 || global.coop) && !place_meeting(x, y, obj_puppetsafezone))
 		{
@@ -184,7 +184,7 @@ function scr_puppet_appear(player)
 }
 function scr_monsterinvestigate(speed, walkspr, idlespr)
 {
-	targetplayer = instance_nearest(x, y, obj_player);
+	targetplayer = instance_nearest(x, y, obj_player1);
 	image_speed = 0.35;
 	switch investigatestate
 	{
@@ -234,7 +234,7 @@ function scr_monster_detect_audio()
 		}
 		else
 		{
-			targetplayer = instance_nearest(x, y, obj_player);
+			targetplayer = instance_nearest(x, y, obj_player1);
 			if object_index == obj_blobmonster
 			{
 				state = states.fall;

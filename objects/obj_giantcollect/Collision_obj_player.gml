@@ -31,7 +31,7 @@ if other.state != states.gotoplayer
 	instance_destroy();
 	if (secret && !instance_exists(obj_fadeout))
 	{
-		with obj_player
+		with obj_player1
 		{
 			targetRoom = lastroom;
 			targetDoor = "S";

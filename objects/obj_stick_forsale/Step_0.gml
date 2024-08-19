@@ -1,6 +1,6 @@
 if !first
 {
-	if (distance_to_object(obj_player) < 300 && obj_player.y > (y - 100))
+	if (distance_to_object(obj_player1) < 300 && obj_player1.y > (y - 100))
 	{
 		first = true;
 		ini_open_from_string(obj_savesystem.ini_str);

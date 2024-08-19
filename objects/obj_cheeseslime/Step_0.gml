@@ -55,7 +55,7 @@ if state != states.stun
 if flash == 1 && alarm[2] <= 0
 	alarm[2] = 0.15 * room_speed;
 scr_scareenemy();
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 if elite
 {
 	var check = (image_xscale > 0) ? (player.x > x && player.x < (x + 200)) : (player.x < x && player.x > (x - 200));

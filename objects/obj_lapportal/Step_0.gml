@@ -4,7 +4,7 @@ if ((global.panic || instance_exists(obj_wartimer)) && sprite_index != spr_pizza
 	if sprite_index == spr_pizzaportal
 	{
 		playerid = -4;
-		with obj_player
+		with obj_player1
 		{
 			if (other.playerid == noone && place_meeting(x, y, other))
 			{
@@ -44,7 +44,7 @@ if ((global.panic || instance_exists(obj_wartimer)) && sprite_index != spr_pizza
 			image_speed = 0;
 			if (!instance_exists(obj_fadeout))
 			{
-				with obj_player
+				with obj_player1
 				{
 					targetDoor = "LAP";
 					targetRoom = other.targetRoom;

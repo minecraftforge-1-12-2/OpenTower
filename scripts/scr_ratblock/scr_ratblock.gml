@@ -22,7 +22,7 @@ function scr_ratblock_destroy()
 	}
 	if (bbox_in_camera(view_camera[0]))
 	{
-		with obj_player
+		with obj_player1
 		{
 			if ((other.sprite_index == spr_rattumbleblock || other.sprite_index == spr_rattumbleblock_big) && sprite_index == spr_tumble && (place_meeting(x + 1, y, other) || place_meeting(x - 1, y, other)))
 				instance_destroy(other);

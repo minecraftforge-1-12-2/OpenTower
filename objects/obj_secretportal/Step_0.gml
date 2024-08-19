@@ -37,7 +37,7 @@ if floor(image_index) == image_number - 1
 			{
 				if (!instance_exists(obj_fadeout))
 				{
-					with obj_player
+					with obj_player1
 					{
 						lastTargetDoor = targetDoor;
 						targetDoor = "S";

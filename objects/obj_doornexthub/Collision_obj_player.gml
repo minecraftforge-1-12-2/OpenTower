@@ -1,7 +1,7 @@
 if !unlocked
 	exit;
 var _actor = false;
-with obj_player
+with obj_player1
 {
 	if state == states.actor
 		_actor = true;
@@ -29,9 +29,9 @@ if (!place_meeting(x, y, obj_doorblocked))
 			obj_player1.targetRoom = other.targetRoom2;
 			obj_player2.targetDoor = other.targetDoor;
 			obj_player2.targetRoom = other.targetRoom2;
-			obj_player.image_index = 0;
-			obj_player.state = states.door;
-			obj_player.mach2 = 0;
+			obj_player1.image_index = 0;
+			obj_player1.state = states.door;
+			obj_player1.mach2 = 0;
 			if (instance_exists(obj_player2) && global.coop == 1)
 			{
 				if object_index == obj_player2

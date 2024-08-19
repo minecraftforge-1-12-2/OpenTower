@@ -1,13 +1,13 @@
 if room == rm_editor
 	exit;
-var targetplayer = global.coop ? instance_nearest(x, y, obj_player) : obj_player1;
+var targetplayer = global.coop ? instance_nearest(x, y, obj_player1) : obj_player1;
 if bombreset > 0
 	bombreset--;
 if state == states.walk
 {
 	if !chasing
 	{
-		targetplayer = instance_nearest(x, y, obj_player);
+		targetplayer = instance_nearest(x, y, obj_player1);
 		if ((targetplayer.x > (x - 1900) && targetplayer.x < (x + 1900)) && (y <= (targetplayer.y + 540) && y >= (targetplayer.y - 540)))
 		{
 			chasing = true;

@@ -3,5 +3,5 @@ image_speed = 0.35;
 ready = false;
 depth = -2;
 
-with obj_player
+with obj_player1
 	state = states.titlescreen;

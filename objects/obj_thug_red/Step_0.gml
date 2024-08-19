@@ -1,6 +1,6 @@
 if room == rm_editor
 	exit;
-var targetplayer = global.coop ? instance_nearest(x, y, obj_player) : obj_player1;
+var targetplayer = global.coop ? instance_nearest(x, y, obj_player1) : obj_player1;
 if bombreset > 0
 	bombreset--;
 if state == states.walk
@@ -9,7 +9,7 @@ if state == states.walk
 	{
 		sprite_index = idlespr;
 		if (collision_line(x, y, targetplayer.x, targetplayer.y, obj_solid, false, true) == noone && ((image_xscale < 0 && targetplayer.x < x) || (image_xscale > 0 && targetplayer.x > x)) && (targetplayer.y < (y + threshold_y) && targetplayer.y > (y - threshold_y)))
-			targetplayer = instance_nearest(x, y, obj_player);
+			targetplayer = instance_nearest(x, y, obj_player1);
 		if ((targetplayer.x > (x - 150) && targetplayer.x < (x + 150)) && (y <= (targetplayer.y + 60) && y >= (targetplayer.y - 60)))
 		{
 			chasing = true;
@@ -175,7 +175,7 @@ if state != states.stun
 	birdcreated = false;
 if elite && ragecooldown <= 0
 {
-	var player = instance_nearest(x, y, obj_player);
+	var player = instance_nearest(x, y, obj_player1);
 	if (state == states.walk || state == states.charge)
 	{
 		if ((player.x > (x - 400) && player.x < (x + 400)) && (y <= (player.y + 60) && y >= (player.y - 60)))

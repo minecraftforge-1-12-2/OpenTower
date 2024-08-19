@@ -51,9 +51,9 @@ switch state
 			idlespr = spr_tv_idleN;
 		if global.panic
 			idlespr = spr_tv_exprpanic;
-		else if global.combo >= 3 && global.combo < 50 && !obj_player.isgustavo
+		else if global.combo >= 3 && global.combo < 50 && !obj_player1.isgustavo
 			idlespr = spr_tv_exprcombo;
-		else if global.combo >= 50 && !obj_player.isgustavo
+		else if global.combo >= 50 && !obj_player1.isgustavo
 			idlespr = spr_tv_exprheat;
 		if obj_player1.isgustavo
 		{
@@ -377,9 +377,9 @@ if state != states.tv_whitenoise
 else
 	tv_trans += 0.35;
 var change_pos = false;
-if (obj_player.x > (room_width - 224) && obj_player.y < 187)
+if (obj_player1.x > (room_width - 224) && obj_player1.y < 187)
 	change_pos = true;
-if bubblespr != -4 && obj_player.x > 316 && obj_player.y < 101
+if bubblespr != -4 && obj_player1.x > 316 && obj_player1.y < 101
 	change_pos = true;
 var spd = 15;
 if change_pos

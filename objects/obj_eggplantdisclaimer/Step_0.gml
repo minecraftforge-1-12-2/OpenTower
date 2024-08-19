@@ -13,7 +13,7 @@ else if changeroom
 	fade = Approach(fade, 1, accel);
 	if (fade >= 1 && !instance_exists(obj_fadeout))
 	{
-		with obj_player
+		with obj_player1
 		{
 			targetRoom = rm_levelselect;
 			targetDoor = "A";

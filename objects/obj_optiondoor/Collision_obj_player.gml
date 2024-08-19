@@ -1,5 +1,5 @@
 var _actor = false;
-with obj_player
+with obj_player1
 {
 	if state == states.actor
 		_actor = true;

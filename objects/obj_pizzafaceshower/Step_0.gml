@@ -1,12 +1,12 @@
 switch state
 {
 	case states.idle:
-		if (start && distance_to_object(obj_player) <= 150)
+		if (start && distance_to_object(obj_player1) <= 150)
 		{
 			state = states.actor;
 			substate = states.idle;
 			cutscenebuffer = 120;
-			with obj_player
+			with obj_player1
 			{
 				state = states.actor;
 				sprite_index = spr_idle;
@@ -77,7 +77,7 @@ switch state
 				if (!bbox_in_camera(view_camera[0], 50))
 				{
 					substate = states.dead;
-					with obj_player
+					with obj_player1
 					{
 						state = states.normal;
 						landAnim = false;

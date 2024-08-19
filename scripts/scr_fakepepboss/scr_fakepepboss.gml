@@ -298,7 +298,7 @@ function scr_fakepepboss_arenaintro()
 	if !skipintro
 	{
 		image_speed = 0.35;
-		with obj_player
+		with obj_player1
 		{
 			hsp = 0;
 			movespeed = 0;
@@ -344,7 +344,7 @@ function scr_fakepepboss_arenaintro()
 			sprite_index = spr_fakepeppino_intro2;
 			image_index = 0;
 			introbuffer = 70;
-			with obj_player
+			with obj_player1
 			{
 				if ispeppino
 				{
@@ -364,7 +364,7 @@ function scr_fakepepboss_arenaintro()
 			fmod_event_one_shot("event:/sfx/voice/fakepepscream");
 			image_index = 0;
 			introbuffer = 130;
-			with obj_player
+			with obj_player1
 			{
 				if ispeppino
 				{
@@ -391,7 +391,7 @@ function scr_fakepepboss_arenaintro()
 			spotlightID.expand = true;
 			with (instance_create(x, y, obj_grabmarker))
 				ID = other.id;
-			with obj_player
+			with obj_player1
 			{
 				if ispeppino
 				{
@@ -617,7 +617,7 @@ function scr_fakepepboss_grabdash()
 		hsp = image_xscale * attackspeed;
 		if floor(image_index) == image_number - 1
 			state = states.walk;
-		with (instance_place(x, y, obj_player))
+		with (instance_place(x, y, obj_player1))
 		{
 			if !hurted && state != states.grabthrow && state != states.tackle && state != states.actor && state != states.supergrab
 			{

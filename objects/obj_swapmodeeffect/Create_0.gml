@@ -18,7 +18,7 @@ dest_x = obj_player1.x - camera_get_view_x(view_camera[0]);
 dest_y = obj_player1.y - camera_get_view_y(view_camera[0]);
 
 savedxscale = obj_player1.xscale;
-spr_palette = obj_player.spr_palette;
+spr_palette = obj_player1.spr_palette;
 paletteselect = obj_player1.player_paletteselect[(!obj_player1.player_paletteindex)];
 patterntexture = obj_player1.player_patterntexture[(!obj_player1.player_paletteindex)];
 

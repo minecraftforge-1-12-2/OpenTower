@@ -9,7 +9,7 @@ function scr_pizzaball_hit()
 		x = hitX;
 		y = hitY;
 		var s = -1;
-		with (instance_nearest(x, y, obj_player))
+		with (instance_nearest(x, y, obj_player1))
 			s = tauntstoredstate;
 		notification_push(notifs.pizzaball, [obj_player1]);
 		var p = obj_player1.id;

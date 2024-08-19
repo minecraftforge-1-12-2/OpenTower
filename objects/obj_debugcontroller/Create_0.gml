@@ -54,7 +54,7 @@ if DEBUG
 	});
 	SWITCH_CHAR = new DebugCommand("switch_char", "Switches character", "", function()
 	{
-		with obj_player
+		with obj_player1
 		{
 			character = "P";
 			ispeppino = !ispeppino;
@@ -133,7 +133,7 @@ if DEBUG
 	});
 	GOTOEDITOR = new DebugCommand("editor", "", "", function()
 	{
-		with obj_player
+		with obj_player1
 		{
 			targetRoom = editor_room;
 			targetDoor = "A";
@@ -176,7 +176,7 @@ if DEBUG
 		
 		global.combo = real(combo);
 		global.combotime = real(combotime);
-		with obj_player
+		with obj_player1
 			supercharge = 10;
 	});
 	GIVEHEAT = new DebugCommand("giveheat", "Gives heat", "", function()
@@ -266,7 +266,7 @@ if DEBUG
 		_room = asset_get_index(_room);
 		if _room == -1
 			exit;
-		with obj_player
+		with obj_player1
 		{
 			targetRoom = _room;
 			targetDoor = _door;
@@ -313,7 +313,7 @@ if DEBUG
 		_state = ds_map_find_value(state_map, _state);
 		if (!is_undefined(_state))
 		{
-			with obj_player
+			with obj_player1
 			{
 				if (object_index == obj_player1 || global.coop)
 				{

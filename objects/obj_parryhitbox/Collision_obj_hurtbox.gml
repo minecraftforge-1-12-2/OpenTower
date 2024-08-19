@@ -11,7 +11,7 @@ if (other.object_index == obj_spitcheesespike || other.object_index == obj_bandi
 	}
 }
 if other.object_index == obj_forkhitbox
-	obj_player.parryID = other.ID;
+	obj_player1.parryID = other.ID;
 if !collisioned
 {
 	if obj_player1.x != other.x

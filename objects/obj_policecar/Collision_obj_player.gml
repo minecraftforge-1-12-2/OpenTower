@@ -2,7 +2,7 @@ if state == states.policetaxi
 	exit;
 if (ds_queue_size(followqueue) < LAG_STEPS)
 	exit;
-with obj_player
+with obj_player1
 {
 	targetRoom = other.targetRoom;
 	lastroom = room;

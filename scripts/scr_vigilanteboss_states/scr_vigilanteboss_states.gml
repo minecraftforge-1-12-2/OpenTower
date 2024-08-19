@@ -113,7 +113,7 @@ function boss_vigilante_decide_attack()
 				movespeed = 0;
 				with obj_bosshitbox
 					instance_destroy();
-				with obj_player
+				with obj_player1
 				{
 					if (object_index == obj_player1 || global.coop)
 					{

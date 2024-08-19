@@ -3,7 +3,7 @@ if angle > 360
 	angle -= 360;
 x = xstart + lengthdir_x(len, angle);
 y = ystart + lengthdir_y(len, angle);
-if (place_meeting(x, y, obj_player))
+if (place_meeting(x, y, obj_player1))
 {
 	instance_destroy();
 	repeat 3

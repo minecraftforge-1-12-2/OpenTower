@@ -1,6 +1,6 @@
 function cutscene_set_player_actor()
 {
-	with obj_player
+	with obj_player1
 	{
 		if (check_player_coop())
 		{

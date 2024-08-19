@@ -48,7 +48,7 @@ if state == states.stun && stunned > 100 && birdcreated == 0
 if state != states.stun
 	birdcreated = false;
 scr_scareenemy();
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 if ragebuffer > 0
 	ragebuffer--;
 if ((player.x > (x - 400) && player.x < (x + 400)) && (y <= (player.y + 60) && y >= (player.y - 60)))

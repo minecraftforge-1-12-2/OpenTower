@@ -1,6 +1,6 @@
 if room == rm_editor
 	exit;
-var playerid = instance_place(x, y - 1, obj_player);
+var playerid = instance_place(x, y - 1, obj_player1);
 with playerid
 {
 	if character == "V"

@@ -9,7 +9,7 @@ if (!instance_exists(playerid))
 if !roomstarted
 	exit;
 var _move = true;
-with obj_player
+with obj_player1
 {
 	if (state == states.taxi || state == states.victory || state == states.keyget || state == states.gottreasure || state == states.door || state == states.spaceshuttle)
 		_move = false;

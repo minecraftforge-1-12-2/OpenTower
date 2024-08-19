@@ -102,7 +102,7 @@ if (!pizzahead && obj_player1.state != states.actor && obj_player1.state != stat
 {
 	if (place_meeting(x, y, obj_player1))
 	{
-		with obj_player
+		with obj_player1
 		{
 			if state != states.tackle
 			{

@@ -4,7 +4,7 @@ if !finish
 	if start
 	{
 		y = Approach(y, 32, accel);
-		with obj_player
+		with obj_player1
 		{
 			if (place_meeting(x, y, obj_grannypizzasign) || place_meeting(x, y, obj_tutorialbook))
 			{

@@ -84,7 +84,7 @@ with obj_totem
 	if (fmod_event_instance_is_playing(snd) && distance_to_object(obj_player1) <= 400)
 		_found = true;
 }
-with obj_player
+with obj_player1
 {
 	if state == states.gottreasure
 		_found = true;

@@ -1,5 +1,5 @@
 visible = (room == rank_room || room == timesuproom) ? false : playerid.visible;
-if obj_player.state == states.pizzathrow
+if obj_player1.state == states.pizzathrow
 	visible = false;
 playerid = obj_player1.spotlight ? obj_player1 : obj_player2;
 if state != states.backbreaker
@@ -10,7 +10,7 @@ if state != states.backbreaker
 			sprite_index = spr_idle;
 		if sprite_index != spr_intro
 		{
-			image_alpha = playerid.image_alpha;
+			image_alpha = 1;
 			sprite_index = (xprev != x) ? spr_run : spr_idle;
 			depth = -6;
 		}

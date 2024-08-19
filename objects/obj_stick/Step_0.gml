@@ -82,9 +82,9 @@ switch state
 				sprite_index = spr_noisettestick_idle;
 			image_xscale = -1;
 		}
-		if (!drawing && place_meeting(x, y, obj_player))
+		if (!drawing && place_meeting(x, y, obj_player1))
 			drawing = true;
-		else if (drawing && !place_meeting(x, y, obj_player))
+		else if (drawing && !place_meeting(x, y, obj_player1))
 			drawing = false;
 		if (drawing && obj_player1.key_up && (global.pigtotal - global.pigreduction) >= maxscore)
 		{
@@ -109,7 +109,7 @@ switch state
 				fmod_event_one_shot_3d("event:/sfx/noisette/voice1", x, y);
 			}
 			gamesave_async_save();
-			with obj_player
+			with obj_player1
 			{
 				hsp = 0;
 				vsp = 0;

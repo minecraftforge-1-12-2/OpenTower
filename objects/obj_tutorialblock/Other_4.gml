@@ -20,7 +20,7 @@ if _destroyed
 		ini_write_real("Tutorial", "tutorialcutscene", true);
 		with obj_tutorialblock
 		{
-			with obj_player
+			with obj_player1
 			{
 				if place_meeting(x, y, obj_startgate)
 					other.alarm[0] = 100;

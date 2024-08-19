@@ -1,6 +1,6 @@
 if (move && !instance_exists(obj_taxitransition))
 {
-	with obj_player
+	with obj_player1
 	{
 		lastroom = room;
 		targetRoom = other.targetRoom;

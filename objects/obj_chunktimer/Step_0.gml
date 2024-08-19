@@ -10,7 +10,7 @@ if (global.fill <= 0 && global.panic == true && !global.tutorial_room && !instan
 	}
 	else
 	{
-		with obj_player
+		with obj_player1
 		{
 			instance_destroy(obj_fadeout);
 			targetDoor = "A";

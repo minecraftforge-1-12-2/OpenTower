@@ -7,7 +7,7 @@ if (!instance_exists(obj_fadeout) && state != states.robotidle && other.state !=
 {
 	if !global.panic
 	{
-		with obj_player
+		with obj_player1
 		{
 			state = states.actor;
 			hsp = 0;

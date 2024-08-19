@@ -1,6 +1,6 @@
 if other.ispeppino && !global.swapmode
 {
-	with obj_player
+	with obj_player1
 	{
 		if (state == states.knightpep || state == states.knightpepslopes)
 		{

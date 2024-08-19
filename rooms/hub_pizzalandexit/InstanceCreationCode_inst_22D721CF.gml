@@ -5,7 +5,7 @@ scene_info = [[function()
 {
 	if (!global.exitfeecutscene)
 	{
-		with (obj_player)
+		with (obj_player1)
 		{
 			if (x > other.x)
 			{
@@ -14,7 +14,7 @@ scene_info = [[function()
 			}
 		}
 	}
-}], [cutscene_set_player_actor], [cutscene_do_dialog, dialog], [cutscene_waitfor_dialog], [cutscene_set_player_actor], [cutscene_move_player, obj_player, x - 200, 8, 12], [cutscene_set_player_normal]];
+}], [cutscene_set_player_actor], [cutscene_do_dialog, dialog], [cutscene_waitfor_dialog], [cutscene_set_player_actor], [cutscene_move_player, obj_player1, x - 200, 8, 12], [cutscene_set_player_normal]];
 if (global.exitfeecutscene == noone)
 	global.exitfeecutscene = quick_ini_read_real(get_savefile_ini(), "cutscene", "exitfee", false);
 if (global.exitfeecutscene)

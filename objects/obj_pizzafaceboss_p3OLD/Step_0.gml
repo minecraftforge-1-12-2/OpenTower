@@ -1,7 +1,7 @@
 wastedhits = maxhp - hp;
-targetplayer = instance_nearest(x, y, obj_player);
+targetplayer = instance_nearest(x, y, obj_player1);
 mask_index = spr_pizzahead_giddy;
-with obj_player
+with obj_player1
 {
 	if (state == states.mach3 || state == states.mach3)
 		movespeed = 16;

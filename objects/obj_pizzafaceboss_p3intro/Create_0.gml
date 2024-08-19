@@ -22,7 +22,7 @@ with obj_music
 }
 if room == rm_testing4
 {
-	with obj_player
+	with obj_player1
 		state = states.actor;
 }
 peppinoID = -4;

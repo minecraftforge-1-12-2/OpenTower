@@ -49,7 +49,7 @@ if object_index != obj_vigilanteboss && object_index != obj_pizzafaceboss_p3 && 
 	if (object_index != obj_bazookabaddie || !instance_exists(bazookaID))
 	{
 		var _taunted = false;
-		with (instance_nearest(x, y, obj_player))
+		with (instance_nearest(x, y, obj_player1))
 		{
 			if state == states.backbreaker
 			{

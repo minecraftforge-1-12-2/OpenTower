@@ -1,6 +1,6 @@
 function scr_playersounds()
 {
-	with obj_player
+	with obj_player1
 	{
 		if (instance_exists(obj_pizzaface))
 		{

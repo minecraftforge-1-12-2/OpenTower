@@ -21,7 +21,7 @@ else if state == states.spaceshuttle
 	y -= movespeed;
 	if (y < (camera_get_view_y(view_camera[0]) - 236) && !instance_exists(obj_spaceshuttlecutscene))
 	{
-		with obj_player
+		with obj_player1
 		{
 			targetRoom = other.targetRoom;
 			targetDoor = "ROCKET";

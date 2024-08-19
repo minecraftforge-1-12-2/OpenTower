@@ -48,7 +48,7 @@ else
 	grav = 0;
 if bombreset > 0 && state == states.walk
 	bombreset--;
-var player = instance_nearest(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player1);
 if ragebuffer > 0
 	ragebuffer--;
 if ((player.x > (x - 200) && player.x < (x + 200)) && (player.y <= (y + 400) && player.y >= (y - 60)))

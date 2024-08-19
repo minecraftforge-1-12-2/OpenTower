@@ -12,7 +12,7 @@ if playerid != -4
 }
 if !got
 {
-	var num = instance_place_list(x, y, obj_player, global.instancelist, false);
+	var num = instance_place_list(x, y, obj_player1, global.instancelist, false);
 	for(var i = 0; i < num; i++)
 	{
 		var _player = ds_list_find_value(global.instancelist, i);

@@ -1,5 +1,5 @@
 var _actor = false;
-with obj_player
+with obj_player1
 {
 	if state == states.actor
 		_actor = true;
@@ -27,7 +27,7 @@ if (!place_meeting(x, y, obj_doorblocked))
 			obj_player1.targetRoom = other.targetRoom;
 			obj_player2.targetDoor = other.targetDoor;
 			obj_player2.targetRoom = other.targetRoom;
-			with obj_player
+			with obj_player1
 			{
 				image_index = 0;
 				if state != states.gotoplayer

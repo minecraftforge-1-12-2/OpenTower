@@ -38,7 +38,7 @@ function scr_playerreset(stopmusic = true)
 	global.prank_enemykilled = false;
 	global.prank_cankillenemy = true;
 	global.noisejetpack = false;
-	with obj_player
+	with obj_player1
 		noisepizzapepper = false;
 	global.level_minutes = 0;
 	global.level_seconds = 0;
@@ -259,7 +259,7 @@ function scr_playerreset(stopmusic = true)
 		if (instance_exists(obj_timesup))
 			instance_destroy(obj_timesup);
 	}
-	with obj_player
+	with obj_player1
 	{
 		mort = false;
 		noisepizzapepper = false;
@@ -283,13 +283,13 @@ function scr_playerreset(stopmusic = true)
 		ghostbumpbuffer = -1;
 		obj_camera.targetgolf = -4;
 		ds_list_clear(global.baddietomb);
-		obj_player.supercharge = 0;
-		obj_player.supercharged = false;
+		obj_player1.supercharge = 0;
+		obj_player1.supercharged = false;
 		pistol = false;
 		if (instance_exists(obj_gnome_checklist))
 		{
 			var destroy = true;
-			with obj_player
+			with obj_player1
 			{
 				if (state == states.dead || state == states.timesup)
 					destroy = false;
@@ -315,7 +315,7 @@ function scr_playerreset(stopmusic = true)
 		ds_list_clear(global.saveroom);
 		ds_list_clear(global.escaperoom);
 		ds_list_clear(global.baddieroom);
-		with obj_player
+		with obj_player1
 		{
 			flash = false;
 			pistolcharge = 0;

@@ -53,7 +53,7 @@ if state != states.walk && object_index != obj_farmerbaddie2 && object_index != 
 if state == states.walk
 {
 	var x1 = disx;
-	playerid = instance_nearest(x, y, obj_player);
+	playerid = instance_nearest(x, y, obj_player1);
 	var t = playerid.x > (x - x1) && playerid.x < (x + x1) && playerid.y > (y - 100) && playerid.y < (y + 100);
 	if cooldown > 0
 		cooldown--;
@@ -90,7 +90,7 @@ else if state == states.charge
 		}
 	}
 	x1 = disx_out;
-	playerid = instance_nearest(x, y, obj_player);
+	playerid = instance_nearest(x, y, obj_player1);
 	t = playerid.x > (x - x1) && playerid.x < (x + x1) && playerid.y > (y - 400) && playerid.y < (y + 400);
 	hsp = image_xscale * attackspeed;
 	var q = outofsight;

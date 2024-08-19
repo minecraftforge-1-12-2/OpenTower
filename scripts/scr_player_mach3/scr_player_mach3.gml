@@ -316,7 +316,7 @@ function scr_player_mach3()
 					else
 					{
 						fightball = false;
-						with obj_player
+						with obj_player1
 						{
 							sprite_index = spr_hitwall;
 							instance_create(x + 10, y + 10, obj_bumpeffect);
@@ -346,7 +346,7 @@ function scr_player_mach3()
 		with (instance_create(x, y, obj_superdashcloud))
 		{
 			if other.fightball == 1
-				instance_create(obj_player.x, obj_player.y, obj_slapstar);
+				instance_create(obj_player1.x, obj_player1.y, obj_slapstar);
 			image_xscale = other.xscale;
 			other.dashcloudid = id;
 		}
@@ -356,7 +356,7 @@ function scr_player_mach3()
 		with (instance_create(x, y, obj_superdashcloud))
 		{
 			if other.fightball == 1
-				instance_create(obj_player.x, obj_player.y, obj_slapstar);
+				instance_create(obj_player1.x, obj_player1.y, obj_slapstar);
 			image_xscale = other.xscale;
 			sprite_index = spr_watereffect;
 			other.dashcloudid = id;

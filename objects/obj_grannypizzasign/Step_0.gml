@@ -13,7 +13,7 @@ switch text_state
 	case states.titlescreen:
 		repeat _hide + 1
 			text_y = Approach(text_y, -(text_sprite_height * text_yscale), 5);
-		if (place_meeting(x, y, obj_player) && !_hide)
+		if (place_meeting(x, y, obj_player1) && !_hide)
 		{
 			text_state = states.fall;
 			text_vsp = 0;
@@ -30,7 +30,7 @@ switch text_state
 	
 	case states.normal:
 		text_y = Approach(text_y, text_ystart, 2);
-		if (!place_meeting(x, y, obj_player) || _hide)
+		if (!place_meeting(x, y, obj_player1) || _hide)
 			text_state = states.titlescreen;
 		break;
 }

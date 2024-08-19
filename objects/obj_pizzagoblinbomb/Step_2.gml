@@ -10,7 +10,7 @@ if countdown <= 0
 }
 if kickbuffer > 0
 {
-	if (!place_meeting(x, y, obj_player))
+	if (!place_meeting(x, y, obj_player1))
 		kickbuffer = 0;
 }
 switch state

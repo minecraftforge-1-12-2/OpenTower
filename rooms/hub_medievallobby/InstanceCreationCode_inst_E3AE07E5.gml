@@ -1,6 +1,6 @@
 if (global.levelcomplete)
 {
-	with (obj_player)
+	with (obj_player1)
 	{
 		x = backtohubstartx;
 		y = backtohubstarty;
@@ -34,7 +34,7 @@ else if (global.levelcomplete && !global.chateaucutscene)
 	currentroom = room;
 	scene_info = [[cutscene_entrance_start], [cutscene_waitfor_sprite, obj_player1], [cutscene_player_idleanim], [cutscene_change_room, hub_warpath], [cutscene_set_player_visible, false], [cutscene_set_player_pos, 1888, 369], [cutscene_wait, 100], [cutscene_change_room, currentroom], [cutscene_set_player_visible, true], [function()
 	{
-		with (obj_player)
+		with (obj_player1)
 		{
 			state = states.normal;
 			x = backtohubstartx;

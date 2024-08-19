@@ -1,5 +1,5 @@
 var _x = x;
-if obj_player.state != states.backbreaker
+if obj_player1.state != states.backbreaker
 {
 	timer += 20;
 	sprite_index = spr_beedeco;

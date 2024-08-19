@@ -1,5 +1,5 @@
 var _sound = false;
-if (place_meeting(x, y, obj_player))
+if (place_meeting(x, y, obj_player1))
 {
 	with obj_hiddenobject
 	{

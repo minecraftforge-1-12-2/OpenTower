@@ -82,7 +82,7 @@ function scr_pepperman_arenaintro()
 	if !skipintro
 	{
 		image_speed = 0.35;
-		with obj_player
+		with obj_player1
 		{
 			state = states.actor;
 			image_speed = 0.35;
@@ -119,7 +119,7 @@ function scr_pepperman_arenaintro()
 			sprite_index = spr_pepperman_intro2;
 			image_index = 0;
 			introbuffer = 70;
-			with obj_player
+			with obj_player1
 			{
 				image_index = 0;
 				if ispeppino

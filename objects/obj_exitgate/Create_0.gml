@@ -19,6 +19,6 @@ handsprite = spr_grabbiehand_idle;
 handindex = 0;
 uparrow = false;
 uparrowID = -4;
-if obj_player.character == "S"
+if obj_player1.character == "S"
 	instance_destroy();
 snd = false;

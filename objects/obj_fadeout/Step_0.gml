@@ -24,7 +24,7 @@ if fadealpha > f
 	}
 	if finalhallway
 	{
-		with obj_player
+		with obj_player1
 		{
 			state = states.normal;
 			movespeed = 0;
@@ -63,7 +63,7 @@ if fadein == 0
 	fadealpha += 0.1;
 else if fadein == 1
 	fadealpha -= 0.1;
-if (instance_exists(obj_player))
+if (instance_exists(obj_player1))
 {
 	with obj_player1
 	{

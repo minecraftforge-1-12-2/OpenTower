@@ -5,7 +5,7 @@ global.gameframe_caption_text = lang_get_value("caption_boss_pizzaface");
 global.level_minutes = 0;
 global.level_seconds = 0;
 
-with obj_player
+with obj_player1
 {
 	backtohubroom = tower_outside;
 	backtohubstartx = 522;

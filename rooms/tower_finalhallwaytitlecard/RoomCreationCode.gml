@@ -7,7 +7,7 @@ global.player_damage = 0;
 global.swap_damage[0] = 0;
 global.swap_damage[1] = 0;
 
-with (obj_player)
+with (obj_player1)
 {
 	state = states.titlescreen;
 	targetRoom = tower_finalhallway;

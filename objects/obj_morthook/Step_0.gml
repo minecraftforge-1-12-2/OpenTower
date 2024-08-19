@@ -1,5 +1,5 @@
 var _found = false;
-with obj_player
+with obj_player1
 {
 	if (state == states.mort || state == states.mortjump || state == states.mortattack || state == states.morthook)
 		_found = true;

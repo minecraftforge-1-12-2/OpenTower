@@ -12,7 +12,7 @@ switch state
 			{
 				if hub_array[selected][0] != room
 				{
-					with obj_player
+					with obj_player1
 					{
 						targetRoom = other.hub_array[other.selected][0];
 						targetDoor = "A";
@@ -31,7 +31,7 @@ switch state
 				else
 				{
 					state = states.normal;
-					with obj_player
+					with obj_player1
 						state = states.normal;
 				}
 			}

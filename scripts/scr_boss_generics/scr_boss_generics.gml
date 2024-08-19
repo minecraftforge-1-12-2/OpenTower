@@ -162,7 +162,7 @@ function boss_hurt_gustavo()
 				}
 				if _slam
 				{
-					with obj_player
+					with obj_player1
 						baddiegrabbedID = -4;
 					instance_destroy();
 				}
@@ -235,7 +235,7 @@ function scr_boss_genericintro(sprite, buffer = 30)
 		state = states.walk;
 		if (instance_exists(spotlightID))
 			spotlightID.expand = true;
-		with obj_player
+		with obj_player1
 		{
 			state = states.normal;
 			sprite_index = spr_idle;
@@ -282,7 +282,7 @@ function scr_boss_playerN_phase1hurt(func = noone)
 	y = hitY + irandom_range(-1, 1);
 	hsp = 0;
 	vsp = 0;
-	with obj_player
+	with obj_player1
 	{
 		actorbuffer = 10000;
 		hsp = 0;
@@ -347,7 +347,7 @@ function scr_boss_playerN_phase1hurt(func = noone)
 		obj_camera.lock = false;
 		camzoom = 1;
 		camera_set_view_size(view_camera[0], SCREEN_WIDTH, SCREEN_HEIGHT);
-		with obj_player
+		with obj_player1
 			state = states.normal;
 		hithsp = -image_xscale * 25;
 		hitvsp = -5;

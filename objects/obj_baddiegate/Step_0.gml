@@ -1,4 +1,4 @@
-if (active && x != xstart && !place_meeting(xstart, ystart, obj_baddie) && !place_meeting(xstart, ystart, obj_player))
+if (active && x != xstart && !place_meeting(xstart, ystart, obj_baddie) && !place_meeting(xstart, ystart, obj_player1))
 {
 	x = xstart;
 	y = ystart;

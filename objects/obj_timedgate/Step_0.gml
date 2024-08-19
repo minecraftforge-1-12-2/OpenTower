@@ -4,7 +4,7 @@ if global.timedgatetimer
 	x = -100;
 	y = -100;
 }
-else if (!activated && !place_meeting(xstart, ystart, obj_player) && !place_meeting(xstart, ystart, obj_weeniemount))
+else if (!activated && !place_meeting(xstart, ystart, obj_player1) && !place_meeting(xstart, ystart, obj_weeniemount))
 {
 	activated = true;
 	x = xstart;

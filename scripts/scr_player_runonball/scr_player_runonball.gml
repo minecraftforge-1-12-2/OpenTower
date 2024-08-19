@@ -6,7 +6,7 @@ function scr_player_runonball()
 	else
 		hsp = image_xscale * movespeed;
 	jumpstop = false;
-	vsp = obj_player.vsp;
+	vsp = obj_player1.vsp;
 	sprite_index = spr_player_slipnslide;
 	if key_attack && grounded
 	{

@@ -5,7 +5,7 @@ switch state
 {
 	case states.idle:
 		sprite_index = idlespr;
-		playerid = instance_nearest(x, y, obj_player);
+		playerid = instance_nearest(x, y, obj_player1);
 		hsp = 0;
 		vsp = 0;
 		var x1 = 370;

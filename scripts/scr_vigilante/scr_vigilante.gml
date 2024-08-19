@@ -92,7 +92,7 @@ function scr_vigilante_arenaintro()
 {
 	if skipintro && !introwait
 	{
-		with obj_player
+		with obj_player1
 		{
 			state = states.actor;
 			image_speed = 0.35;
@@ -122,7 +122,7 @@ function scr_vigilante_arenaintro()
 				vsp = -11;
 			}
 		}
-		with obj_player
+		with obj_player1
 		{
 			hsp = 0;
 			state = states.normal;
@@ -220,7 +220,7 @@ function scr_vigilante_arenaintro()
 			introwait = true;
 			introbuffer = 250;
 			spotlightID.expand = true;
-			with obj_player
+			with obj_player1
 			{
 				if ispeppino
 				{
@@ -264,7 +264,7 @@ function scr_vigilante_phase1hurt()
 	y = hitY + irandom_range(-1, 1);
 	hsp = 0;
 	vsp = 0;
-	with obj_player
+	with obj_player1
 	{
 		actorbuffer = 10000;
 		hsp = 0;
@@ -300,7 +300,7 @@ function scr_vigilante_phase1hurt()
 		state = states.hit;
 		linethrown = true;
 		mach2 = false;
-		with obj_player
+		with obj_player1
 			state = states.normal;
 	}
 	obj_screensizer.camzoom = camzoom;
@@ -501,8 +501,8 @@ function scr_vigilante_throw_cow()
 		throwbuffer = throwbuffermax;
 		sprite_index = spr_playerV_dynamitethrow;
 		image_index = 0;
-		if obj_player.x != x
-			image_xscale = sign(obj_player.x - x);
+		if obj_player1.x != x
+			image_xscale = sign(obj_player1.x - x);
 		with (instance_create(x + (image_xscale * 100), y - 10, obj_vigilantecow))
 		{
 			xscale = other.image_xscale;
@@ -526,8 +526,8 @@ function scr_vigilante_do_revolver(_shot, _buffer, _jump = false)
 	else
 		sprite_index = spr_playerV_revolverhold;
 	image_index = 0;
-	if obj_player.x != x
-		image_xscale = -sign(x - obj_player.x);
+	if obj_player1.x != x
+		image_xscale = -sign(x - obj_player1.x);
 	if jump
 	{
 		revolverbuffer = 0;
@@ -815,7 +815,7 @@ function scr_vigilante_duel()
 	if (instance_exists(obj_vigilante_duelintro))
 		exit;
 	image_speed = 0.35;
-	with obj_player
+	with obj_player1
 	{
 		pistolcharge = 0;
 		pistolchargeshooting = false;

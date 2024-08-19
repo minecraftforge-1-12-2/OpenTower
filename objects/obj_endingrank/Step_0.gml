@@ -110,7 +110,7 @@ switch state
 		fade = Approach(fade, 2, 0.01);
 		if fade >= 1.4
 		{
-			with obj_player
+			with obj_player1
 				state = states.titlescreen;
 			room_goto(Realtitlescreen);
 		}

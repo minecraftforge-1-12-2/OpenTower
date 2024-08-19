@@ -1,7 +1,7 @@
 y = Approach(y, obj_spaceshuttlestop.y, 40);
 if (y > (obj_spaceshuttlestop.y - 18))
 {
-	with obj_player
+	with obj_player1
 	{
 		if (check_player_coop())
 		{

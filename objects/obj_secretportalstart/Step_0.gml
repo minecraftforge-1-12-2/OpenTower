@@ -10,7 +10,7 @@ switch sprite_index
 	case spr_secretportal_spawnopen:
 		with obj_heatafterimage
 			visible = false;
-		with obj_player
+		with obj_player1
 		{
 			if (object_index != obj_player2 || global.coop)
 			{
@@ -31,7 +31,7 @@ switch sprite_index
 		{
 			fmod_event_one_shot_3d("event:/sfx/misc/secretexit", x, y);
 			sprite_index = spr_secretportal_spawnidle;
-			with obj_player
+			with obj_player1
 			{
 				if (object_index != obj_player2 || global.coop)
 				{
@@ -62,7 +62,7 @@ switch sprite_index
 		{
 			with obj_heatafterimage
 				visible = false;
-			with obj_player
+			with obj_player1
 			{
 				if (check_player_coop())
 				{

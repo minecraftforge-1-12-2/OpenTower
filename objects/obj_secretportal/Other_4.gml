@@ -1,5 +1,5 @@
 var _start = false;
-with obj_player
+with obj_player1
 {
 	if (object_index != obj_player2 || global.coop)
 	{

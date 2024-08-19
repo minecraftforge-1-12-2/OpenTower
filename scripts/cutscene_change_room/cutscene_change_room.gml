@@ -1,6 +1,6 @@
 function cutscene_change_room(target)
 {
-	with obj_player
+	with obj_player1
 		targetRoom = target;
 	instance_create(x, y, obj_fadeout);
 	if room == target

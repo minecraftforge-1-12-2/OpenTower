@@ -47,7 +47,7 @@ create_command("CHANGE_CHARACTER", [], function()
 create_command("ROOM GOTO", [rooms, ["A", "B", "C", "D", "E", "F", "G"]], function(_room, _door)
 {
 	_room = asset_get_index(_room);
-	with obj_player
+	with obj_player1
 	{
 		targetDoor = _door;
 		lastroom = room;

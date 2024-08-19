@@ -38,7 +38,7 @@ with other
 }
 if ((floor(obj_player1.image_index) == (obj_player1.image_number - 1) && obj_player1.state == states.victory) || (floor(obj_player2.image_index) == (obj_player2.image_number - 1) && obj_player2.state == states.victory))
 {
-	with obj_player
+	with obj_player1
 	{
 		if other.level == "snickchallenge"
 		{

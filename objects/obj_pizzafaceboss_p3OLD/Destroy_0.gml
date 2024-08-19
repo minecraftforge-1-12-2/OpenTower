@@ -1,6 +1,6 @@
 with (instance_create(x, y, obj_sausageman_dead))
 	sprite_index = other.sprite_index;
-with obj_player
+with obj_player1
 {
 	if state == states.supergrab
 		state = states.normal;

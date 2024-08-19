@@ -1,6 +1,6 @@
 if room == rm_editor
 	exit;
-var targetplayer = instance_nearest(x, y, obj_player);
+var targetplayer = instance_nearest(x, y, obj_player1);
 if slide_buffer > 0
 	slide_buffer--;
 if can_flash
@@ -38,7 +38,7 @@ if state == states.idle
 	image_speed = 0.35;
 	if !patrolling
 	{
-		targetplayer = instance_nearest(x, y, obj_player);
+		targetplayer = instance_nearest(x, y, obj_player1);
 		if ((targetplayer.x > (x - 400) && targetplayer.x < (x + 400)) && (y <= (targetplayer.y + 20) && y >= (targetplayer.y - 20)))
 		{
 			bombreset = patrolmax;

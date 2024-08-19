@@ -1,4 +1,4 @@
 depth = -10;
-image_xscale = obj_player.xscale;
-image_speed = obj_player.image_speed;
+image_xscale = obj_player1.xscale;
+image_speed = obj_player1.image_speed;
 global.cowboyhat = false;

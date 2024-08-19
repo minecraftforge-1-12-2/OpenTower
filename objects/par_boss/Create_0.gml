@@ -207,7 +207,7 @@ function SUPER_boss_hurt_noplayer(damage)
 {
 	if important
 		hp -= damage;
-	if obj_player.state != states.playersuperattack
+	if obj_player1.state != states.playersuperattack
 	{
 		with obj_bosscontroller
 			super += 30;

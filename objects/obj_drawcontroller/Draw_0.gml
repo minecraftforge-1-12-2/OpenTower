@@ -35,7 +35,7 @@ if use_dark
 		}
 	}
 }
-if (obj_player1.finisher || obj_player2.finisher || (obj_player.state == states.playersuperattack && obj_player.superattackstate == states.transition))
+if (obj_player1.finisher || obj_player2.finisher || (obj_player1.state == states.playersuperattack && obj_player1.superattackstate == states.transition))
 	finisher_alpha = Approach(finisher_alpha, 0.3, 0.1);
 else if finisher_alpha > 0
 	finisher_alpha = Approach(finisher_alpha, 0, 0.02);
@@ -167,7 +167,7 @@ with obj_sausageman_dead
 	}
 }
 shader_set(shd_hit);
-with obj_player
+with obj_player1
 {
 	if (visible && flash && bbox_in_camera(view_camera[0], 32))
 		draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha);

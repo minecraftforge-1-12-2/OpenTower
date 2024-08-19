@@ -1,4 +1,4 @@
-with obj_player
+with obj_player1
 {
 	if (state == states.backbreaker && (sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4))
 		draw_superslam_enemy();
@@ -119,7 +119,7 @@ if (kidsparty_lightning || dark_lightning)
 			draw_set_color(c_white);
 			for (var i = 0; i < 2; i++)
 			{
-				var _player = asset_get_index(concat("obj_player", i + 1));
+				var _player = asset_get_index(concat("obj_player1", i + 1));
 				draw_set_alpha(circle_alpha_out);
 				with _player
 				{

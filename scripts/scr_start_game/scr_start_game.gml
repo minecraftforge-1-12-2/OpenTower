@@ -1,7 +1,7 @@
 function scr_start_game(slot, peppino = true)
 {
 	instance_create(x, y, obj_fadeout);
-	with obj_player
+	with obj_player1
 	{
 		targetRoom = hub_loadingscreen;
 		targetDoor = "A";

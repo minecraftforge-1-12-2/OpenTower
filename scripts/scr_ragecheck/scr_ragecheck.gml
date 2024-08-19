@@ -1,7 +1,7 @@
 function scr_ragecheck()
 {
 	/*
-	var player = instance_nearest(x, y, obj_player);
+	var player = instance_nearest(x, y, obj_player1);
 
 	if state != states.grabbed && state != states.stun
 	if (player.x > x - 200 && player.x < x + 200) && (y <= player.y + 60 && y >= player.y - 60)

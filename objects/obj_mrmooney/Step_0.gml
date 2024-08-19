@@ -1,6 +1,6 @@
 if sprite_index == idlespr
 {
-	showmoney = place_meeting(x, y, obj_player);
+	showmoney = place_meeting(x, y, obj_player1);
 	if (showmoney && obj_player1.key_up2 && (global.pigtotal - global.pigreduction) >= maxscore)
 	{
 		sprite_index = smilespr;

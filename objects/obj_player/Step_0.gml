@@ -1084,7 +1084,7 @@ if (state == states.dead && y > (room_height * 2) && !instance_exists(obj_backto
 		image_blend = c_white;
 		visible = true;
 	}
-	with obj_player
+	with obj_player1
 	{
 		x = -1000;
 		y = -1000;

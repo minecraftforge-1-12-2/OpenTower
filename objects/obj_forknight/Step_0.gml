@@ -56,7 +56,7 @@ if state != states.stun
 scr_scareenemy();
 if elite && ragecooldown == 0
 {
-	var player = instance_nearest(x, y, obj_player);
+	var player = instance_nearest(x, y, obj_player1);
 	var check = (image_xscale > 0) ? (player.x > x && player.x < (x + 400)) : (player.x < x && player.x > (x - 400));
 	if state == states.walk
 	{

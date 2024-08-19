@@ -1,4 +1,4 @@
-with obj_player
+with obj_player1
 	state = states.titlescreen;
 whitefade = Approach(whitefade, 0, 0.1);
 var PLAYER_MOVESPEED = 5;
@@ -344,7 +344,7 @@ else
 	fade = Approach(fade, 1, 0.01);
 	if (fade >= 1 && !instance_exists(obj_fadeout))
 	{
-		with obj_player
+		with obj_player1
 		{
 			targetRoom = Creditsroom;
 			targetDoor = "A";

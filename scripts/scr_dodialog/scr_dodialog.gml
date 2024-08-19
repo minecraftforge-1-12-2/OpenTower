@@ -8,7 +8,7 @@ function do_dialog(dialog_array)
 		currenttext = scr_calculate_text(dialog[0][0]);
 		dialogheight = scr_calculate_height(currenttext);
 	}
-	with obj_player
+	with obj_player1
 	{
 		if state == states.ghostpossess
 		{

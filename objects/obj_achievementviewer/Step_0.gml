@@ -2,7 +2,7 @@ if (place_meeting(x, y, obj_player1))
 	collision = true;
 else
 	collision = false;
-var d = distance_to_object(obj_player);
+var d = distance_to_object(obj_player1);
 with obj_achievementviewer
 {
 	if (id != other.id && collision && distance_to_object(obj_player1) <= d)

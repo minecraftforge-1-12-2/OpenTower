@@ -59,7 +59,7 @@ if state != states.chase
 	momentum = 0;
 if (state == states.walk || state == states.idle)
 {
-	var targetplayer = instance_nearest(x, y, obj_player);
+	var targetplayer = instance_nearest(x, y, obj_player1);
 	if (sprite_index != spr_golfdemon_idle2 && targetplayer.x > (x - 200) && targetplayer.x < (x + 200) && targetplayer.y > (y - 200) && targetplayer.y < (y + 200))
 	{
 		fmod_event_one_shot_3d("event:/sfx/enemies/demonsuprise", x, y);

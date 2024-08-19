@@ -1,6 +1,6 @@
 function cutscene_dungeon_end()
 {
-	with obj_player
+	with obj_player1
 	{
 		state = states.normal;
 		x = backtohubstartx;
