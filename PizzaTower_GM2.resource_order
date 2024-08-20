@@ -13,6 +13,7 @@
     {"name":"Shaders","order":9,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":10,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":11,"path":"folders/Sprites.yy",},
+    {"name":"OpenTower","order":2,"path":"folders/Sprites/OpenTower.yy",},
     {"name":"Tile Sets","order":12,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":13,"path":"folders/Timelines.yy",},
   ],
@@ -948,6 +949,8 @@
     {"name":"bg_noisebossBG2","order":7,"path":"sprites/bg_noisebossBG2/bg_noisebossBG2.yy",},
     {"name":"bg_noisebossBG3","order":11,"path":"sprites/bg_noisebossBG3/bg_noisebossBG3.yy",},
     {"name":"bg_noisebossBG4","order":2,"path":"sprites/bg_noisebossBG4/bg_noisebossBG4.yy",},
+    {"name":"spr_bup","order":1,"path":"sprites/spr_bup/spr_bup.yy",},
+    {"name":"spr_custom_toadrender","order":2,"path":"sprites/spr_custom_toadrender/spr_custom_toadrender.yy",},
     {"name":"spr_noiseballooncrash","order":1,"path":"sprites/spr_noiseballooncrash/spr_noiseballooncrash.yy",},
   ],
 }

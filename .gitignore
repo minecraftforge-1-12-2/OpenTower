@@ -1,15 +1,14 @@
-folders.csx
-refreshAssetlist.csx
+sprites/*/*.png
+sprites/*/*/*/*.png
+
+# if you want to commit sprites add them to this list
+# or make sure they have `mod` or `custom` in their names
+#example
+!sprites/spr_bup/**
 
 # Prolong my lifespan
 options/extensions/Steamworks.json
-datafiles/*
-extensions/fmod_gms/fmod-gamemaker.dll
-sprites/*/*.png
-sprites/*/*/*/*.png
 !options/main/template_icon.png
-!github/*
-!datafiles/licenses
 
 # The manually fixed tilesets
 !sprites/tile_beachprops1/**
@@ -50,3 +49,23 @@ sprites/*/*/*/*.png
 !sprites/tile_dungeon3/**
 !sprites/spr_ruincheese/**
 !sprites/spr_ruinend/**
+
+# Banks
+
+datafiles/sound/Desktop/Master.bank
+datafiles/sound/Desktop/Master.strings.bank
+datafiles/sound/Desktop/music.bank
+datafiles/sound/Desktop/sfx.bank
+
+# Txts
+
+datafiles/credits.txt
+datafiles/lang/english.txt
+datafiles/noisecredits.txt
+
+# Custom sprites
+
+!sprites/*_mod*/**
+!sprites/*_custom*/**
+!sprites/*mod_*/**
+!sprites/*custom_*/**

@@ -5270,8 +5270,8 @@ var includedFiles = new List<string>()
 {
 	"credits.txt",
 	"noisecredits.txt",
-	"fmod.dll",
-	"fmodstudio.dll",
+	//"fmod.dll",
+	//"fmodstudio.dll",
 	"sound/Desktop/Master.bank",
 	"sound/Desktop/Master.strings.bank",
 	"sound/Desktop/music.bank",
@@ -5282,11 +5282,11 @@ var includedFiles = new List<string>()
 Directory.CreateDirectory($"{rootPath}datafiles");
 Directory.CreateDirectory($"{rootPath}datafiles\\sound\\Desktop");
 Directory.CreateDirectory($"{rootPath}datafiles\\lang");
-Directory.CreateDirectory($"{rootPath}extensions\\fmod_gms");
+//Directory.CreateDirectory($"{rootPath}extensions\\fmod_gms");
 
 foreach (var i in includedFiles)
 	File.Copy($"{dataPath}{i}", $"{rootPath}datafiles\\{i}", true);
-File.Copy($"{dataPath}fmod-gamemaker.dll", $"{rootPath}extensions\\fmod_gms\\fmod-gamemaker.dll", true);
+//File.Copy($"{dataPath}fmod-gamemaker.dll", $"{rootPath}extensions\\fmod_gms\\fmod-gamemaker.dll", true);
 
 // Sprites
 //SetupProgress("Sprites", 0, Data.Sprites.Count);
