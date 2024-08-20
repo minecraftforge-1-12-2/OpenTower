@@ -26,23 +26,23 @@ if grabbing
 		var _normalaccel = true;
 		if (distance_to_pos(x, y, grab_xstart, grab_ystart, 78, 78))
 		{
-			trace("start");
+			//trace("start");
 			accel += 0.8;
 			_normalaccel = false;
 		}
 		if (distance_to_pos(x, y, dropspotx, dropspoty, 70, 70))
 		{
-			trace("end");
+			//trace("end");
 			accel -= 0.5;
 			_normalaccel = false;
 		}
 		if _normalaccel
 		{
-			trace("middle");
+			//trace("middle");
 			accel = maxaccel;
 		}
 		accel = clamp(accel, 0.25, maxaccel);
-		trace(accel);
+		//trace(accel);
 		x = Approach(x, dropspotx, accel);
 		y = Approach(y, dropspoty, accel);
 	}

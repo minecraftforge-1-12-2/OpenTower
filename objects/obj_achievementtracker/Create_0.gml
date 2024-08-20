@@ -871,7 +871,7 @@ add_achievement_notify("halloween2", function()
 						event_perform(ev_other, ev_room_start);
 				}
 				else
-					trace("Couldn't get the achievement!, max count: ", achievement_get_variable("hw2count").value);
+					//trace("Couldn't get the achievement!, max count: ", achievement_get_variable("hw2count").value);
 				achievement_get_variable("hw2count").value = 0;
 			}
 			break;
@@ -884,7 +884,7 @@ add_achievement_notify("halloween2", function()
 			var r = string_letters(room_get_name(room));
 			if (r == "trickytreat" || r == "trickytreatb")
 			{
-				trace("Found pumpkin at: ", room_get_name(room));
+				//trace("Found pumpkin at: ", room_get_name(room));
 				achievement_get_variable("hw2count").value += 1;
 			}
 			break;
@@ -996,7 +996,7 @@ add_achievement_notify("ruin1", function(data)
 	if type == notifs.hurt_player && global.leveltosave == "ruin" && arr[2] == obj_canonexplosion
 	{
 		val.value = true;
-		trace("Locked out of Thrill Seeker!");
+		//trace("Locked out of Thrill Seeker!");
 	}
 	else if type == 5 && arr[0] == "ruin" && !val.value
 		achievement_unlock(name, "Thrill Seeker", spr_achievement_ruin, 0);
@@ -1393,7 +1393,7 @@ add_achievement_notify("space3", function(data)
 		else if (achievement_get_variable("space3start").value == 1 && type == notifs.baddie_kill && arr[2] == obj_miniufo)
 		{
 			achievement_get_variable("space3count").value += 1;
-			trace("Meteor Man Count: ", achievement_get_variable("space3count").value);
+			//trace("Meteor Man Count: ", achievement_get_variable("space3count").value);
 			if (achievement_get_variable("space3count").value >= 5)
 				achievement_unlock(name, "Man Meteor", spr_achievement_space, 1);
 		}
@@ -1763,7 +1763,7 @@ add_achievement_notify("war2", function(data)
 			if !val
 			{
 				achievement_get_variable("war2_missed").value += 1;
-				trace("Sharpshooter: Shot missed!");
+				//trace("Sharpshooter: Shot missed!");
 			}
 		}
 	}

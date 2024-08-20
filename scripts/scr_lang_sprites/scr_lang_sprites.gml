@@ -6,7 +6,7 @@ function lang_sprites_parse(language)
 	file_text_close(file);
 	
 	var json = json_parse(str);
-	trace(json);
+	//trace(json);
 	ds_map_set(global.lang_sprite_map, language, ds_map_create());
 	
 	var arr = json.sprites;

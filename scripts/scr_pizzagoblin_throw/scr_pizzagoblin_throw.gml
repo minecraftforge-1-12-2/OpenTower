@@ -29,7 +29,7 @@ function scr_pizzagoblin_throw()
 				with (instance_create(x, y, obj_pizzagoblinbomb))
 				{
 					baddie = true;
-					trace("pizzagoblinbomb create: ", baddie);
+					//trace("pizzagoblinbomb create: ", baddie);
 					defused = true;
 					movespeed = 5;
 					image_xscale = other.image_xscale;

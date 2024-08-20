@@ -263,7 +263,7 @@ function pepperman_nearestspot()
 	calculate_jump_velocity(targetspot.x + 16, (targetspot.y + 16) - 200, jump_speed, grav);
 	if hsp > -2 && hsp < 2
 		vsp = -jump_speed;
-	trace(hsp, " ", vsp);
+	//trace(hsp, " ", vsp);
 	sprite_index = spr_pepperman_jump;
 	image_index = 0;
 }

@@ -46,7 +46,7 @@ function scr_player_climbwall()
 			}
 			if (verticalbuffer <= 0 && wallspeed > 0 && !scr_solid(x + xscale, y) && !place_meeting(x, y, obj_verticalhallway) && !place_meeting(x, y - 12, obj_verticalhallway))
 			{
-				trace("climbwall out");
+				//trace("climbwall out");
 				instance_create(x, y, obj_jumpdust);
 				vsp = 0;
 				var old_x = x;
@@ -117,7 +117,7 @@ function scr_player_climbwall()
 			}
 			if (state != states.mach2 && verticalbuffer <= 0 && place_meeting(x, y - 1, obj_solid) && scr_solid(x + xscale, y) && !place_meeting(x, y - 1, obj_verticalhallway) && !place_meeting(x, y - 1, obj_destructibles) && (!place_meeting(x + sign(hsp), y, obj_slope) || scr_solid_slope(x + sign(hsp), y)) && !place_meeting(x - sign(hsp), y, obj_slope))
 			{
-				trace("climbwall hit head");
+				//trace("climbwall hit head");
 				if !skateboarding
 				{
 					sprite_index = spr_superjumpland;

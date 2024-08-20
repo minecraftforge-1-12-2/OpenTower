@@ -23,7 +23,7 @@ on_item_click = function(item_id)
 };
 on_item_double_click = function(item_id)
 {
-	trace("double clicked item ", item_id);
+	//trace("double clicked item ", item_id);
 };
 on_item_draw = function(_x, _y, _item)
 {
@@ -35,7 +35,7 @@ on_item_draw = function(_x, _y, _item)
 };
 on_dirty = function()
 {
-	trace("list dirty");
+	//trace("list dirty");
 	dirty = false;
 };
 on_left_click = function()

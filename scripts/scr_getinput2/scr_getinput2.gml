@@ -35,7 +35,7 @@ function scr_getinput2()
 		if (haxis != 0 || vaxis != 0)
 		{
 			var _dir = point_direction(0, 0, haxis, vaxis);
-			trace(_dir);
+			//trace(_dir);
 			var _deadzone = 5;
 			if (_dir >= _deadzone && _dir <= (180 - _deadzone))
 				key_up = true;

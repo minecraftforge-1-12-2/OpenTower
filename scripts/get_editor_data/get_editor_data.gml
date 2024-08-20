@@ -10,5 +10,5 @@ function get_editor_data()
 	file_text_close(file)
 	var json = json_parse(str)
 	global.editor_data = json
-	trace(json)
+	//trace(json)
 }

@@ -18,5 +18,5 @@ else
 {
 	x += hsp;
 	y += vsp;
-	trace(colliding, ", Hsp: ", hsp, "Vsp: ", vsp);
+	//trace(colliding, ", Hsp: ", hsp, "Vsp: ", vsp);
 }

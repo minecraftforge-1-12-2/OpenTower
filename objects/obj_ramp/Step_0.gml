@@ -38,7 +38,7 @@ if (place_meeting(x, y - s, obj_player1))
 				other.used = true;
 			}
 			ramp_buffer = 16;
-			trace("trickjump");
+			//trace("trickjump");
 		}
 	}
 }

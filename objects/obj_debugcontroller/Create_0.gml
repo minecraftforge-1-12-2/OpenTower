@@ -230,29 +230,29 @@ if DEBUG
 		if toggle == undefined
 			exit;
 		toggle = get_bool(toggle);
-		show_debug_message(!toggle);
+		//show_debug_message(!toggle);
 		if toggle != undefined
 		{
 			showhud = toggle;
 			with obj_tv
 			{
 				visible = toggle;
-				show_debug_message(visible);
+				//show_debug_message(visible);
 			}
 			with obj_camera
 			{
 				visible = toggle;
-				show_debug_message(visible);
+				//show_debug_message(visible);
 			}
 			with obj_roomname
 			{
 				visible = toggle;
-				show_debug_message(visible);
+				//show_debug_message(visible);
 			}
 			with obj_pigtotal
 			{
 				visible = toggle;
-				show_debug_message(visible);
+				//show_debug_message(visible);
 			}
 		}
 	});
@@ -298,7 +298,7 @@ if DEBUG
 		if toggle == undefined
 			exit;
 		toggle = get_bool(toggle);
-		show_debug_message(!toggle);
+		//show_debug_message(!toggle);
 		if toggle != undefined
 		{
 			global.hardmode = toggle;
@@ -379,7 +379,7 @@ if DEBUG
 	function DoCommand(text)
 	{
 		var commands = string_split(text, " ");
-		trace(commands);
+		//trace(commands);
 		if (array_length(commands) > 0)
 		{
 			var c = FindCommand(commands[0]);

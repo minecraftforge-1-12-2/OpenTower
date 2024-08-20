@@ -2,7 +2,7 @@ function scr_player_ghostdash_sprites(min_mag = 2.5)
 {
 	var _h = abs(hsp) > 0;
 	var mag = magnitude(hsp, vsp);
-	trace(mag);
+	//trace(mag);
 	if mag >= min_mag
 	{
 		var pad = 22;

@@ -33,5 +33,5 @@ if (floor(other.x) == (x + _offset_x) && floor(other.y) == (y + _offset_y))
 	other.tube_vsp = vsp * ms;
 	stored_spd = 0;
 	fmod_event_one_shot_3d("event:/sfx/pipe/bump", x, y);
-	trace("hsp: ", other.hsp, " vsp: ", other.vsp);
+	//trace("hsp: ", other.hsp, " vsp: ", other.vsp);
 }

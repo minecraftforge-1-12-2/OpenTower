@@ -447,7 +447,7 @@ add_option_slide(deadzones_menu, 1, "option_deadzone", function(val)
 	if val > 90
 		val = 90;
 	global.input_controller_deadzone = val / 100;
-	trace(val / 100);
+	//trace(val / 100);
 	set_controller_config();
 }).value = (global.input_controller_deadzone * 100);
 
@@ -456,7 +456,7 @@ add_option_slide(deadzones_menu, 2, "option_deadzone_h", function(val)
 	if val > 90
 		val = 90;
 	global.input_controller_deadzone_horizontal = val / 100;
-	trace(val / 100);
+	//trace(val / 100);
 	set_controller_config();
 }).value = (global.input_controller_deadzone_horizontal * 100);
 
@@ -465,7 +465,7 @@ add_option_slide(deadzones_menu, 3, "option_deadzone_v", function(val)
 	if val > 90
 		val = 90;
 	global.input_controller_deadzone_vertical = val / 100;
-	trace(val / 100);
+	//trace(val / 100);
 	set_controller_config();
 }).value = (global.input_controller_deadzone_vertical * 100);
 
@@ -474,7 +474,7 @@ add_option_slide(deadzones_menu, 4, "option_deadzone_press", function(val)
 	if val > 90
 		val = 90;
 	global.input_controller_deadzone_press = val / 100;
-	trace(val / 100);
+	//trace(val / 100);
 	set_controller_config();
 }).value = (global.input_controller_deadzone_press * 100);
 
@@ -482,14 +482,14 @@ add_option_slide(deadzones_menu, 5, "option_deadzone_superjump", function(val)
 {
 	global.gamepad_deadzone_superjump = val / 100;
 	set_controller_config();
-	trace(val / 100);
+	//trace(val / 100);
 }).value = (global.gamepad_deadzone_superjump * 100);
 
 add_option_slide(deadzones_menu, 5, "option_deadzone_crouch", function(val)
 {
 	global.gamepad_deadzone_crouch = val / 100;
 	set_controller_config();
-	trace(val / 100);
+	//trace(val / 100);
 }).value = (global.gamepad_deadzone_crouch * 100);
 
 array_push(menus, deadzones_menu);

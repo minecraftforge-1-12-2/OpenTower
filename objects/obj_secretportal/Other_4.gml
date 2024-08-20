@@ -34,5 +34,5 @@ if (ds_list_find_index(global.saveroom, id) != -1)
 	image_index = 0;
 	if !_start
 		instance_destroy(instance_place(x, y, obj_frontcanongoblin_trigger));
-	trace("portal active: false");
+	//trace("portal active: false");
 }

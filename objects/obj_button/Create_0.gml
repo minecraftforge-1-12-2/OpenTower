@@ -10,9 +10,9 @@ icon = -4;
 
 on_left_click = function()
 {
-	trace("left click");
+	//trace("left click");
 };
 on_right_click = function()
 {
-	trace("right click");
+	//trace("right click");
 };

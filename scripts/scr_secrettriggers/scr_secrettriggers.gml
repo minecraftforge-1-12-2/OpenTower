@@ -55,7 +55,7 @@ function secret_check_trigger(secret_trigger)
 			_found = true;
 	}
 	if _found
-		trace({found: _found});
+		//trace({found: _found});
 	return _found;
 }
 function secret_open_portal(secret_trigger)

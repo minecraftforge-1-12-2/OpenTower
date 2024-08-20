@@ -55,7 +55,7 @@ if (!instance_exists(obj_randomsecret))
 		}
 		if global.panic
 		{
-			trace("Pausing panic music: room_start");
+			//trace("Pausing panic music: room_start");
 			savedpanicpos = fmod_event_instance_get_timeline_pos(panicmusicID);
 			fmod_event_instance_set_paused(panicmusicID, true);
 		}
@@ -73,7 +73,7 @@ if (!instance_exists(obj_randomsecret))
 		{
 			fmod_event_instance_set_timeline_pos(panicmusicID, savedpanicpos);
 			fmod_event_instance_set_paused(panicmusicID, false);
-			trace("Resuming panic music: room_start");
+			//trace("Resuming panic music: room_start");
 		}
 	}
 }

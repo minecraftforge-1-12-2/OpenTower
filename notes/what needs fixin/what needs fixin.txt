@@ -1,5 +1,2 @@
-random layer_depth messages
-exit followers are a bit broken
-
 SWAP MODE:
 swapping from peppino to noise cutscene is broken

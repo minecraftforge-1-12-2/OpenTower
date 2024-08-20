@@ -4,7 +4,7 @@ global.gameframe_caption_text = lang_get_value("caption_entrance");
 
 if (!obj_secretmanager.init)
 {
-	trace("secret init");
+	//trace("secret init");
 	obj_secretmanager.init = true;
 	secret_add(function()
 	{

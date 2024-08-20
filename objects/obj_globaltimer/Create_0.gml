@@ -38,6 +38,6 @@ if use_livesplit
 		buffer_write(ls_buffer, buffer_u8, MAGIC[Mi]);
 	buffer_seek(ls_buffer, buffer_seek_start, 0);
 	buffer_poke(ls_buffer, MAGICsize + 32, buffer_string, lang_get_value("game_version"));
-	show_debug_message("BUFFER ADDRESS = " + string(buffer_get_address(ls_buffer)));
-	show_debug_message("END!");
+	//show_debug_message("BUFFER ADDRESS = " + string(buffer_get_address(ls_buffer)));
+	//show_debug_message("END!");
 }

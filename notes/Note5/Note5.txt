@@ -1,0 +1,1 @@
+most trace() functions were commented because they only really make everything more annoying if you REALLY need them shift ctrl f for //trace and uncomment them

@@ -247,6 +247,6 @@ for (var i = 0; i < 3; i++)
 		}
 	}
 }
-trace(tilemap_sprite);
+//trace(tilemap_sprite);
 if (array_length(tiles[0]) <= 0 && array_length(tiles[1]) <= 0 && array_length(tiles[2]) <= 0)
 	instance_destroy();

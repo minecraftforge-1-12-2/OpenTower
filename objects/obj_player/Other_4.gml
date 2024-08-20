@@ -36,7 +36,7 @@ with obj_secretportal
 				create_transformation_tip(txt);
 			}
 			instance_create(0, 0, obj_ghostcollectibles);
-			trace(instance_number(obj_ghostcollectibles));
+			//trace(instance_number(obj_ghostcollectibles));
 		}
 	}
 }
@@ -170,7 +170,7 @@ if verticalhallway
 		x = _vinst.x + (_vinst.sprite_width * vertical_x);
 		var bbox_size = abs(bbox_right - bbox_left);
 		x = clamp(x, _vinst.x + bbox_size, _vinst.bbox_right - bbox_size);
-		trace(x, _vinst.x);
+		//trace(x, _vinst.x);
 		if vhallwaydirection > 0
 			y = _vinst.bbox_bottom + 32;
 		else
@@ -184,7 +184,7 @@ if verticalhallway
 			while (!scr_solid(x + xscale, y))
 			{
 				x += xscale;
-				trace(x);
+				//trace(x);
 				i++;
 				if i > room_width
 					break;

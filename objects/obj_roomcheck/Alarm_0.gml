@@ -4,7 +4,7 @@ if (room_pos < (array_length(room_arr) - 1))
 	with obj_player1
 		trapid = -4;
 	instance_destroy(obj_trapghost);
-	trace("Testing room: ", room_get_name(room_arr[room_pos]));
+	//trace("Testing room: ", room_get_name(room_arr[room_pos]));
 	room_goto(room_arr[room_pos]);
 	room_pos++;
 }

@@ -68,7 +68,7 @@ update_text = function()
 		str = lang_get_value_newline("computer_text2");
 		str = embed_value_string(str, [achievements, maxachievements, palettes, maxpalettes, damage]);
 	}
-	trace(str);
+	//trace(str);
 	with grannyID
 	{
 		change_y = false;

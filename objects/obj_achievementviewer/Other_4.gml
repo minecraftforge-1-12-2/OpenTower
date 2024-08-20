@@ -11,7 +11,7 @@ if ach != -4
 }
 else
 {
-	trace("Not found secret: ", achievement);
+	//trace("Not found secret: ", achievement);
 	image_index = index + secretplus;
 }
 textfont = lang_get_font("creditsfont");

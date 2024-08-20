@@ -20,11 +20,11 @@ for (var i = 0; i < array_length(credits_arr); i++)
 	{
 		var b = q[j];
 		var title = false;
-		trace(b);
+		//trace(b);
 		if (b == "CHIVALROUS CUSTOMERS" || b == "COOL CUSTOMERS" || b == "WEENIE CUSTOMERS" || b == "CHEESY CUSTOMERS")
 		{
 			title = true;
-			trace("Found title");
+			//trace("Found title");
 			var old_x = xx;
 			var old_halign = draw_get_halign();
 			draw_set_halign(fa_center);

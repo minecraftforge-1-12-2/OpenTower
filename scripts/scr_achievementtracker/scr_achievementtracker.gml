@@ -105,7 +105,7 @@ function add_achievement_update(_name, _update_rate, _creation_code, _update_fun
 		ini_open_from_string(obj_savesystem.ini_str_options);
 		if (ini_read_real(_savesection, _savename, false) == 1)
 		{
-			trace(_savename, " already unlocked");
+			//trace(_savename, " already unlocked");
 			q.unlocked = true;
 			ini_close();
 			exit;
@@ -136,7 +136,7 @@ function add_achievement_notify(_name, _creation_code, _func, _local = true, _sa
 		ini_open_from_string(obj_savesystem.ini_str_options);
 		if (ini_read_real(_savesection, _savename, false) == 1)
 		{
-			trace(_savename, " already unlocked");
+			//trace(_savename, " already unlocked");
 			q.unlocked = true;
 			ini_close();
 			exit;
@@ -186,7 +186,7 @@ function achievement_unlock(_name, _display_name, _sprite, _index = 0)
 	{
 		if !unlocked
 		{
-			trace("Achievement unlocked! ", _name, " ", _display_name);
+			//trace("Achievement unlocked! ", _name, " ", _display_name);
 			unlocked = true;
 			ini_open_from_string(obj_savesystem.ini_str);
 			ini_write_real("achievements", name, true);
@@ -226,15 +226,15 @@ function scr_steam_unlock_achievement(_achievement)
 		var steamach = ds_map_find_value(global.steam_achievements, _achievement);
 		if !is_undefined(steamach)
 		{
-			trace("Steam achievement unlocked! ", steamach);
+			//trace("Steam achievement unlocked! ", steamach);
 			if !steam_get_achievement(steamach)
 				steam_set_achievement(steamach);
 		}
-		else
-			trace("Could not find steam achievement! ", _achievement);
+		//else
+			//trace("Could not find steam achievement! ", _achievement);
 	}
-	else
-		trace("Steam API not initialized!");
+	//else
+		//trace("Steam API not initialized!");
 }
 function palette_unlock(_achievement, _palettename, _paletteselect, _texture = noone, peppino = true)
 {

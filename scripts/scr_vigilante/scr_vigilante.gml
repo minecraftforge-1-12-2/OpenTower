@@ -390,7 +390,7 @@ function scr_vigilante_walk()
 		if (currentattack >= array_length(attacklist))
 			currentattack = 0;
 		var attack = attacklist[currentattack++];
-		trace(attack);
+		//trace(attack);
 		switch attack[0]
 		{
 			case vigi_attacks.revolver:

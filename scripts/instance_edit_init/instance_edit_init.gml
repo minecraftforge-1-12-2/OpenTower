@@ -19,7 +19,7 @@ function instance_edit_init()
 			if variable_struct_exists(obj, "components")
 			{
 				ds_map_set(component_map, obj.ID, obj.components)
-				trace(obj.components)
+				//trace(obj.components)
 			}
 		}
 	}

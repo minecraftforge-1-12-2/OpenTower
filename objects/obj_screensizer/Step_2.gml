@@ -65,7 +65,7 @@ if window_has_focus() && (dirty || window_width_current != ww || window_height_c
 	{
 		camera_set_view_size(view_camera[0], CAMERA_WIDTH * camzoom, CAMERA_HEIGHT * camzoom);
 		app_scale = min(ww / CAMERA_WIDTH, wh / CAMERA_HEIGHT);
-		trace(app_scale);
+		//trace(app_scale);
 		
 		SCREEN_WIDTH = CAMERA_WIDTH;
 		SCREEN_HEIGHT = CAMERA_HEIGHT;

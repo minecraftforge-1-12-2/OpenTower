@@ -208,8 +208,8 @@ function hillbilly_create(argument0, argument1)
 					x = _hinst.x + 32;
 					y = _hinst.bbox_bottom - 51;
 				}
-				else
-					trace("destroy1");
+				//else
+					//trace("destroy1");
 			}
 			else
 			{
@@ -228,8 +228,8 @@ function hillbilly_create(argument0, argument1)
 					x = _doorInst.x + 32;
 					y = _doorInst.y - 14;
 				}
-				else
-					trace("destroy2");
+				//else
+					//trace("destroy2");
 			}
 		}
 	}

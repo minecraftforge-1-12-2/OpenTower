@@ -55,12 +55,12 @@ function warbg_generic(begin_script, end_script, layer_map = noone)
 				_found = false;
 			if !_found
 			{
-				trace("Adding script to Background: ", layer_get_name(_id));
+				//trace("Adding script to Background: ", layer_get_name(_id));
 				layer_script_begin(_id, begin_script);
 				layer_script_end(_id, end_script);
 			}
-			else
-				trace("Excluding scripts to Background: ", layer_get_name(_id));
+			//else
+				//trace("Excluding scripts to Background: ", layer_get_name(_id));
 		}
 	}
 }

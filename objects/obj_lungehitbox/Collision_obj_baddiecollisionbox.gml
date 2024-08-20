@@ -22,7 +22,7 @@ if _baddieID.state != states.grabbed && !_baddieID.invincible && _baddieID.hitta
 					hit_connected = true;
 					hithsp = ((other.x + ((other.movespeed + 0.5) * 60 * other.xscale)) - x) / 60;
 					hitvsp = (other.y - 180 - y) / 60;
-					trace([hithsp, hitvsp]);
+					//trace([hithsp, hitvsp]);
 					hitLag = lag;
 					hitX = x;
 					hitY = y;

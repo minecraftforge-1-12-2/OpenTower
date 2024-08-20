@@ -27,7 +27,7 @@ switch state
 				if yy > 440
 				{
 					var pid = scr_puppet_detect();
-					trace(pid);
+					//trace(pid);
 					if pid != -4
 					{
 						playerid = pid;

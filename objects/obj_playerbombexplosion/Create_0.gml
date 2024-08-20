@@ -30,7 +30,7 @@ add_hit = function(inst, obj = noone)
 
 ds_map_set(collision_function, noone, function(obj)
 {
-	trace("Non collision, but not misssed");
+	//trace("Non collision, but not misssed");
 	return true;
 });
 

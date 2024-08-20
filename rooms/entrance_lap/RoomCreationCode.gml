@@ -2,7 +2,7 @@ pal_swap_init_system();
 global.roommessage = "WELCOME TO PIZZA TOWER";
 if (!obj_secretmanager.init)
 {
-	trace("secret init");
+	//trace("secret init");
 	obj_secretmanager.init = true;
 	secret_add(function()
 	{

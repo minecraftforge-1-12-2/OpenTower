@@ -197,7 +197,7 @@ function scr_player_knightpep()
 	if (sprite_index == spr_knightpepfall || sprite_index == spr_knightpepdowntrust)
 	{
 		knightmomentum += 0.35;
-		trace(knightmomentum);
+		//trace(knightmomentum);
 	}
 	if (scr_slope() && sprite_index != spr_knightpepthunder)
 	{

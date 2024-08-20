@@ -2,6 +2,7 @@
 
 function fmod_event_create_instance(event)
 {
+	//trace(event)
 	var eventdesc = fmod_studio_system_get_event(event)
 	var instance = fmod_studio_event_description_create_instance(eventdesc)
 	return instance

@@ -24,8 +24,8 @@ function scr_hurtplayer(player)
 		}
 		else if ((state == states.backbreaker && (parrytimer > 0 || instance_exists(obj_parryhitbox) || sprite_index == spr_supertaunt1 || sprite_index == spr_supertaunt2 || sprite_index == spr_supertaunt3 || sprite_index == spr_supertaunt4 || sprite_index == spr_player_ratmountsupertaunt)) || state == states.chainsaw || state == states.phase1hurt || state == states.actor || instance_exists(obj_bossdark))
 		{
-			if state == states.backbreaker
-				trace(parrytimer);
+			//if state == states.backbreaker
+				//trace(parrytimer);
 		}
 		else if global.kungfu
 		{
@@ -301,7 +301,7 @@ function scr_hurtplayer(player)
 				{
 					var str1 = sprite_get_name(sprite_index);
 					var str2 = string_copy(str1, 0, string_length(str1) - 1);
-					trace(str2);
+					//trace(str2);
 					
 					if ((state == states.tv_expression || state == states.tv_whitenoise) && (sprite_index == spr_tv_exprhurt || sprite_index == spr_tv_exprhurtN || sprite_index == spr_tv_hurtG || str2 == "spr_tv_exprhurt" || str2 == "spr_tv_exprhurtN"))
 					{

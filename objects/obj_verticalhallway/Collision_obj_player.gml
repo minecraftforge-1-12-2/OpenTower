@@ -51,7 +51,7 @@ with other
 	}
 	if state == states.climbwall
 	{
-		trace("climbwall verticalhallway");
+		//trace("climbwall verticalhallway");
 		verticalbuffer = 10;
 		verticalstate = states.climbwall;
 		var i = 0;

@@ -92,7 +92,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 	if global.prank_cankillenemy && !global.prank_enemykilled
 	{
 		global.prank_enemykilled = true;
-		trace("P Rank started!");
+		//trace("P Rank started!");
 	}
 	if (!instance_exists(obj_bosscontroller))
 	{
@@ -139,7 +139,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 }
 else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
 {
-	trace("destroy unimportant");
+	//trace("destroy unimportant");
 	instance_create(x, y, obj_slapstar);
 	instance_create(x, y, obj_slapstar);
 	instance_create(x, y, obj_slapstar);

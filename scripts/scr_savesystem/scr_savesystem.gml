@@ -73,9 +73,9 @@ function get_percentage()
 	if per > 100
 		per = 100;
 	var extraper = (extracount >= _extramax) ? 1 : 0;
-	trace("Base count: ", count, " out of ", _basemax);
-	trace("Extra count: ", extracount, " out of ", _extramax);
-	trace("Percentage: ", per, " and ", extraper);
+	//trace("Base count: ", count, " out of ", _basemax);
+	//trace("Extra count: ", extracount, " out of ", _extramax);
+	//trace("Percentage: ", per, " and ", extraper);
 	return per + extraper;
 }
 function gamesave_async_load()

@@ -36,7 +36,7 @@ if global.panic
 {
 	if !panicstart
 	{
-		trace("Starting panic music: step");
+		//trace("Starting panic music: step");
 		panicstart = true;
 		if room != tower_finalhallway
 		{

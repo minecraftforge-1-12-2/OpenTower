@@ -7,11 +7,11 @@ function load_level_update(argument0) //load_level_update
 		load_array = []
 		for (var file = file_find_first((path + "rooms/*.json"), 0); file != ""; file = file_find_next())
 		{
-			trace("Loading file: ", file)
+			//trace("Loading file: ", file)
 			array_push(load_array, ((path + "rooms/") + file))
 		}
 		if (array_length(load_array) <= 0)
-			trace("Couldn't find any rooms")
+			//trace("Couldn't find any rooms")
 		file_find_close()
 	}
 	else if (save_step < array_length(load_array))

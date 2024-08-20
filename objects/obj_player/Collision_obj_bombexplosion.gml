@@ -1,7 +1,7 @@
 if (scr_transformationcheck() && state != states.bombpepside && state != states.bombpepup && state != states.Sjump && state != states.Sjumpprep)
 {
 	var dir = point_direction(other.x, other.y, x, y);
-	trace(dir);
+	//trace(dir);
 	if !grounded && dir >= 45 && dir < 135
 	{
 		state = states.bombpepup;
