@@ -1332,40 +1332,45 @@ if ((y > (room_height + 300) || y < -800) && !place_meeting(x, y, obj_verticalha
 {
 	if room != Mainmenu && room != tower_outside && room != Realtitlescreen && room != Longintro && room != Endingroom && room != Johnresurrectionroom && room != Creditsroom && room != rank_room
 	{
-		visible = true;
-		with obj_camera
+		techdiffbuffer++
+		if techdiffbuffer == 2
 		{
-			shake_mag = 3;
-			shake_mag_acc = 3 / room_speed;
-		}
-		if state == states.ghostpossess
-		{
-			state = states.ghost;
-			sprite_index = spr_ghostidle;
-		}
-		var s = state;
-		notification_push(notifs.fall_outofbounds, [id, s]);
-		state = states.actor;
-		visible = false;
-		hsp = 0;
-		vsp = 0;
-		fmod_event_one_shot_3d("event:/sfx/pep/groundpound", x, room_height - 100);
-		with (instance_create(x, y + 540, obj_technicaldifficulty))
-		{
-			playerid = other.id;
-			if !other.ispeppino
-				noise = true;
-			if !noise
+			visible = true;
+			with obj_camera
 			{
-				if !other.isgustavo
-					sprite = choose(spr_technicaldifficulty1, spr_technicaldifficulty2, spr_technicaldifficulty3);
-				else
-					sprite = spr_technicaldifficulty4;
+				shake_mag = 3;
+				shake_mag_acc = 3 / room_speed;
 			}
-			else
-				sprite = choose(spr_technicaldifficulty5, spr_technicaldifficulty6, spr_technicaldifficulty7);
+			if state == states.ghostpossess
+			{
+				state = states.ghost;
+				sprite_index = spr_ghostidle;
+			}
+			var s = state;
+			notification_push(notifs.fall_outofbounds, [id, s]);
+			state = states.actor;
+			visible = false;
+			hsp = 0;
+			vsp = 0;
+			fmod_event_one_shot_3d("event:/sfx/pep/groundpound", x, room_height - 100);
+			with (instance_create(x, y + 540, obj_technicaldifficulty))
+			{
+				playerid = other.id;
+				if !other.ispeppino
+					noise = true;
+				if !noise
+				{
+					if !other.isgustavo
+						sprite = choose(spr_technicaldifficulty1, spr_technicaldifficulty2, spr_technicaldifficulty3);
+					else
+						sprite = spr_technicaldifficulty4;
+				}
+				else
+					sprite = choose(spr_technicaldifficulty5, spr_technicaldifficulty6, spr_technicaldifficulty7);
+			}
+			vsp = 10;
+			techdiffbuffer = 0
 		}
-		vsp = 10;
 	}
 	else
 	{

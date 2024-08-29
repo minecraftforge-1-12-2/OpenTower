@@ -37,7 +37,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_tutorialgranny_sleep",
+    "path":"sprites/spr_tutorialgranny_sleep/spr_tutorialgranny_sleep.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

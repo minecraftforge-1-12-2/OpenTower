@@ -10,5 +10,5 @@ draw_sprite(spr_roomnamebg, 0, xi, yi);
 var yp = 17;
 if (lang_get_value("use_ttf"))
 	yp = 22;
-tdp_draw_text(xi, yi + yp + 6, msg);
+tdp_draw_text(xi, yi + yp, msg);
 tdp_text_commit(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);

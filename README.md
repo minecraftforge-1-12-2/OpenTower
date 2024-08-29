@@ -1,6 +1,5 @@
-# Pizza Tower
-- A full decompilation of Pizza Tower v1.1.0 (Noise Update).
-- I am not affiliated with Tour De Pizza in any way.
+# OpenTower-Nathaniel-Scuttlebug-Bandy
+- opentower but it works on gms2 2024 and it has gmext-fmod
 
 # Requirements
 

@@ -298,6 +298,10 @@ function scr_draw_text_arr(x, y, text_arr, color = c_white, alpha = 1, effect = 
 {
 	if text_arr == noone
 		exit;
+	var offsetfix = 0
+	// ima hardcode my stuff and be an idiot rq
+	if global.lang != "en"
+		offsetfix = 8
 	
 	for (var i = 0; i < array_length(text_arr); i++)
 	{
@@ -437,7 +441,7 @@ function scr_draw_text_arr(x, y, text_arr, color = c_white, alpha = 1, effect = 
 			
 			case texttype.array:
 				var val2 = b[4];
-				scr_draw_text_arr(cx, cy, val2, color, alpha, val);
+				scr_draw_text_arr(cx, cy - offsetfix, val2, color, alpha, val);
 				break;
 			
 			case texttype.normal:
@@ -446,7 +450,7 @@ function scr_draw_text_arr(x, y, text_arr, color = c_white, alpha = 1, effect = 
 					if !global.tdp_text_try_outline
 						draw_text_color(cx, cy, val, color, color, color, color, alpha);
 					else
-						tdp_draw_text_color(cx, cy, val, color, color, color, color, alpha);
+						tdp_draw_text_color(cx, cy - offsetfix, val, color, color, color, color, alpha);
 				}
 				else
 				{
@@ -462,7 +466,7 @@ function scr_draw_text_arr(x, y, text_arr, color = c_white, alpha = 1, effect = 
 								if !global.tdp_text_try_outline
 									draw_text_color(cx + x2 + s1, cy + s2, q, color, color, color, color, alpha);
 								else
-									tdp_draw_text_color(cx + x2 + s1, cy + s2, q, color, color, color, color, alpha);
+									tdp_draw_text_color(cx + x2 + s1, cy - offsetfix + s2, q, color, color, color, color, alpha);
 								x2 += string_width(q);
 							}
 							break;
@@ -479,9 +483,9 @@ function scr_draw_text_arr(x, y, text_arr, color = c_white, alpha = 1, effect = 
 								_dir = floor(Wave(-1, 1, 0.1, 0));
 								s += (_dir * d * o);
 								if !global.tdp_text_try_outline
-									draw_text_color(cx + x2, cy + s, q, color, color, color, color, alpha);
+									draw_text_color(cx + x2, cy - offsetfix + s, q, color, color, color, color, alpha);
 								else
-									tdp_draw_text_color(cx + x2, cy + s, q, color, color, color, color, alpha);
+									tdp_draw_text_color(cx + x2, cy - offsetfix + s, q, color, color, color, color, alpha);
 								x2 += string_width(q);
 							}
 							break;

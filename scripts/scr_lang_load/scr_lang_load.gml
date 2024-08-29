@@ -60,7 +60,8 @@ function scr_lang_load_update()
 			{
 				var tex = ds_list_find_value(textures_to_offload, i);
 				var spr = lang_get_texture(tex);
-				sprite_delete(spr);
+				if spr != noone
+					sprite_delete(spr);
 				ds_map_delete(global.lang_texture_map, tex);
 			}
 			ds_list_destroy(textures_to_offload);

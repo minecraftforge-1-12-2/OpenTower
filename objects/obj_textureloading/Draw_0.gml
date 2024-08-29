@@ -8,3 +8,5 @@ var xx = floor((SCREEN_WIDTH / 2) - (spr_w / 2));
 var yy = floor((SCREEN_HEIGHT / 2) - (spr_h / 2));
 draw_sprite(spr_loadingscreen, 0, xx, yy);
 draw_sprite_part(spr_loadingscreen, 1, 0, 0, spr_w * t, spr_h, xx, yy);
+if debug
+	draw_sprite(spr_compiled_mod, 0, SCREEN_WIDTH / 2, SCREEN_HEIGHT - 8)
