@@ -3,8 +3,8 @@
   "%Name":"README",
   "name":"README",
   "parent":{
-    "name":"Notes",
-    "path":"folders/Notes.yy",
+    "name":"BNVIB",
+    "path":"folders/Scripts/TDP/BNVIB.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",
