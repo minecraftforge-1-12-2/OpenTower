@@ -9,19 +9,17 @@ enum menutype
 // functions
 function menu_goto(menu_id)
 {
-	with obj_option
+	menu = 0;
+	for (var i = 0; i < array_length(menus); i++)
 	{
-		menu = 0;
-		for (var i = 0, n = array_length(menus); i < n; ++i)
+		var b = menus[i];
+		if b.menu_id == menu_id
 		{
-			if menus[i].menu_id == menu_id
-			{
-				menu = i;
-				break;
-			}
+			menu = i;
+			break;
 		}
-		optionselected = 0;
 	}
+	optionselected = 0;
 }
 function create_menu_fixed(_menuid, _anchor, _xpad, _ypad, _backmenu = menus_enum.options)
 {

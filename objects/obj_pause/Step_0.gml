@@ -8,7 +8,7 @@ if (!pause && instance_exists(obj_player1) && alarm[3] == -1 && obj_player1.key_
 		if !loop
 			_cutscenehandler = true;
 	}
-	with obj_player1
+	with obj_player
 	{
 		if ((state == states.victory && place_meeting(x, y, obj_startgate)) || (state == states.door && place_meeting(x, y, obj_exitgate)))
 			_cutscenehandler = true;
@@ -290,7 +290,7 @@ if (pause && !instance_exists(obj_loadingscreen) && alarm[3] == -1)
 }
 if (pause && !instance_exists(obj_option) && !instance_exists(obj_achievement_pause) && alarm[3] == -1)
 {
-	scr_menu_getinput()
+	scr_menu_getinput();
 	var _dvc = obj_inputAssigner.player_input_device[0];
 	key_back = key_back || key_start;
 	if backbuffer > 0
@@ -316,7 +316,7 @@ if (pause && !instance_exists(obj_option) && !instance_exists(obj_achievement_pa
 		key_jump = true;
 	}
 	if key_jump
-		pause_menu_map[? pause_menu[selected]][1]();
+		array_get(ds_map_find_value(pause_menu_map, array_get(pause_menu, selected)), 1)();
 }
 if pause
 	scr_pauseicons_update(array_get(ds_map_find_value(pause_menu_map, array_get(pause_menu, selected)), 0));

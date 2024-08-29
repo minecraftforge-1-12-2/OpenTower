@@ -21,7 +21,7 @@ function screen_apply_size()
 		
 		var w = get_resolution_width(global.option_resolution, aspect_ratio);
 		var h = get_resolution_height(global.option_resolution, aspect_ratio);
-		//trace("Setting Window Size: ", w, ", ", h);
+		trace("Setting Window Size: ", w, ", ", h);
 		window_set_size(w, h);
 		alarm[0] = 2;
 	}
@@ -30,7 +30,7 @@ function screen_apply_vsync()
 {
 	if room != Loadiingroom
 	{
-		//trace("Applying VSync: ", global.option_vsync);
+		trace("Applying VSync: ", global.option_vsync);
 		display_reset(0, global.option_vsync);
 	}
 }

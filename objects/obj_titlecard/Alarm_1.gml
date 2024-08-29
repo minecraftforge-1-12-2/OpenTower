@@ -11,7 +11,7 @@ var _add_spot = function(x, y, scale)
 		scale: scale
 	}
 
-	//trace("Adding noise head spot at: ", q);
+	trace("Adding noise head spot at: ", q);
 	array_push(noisespots, q);
 	return q;
 }
@@ -170,7 +170,7 @@ for (i = 0; i < array_length(noisespots); i++)
 		image_index: irandom(sprite_get_number(spr_titlecard_noise) - 1)
 	}
 
-	//trace("Adding noise head at: ", head);
+	trace("Adding noise head at: ", head);
 	array_push(noisehead, head);
 }
 noisehead_pos = 0;

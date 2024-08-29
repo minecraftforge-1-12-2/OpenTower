@@ -791,6 +791,3 @@ noisebossscream = false;
 gallopingsnd = fmod_event_create_instance("event:/sfx/misc/galloping");
 tornadolandanim = 0;
 bombthrow = false;
-
-techdiffbuffer = 0;
-roomstarted = false;

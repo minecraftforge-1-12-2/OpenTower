@@ -284,7 +284,7 @@ add_option_toggle(game_menu, 6, "option_timer_speedrun", function(val)
 	obj_savesystem.ini_str_options = ini_close();
 	global.option_speedrun_timer = val;
 }).value = global.option_speedrun_timer;
-
+	
 array_push(menus, game_menu);
 
 #endregion

@@ -150,7 +150,7 @@ if global.panic
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_set_font(global.bigfont);
-	draw_text(timer_x + 153, timer_y  - ((sprite_get_yoffset(spr_font) - 48) / 2), concat(minutes, ":", seconds));
+	draw_text(timer_x + 153, timer_y + 18 - (sprite_get_yoffset(spr_font) / 2), concat(minutes, ":", seconds));
 }
 else if (surface_exists(bar_surface))
 	surface_free(bar_surface);

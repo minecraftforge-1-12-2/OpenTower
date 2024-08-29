@@ -184,7 +184,7 @@ switch state
 	case 8:
 		if obj_player1.key_jump
 		{
-			with obj_player1
+			with obj_player
 				state = states.titlescreen;
 			room_goto(Realtitlescreen);
 		}

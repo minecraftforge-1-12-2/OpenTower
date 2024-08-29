@@ -1084,7 +1084,7 @@ if (state == states.dead && y > (room_height * 2) && !instance_exists(obj_backto
 		image_blend = c_white;
 		visible = true;
 	}
-	with obj_player1
+	with obj_player
 	{
 		x = -1000;
 		y = -1000;
@@ -1328,48 +1328,44 @@ if toomuchalarm1 > 0
 }
 if restartbuffer > 0
 	restartbuffer--;
-if ((obj_player1.y > (room_height + 300) || obj_player1.y < -800) && !place_meeting(obj_player1.x, obj_player1.y, obj_verticalhallway) && !place_meeting(obj_player1.x, obj_player1.y, obj_secretportal) && !place_meeting(obj_player1.x, obj_player1.y, obj_secretportalstart) && restartbuffer <= 0 && !verticalhallway && state != states.dead && state != states.gotoplayer && !global.levelreset && room != boss_pizzaface && room != tower_outside && room != boss_pizzafacefinale && state != states.dead && !instance_exists(obj_backtohub_fadeout) && state != states.backtohub)
+if ((y > (room_height + 300) || y < -800) && !place_meeting(x, y, obj_verticalhallway) && restartbuffer <= 0 && !verticalhallway && state != states.dead && state != states.gotoplayer && !global.levelreset && room != boss_pizzaface && room != tower_outside && room != boss_pizzafacefinale && state != states.dead && !instance_exists(obj_backtohub_fadeout) && state != states.backtohub)
 {
 	if room != Mainmenu && room != tower_outside && room != Realtitlescreen && room != Longintro && room != Endingroom && room != Johnresurrectionroom && room != Creditsroom && room != rank_room
 	{
-		techdiffbuffer++
-		if techdiffbuffer == 2
+		visible = true;
+		with obj_camera
 		{
-			visible = true;
-			with obj_camera
-			{
-				shake_mag = 3;
-				shake_mag_acc = 3 / room_speed;
-			}
-			if state == states.ghostpossess
-			{
-				state = states.ghost;
-				sprite_index = spr_ghostidle;
-			}
-			var s = state;
-			notification_push(notifs.fall_outofbounds, [id, s]);
-			state = states.actor;
-			visible = false;
-			hsp = 0;
-			vsp = 0;
-			fmod_event_one_shot_3d("event:/sfx/pep/groundpound", x, room_height - 100);
-			with (instance_create(x, y + 540, obj_technicaldifficulty))
-			{
-				playerid = obj_player1.id;
-				if !obj_player1.ispeppino
-					noise = true;
-				if !noise
-				{
-					if !obj_player1.isgustavo
-						sprite = choose(spr_technicaldifficulty1, spr_technicaldifficulty2, spr_technicaldifficulty3);
-					else
-						sprite = spr_technicaldifficulty4;
-				}
-				else
-					sprite = choose(spr_technicaldifficulty5, spr_technicaldifficulty6, spr_technicaldifficulty7);
-			}
-			vsp = 10;
+			shake_mag = 3;
+			shake_mag_acc = 3 / room_speed;
 		}
+		if state == states.ghostpossess
+		{
+			state = states.ghost;
+			sprite_index = spr_ghostidle;
+		}
+		var s = state;
+		notification_push(notifs.fall_outofbounds, [id, s]);
+		state = states.actor;
+		visible = false;
+		hsp = 0;
+		vsp = 0;
+		fmod_event_one_shot_3d("event:/sfx/pep/groundpound", x, room_height - 100);
+		with (instance_create(x, y + 540, obj_technicaldifficulty))
+		{
+			playerid = other.id;
+			if !other.ispeppino
+				noise = true;
+			if !noise
+			{
+				if !other.isgustavo
+					sprite = choose(spr_technicaldifficulty1, spr_technicaldifficulty2, spr_technicaldifficulty3);
+				else
+					sprite = spr_technicaldifficulty4;
+			}
+			else
+				sprite = choose(spr_technicaldifficulty5, spr_technicaldifficulty6, spr_technicaldifficulty7);
+		}
+		vsp = 10;
 	}
 	else
 	{
@@ -1377,10 +1373,6 @@ if ((obj_player1.y > (room_height + 300) || obj_player1.y < -800) && !place_meet
 		x = -100;
 		y = -100;
 	}
-}
-else
-{
-	techdiffbuffer = 0;
 }
 if character == "S"
 {

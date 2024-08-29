@@ -1,6 +1,6 @@
 pal_swap_init_system()
 global.roommessage = "PIZZA TOWER ISLAND"
-gameframe_caption_text = lang_get_value("caption_sewer")
+global.gameframe_caption_text = lang_get_value("caption_sewer")
 if global.panic
 {
 	var lay = layer_get_id("Backgrounds_1")

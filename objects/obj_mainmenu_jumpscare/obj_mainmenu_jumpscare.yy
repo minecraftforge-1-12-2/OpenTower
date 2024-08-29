@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_mainmenu_jumpscare",
-    "path":"sprites/spr_mainmenu_jumpscare/spr_mainmenu_jumpscare.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -33,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_ending_cards",
-    "path":"sprites/spr_ending_cards/spr_ending_cards.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

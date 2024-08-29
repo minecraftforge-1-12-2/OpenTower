@@ -13,9 +13,9 @@ if showgranny
 {
 	if voicecooldown > 1
 		voicecooldown--;
-	else if (!place_meeting(x, y, obj_player1))
+	else if (!place_meeting(x, y, obj_player))
 		voicecooldown = 0;
-	if (place_meeting(x, y, obj_player1))
+	if (place_meeting(x, y, obj_player))
 	{
 		sprite_index = spr_tutorialgranny_talk;
 		if voicecooldown == 0
@@ -42,7 +42,7 @@ switch text_state
 	case states.titlescreen:
 		repeat _hide + 1
 			text_y = Approach(text_y, -(text_sprite_height * text_yscale), 5);
-		if (obj_player1.state != states.backtohub && place_meeting(x, y, obj_player1) && !_hide)
+		if (obj_player1.state != states.backtohub && place_meeting(x, y, obj_player) && !_hide)
 		{
 			text_state = states.fall;
 			text_vsp = 0;
@@ -64,7 +64,7 @@ switch text_state
 	
 	case states.normal:
 		text_y = Approach(text_y, text_ystart, 2);
-		if (!place_meeting(x, y, obj_player1) || _hide)
+		if (!place_meeting(x, y, obj_player) || _hide)
 			text_state = states.titlescreen;
 		break;
 }

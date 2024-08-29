@@ -1,6 +1,6 @@
 pal_swap_init_system();
 global.roommessage = "PIZZA TOWER WITH THE DEAD";
-gameframe_caption_text = lang_get_value("caption_graveyard");
+global.gameframe_caption_text = lang_get_value("caption_graveyard");
 
 if (!obj_secretmanager.init)
 {

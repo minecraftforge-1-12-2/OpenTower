@@ -1,6 +1,6 @@
 pal_swap_init_system();
 global.roommessage = "PIZZA TOWER OF THE WEST";
-gameframe_caption_text = lang_get_value("caption_badland");
+global.gameframe_caption_text = lang_get_value("caption_badland");
 
 if (!obj_secretmanager.init)
 {

@@ -34,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_noiseunlocked_text",
-    "path":"sprites/spr_noiseunlocked_text/spr_noiseunlocked_text.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

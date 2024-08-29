@@ -58,7 +58,7 @@ if !deactivated
 				if player_input_device[player] == -2 && _index >= -1
 				{
 					player_input_device[player] = _index;
-					//trace("Player ", player, " connected at index: ", _index);
+					trace("Player ", player, " connected at index: ", _index);
 					player = 2;
 					break;
 				}
@@ -97,7 +97,7 @@ else
 		{
 			player_input_device[device_to_reconnect] = _index;
 			deactivated = false;
-			//trace("Player ", device_to_reconnect, " connected at index: ", _index);
+			trace("Player ", device_to_reconnect, " connected at index: ", _index);
 			scr_pause_activate_objects(false);
 			alarm[0] = 1;
 			break;

@@ -1,6 +1,6 @@
 pal_swap_init_system();
 global.roommessage = "RUINS OF THE PIZZA TOWER";
-gameframe_caption_text = lang_get_value("caption_ruin");
+global.gameframe_caption_text = lang_get_value("caption_ruin");
 
 if (!obj_secretmanager.init)
 {

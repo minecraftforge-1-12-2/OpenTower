@@ -1,7 +1,7 @@
 pal_swap_init_system()
 global.roommessage = lang_get_value("room_tower4")
 if (global.panic == 0)
-	gameframe_caption_text = lang_get_value("caption_tower4")
+	global.gameframe_caption_text = lang_get_value("caption_tower4")
 if global.panic
 {
 	with (obj_door)

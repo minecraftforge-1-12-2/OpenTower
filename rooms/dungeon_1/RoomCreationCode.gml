@@ -1,6 +1,6 @@
 pal_swap_init_system();
 global.roommessage = "PIZZA TOWER OF HELL!";
-gameframe_caption_text = lang_get_value("caption_dungeon");
+global.gameframe_caption_text = lang_get_value("caption_dungeon");
 
 if (!obj_secretmanager.init)
 {

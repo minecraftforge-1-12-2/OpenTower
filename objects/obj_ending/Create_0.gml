@@ -146,6 +146,6 @@ with towerID
 	depth = -5;
 	sprite_index = spr_towerending_tower;
 }
-with obj_player1
+with obj_player
 	state = states.titlescreen;
 depth = -10;

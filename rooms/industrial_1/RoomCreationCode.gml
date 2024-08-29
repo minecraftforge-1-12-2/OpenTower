@@ -1,6 +1,6 @@
 pal_swap_init_system()
 global.roommessage = "WELCOME TO PIZZA TOWER"
-gameframe_caption_text = lang_get_value("caption_industrial")
+global.gameframe_caption_text = lang_get_value("caption_industrial")
 if (!obj_secretmanager.init)
 {
 	obj_secretmanager.init = true;
